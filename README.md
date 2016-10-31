@@ -42,20 +42,20 @@ song, show, and/or annotations, and upvote the annotations they love.
 
 ### Phase 2: Albums and Tracks Models, API, and components (2 days)
 
-**Objective:** Tracks can be created, read, and destroyed through the API.
+**Objective:** Tracks can be created, read, and destroyed through the API
 
-### Phase 3:  (2 days)
+### Phase 3: Annotations (2 days)
 
-**Objective:**
+**Objective:** Annotations belong to a section of lyrics and a user. Can be added and deleted by a logged in user through the API.
 
-### Phase 4:  (1 day)
+### Phase 4: Comments (1 day)
 
-**Objective:**
+**Objective:** Comments belong to a track and user. Can be added and deleted by a logged in user through the API.
 
-### Phase 5:
+### Phase 5: Upvotes (1 day)
 
-**objective:**
+**objective:** Upvotes belong to an annotation and a user. Can be added and deleted by a logged in user through the API.
 
-### Phase 6:
+### Phase 6: Styling (1 day)
 
-**objective:**
+**objective:** Finishing touches to make the styling professional.
