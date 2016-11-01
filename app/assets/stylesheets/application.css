@@ -14,13 +14,13 @@
  *= require_self
  */
 
- html, body, div, nav, ul, li, h1, h2, p {
-     margin: 0;
-     border: 0;
-     padding: 0;
-     font: inherit;
-     text-align: inherit;
-     text-decoration: inherit;
-     color: inherit;
-     background: transparent;
-   }
+html, body, div, nav, ul, li, h1, h2, p {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  color: inherit;
+  background: transparent;
+}
