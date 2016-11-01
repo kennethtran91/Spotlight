@@ -63,7 +63,7 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className='auth-form'>
         { this.greeting() }
         <form>
           <div className='errors'>
