@@ -31,10 +31,10 @@ class SessionForm extends React.Component {
   }
 
   handleErrors() {
-    if (this.errors){
+    if (this.props.errors){
       return (
         <ul>
-          { this.props.errors.map( error => <li>{error}</li> ) }
+          { this.props.errors.map( (error,idx) => <li key={idx}>{error}</li> ) }
         </ul>
       );
     }
