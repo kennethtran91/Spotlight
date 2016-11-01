@@ -49,6 +49,8 @@
   - only if the user is signed in
 - `DELETE /api/annotations/:id`
   - only if the user is signed in and annotation written by user
+- `PATCH /api/annotations/:id`
+  - only if the user is signed in and annotation written by user
 
 ### Comments
 
@@ -57,4 +59,6 @@
 - `POST /api/comments`
   - only if the user is signed in
 - `DELETE /api/comments/:id`
+  - only if the user is signed in and comment written by user
+- `PATCH /api/comments/:id`
   - only if the user is signed in and comment written by user

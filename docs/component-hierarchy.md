@@ -4,34 +4,27 @@
  - AuthForm
 
 **HomeContainer**
- - Home
- - Index
-  * Index Items (Albums)
- - Home Footer
+ - Header / Footer
+ - Home (IndexRoute)
+  * AlbumIndex (same as below)
+   - AlbumIndexItem
 
 **ProfileContainer**
- - Header
  - UserProfile
  - ContributionIndex
   * ContributionItem
- - Footer
 
-**AlbumsContainer**
- - Header
+**AlbumIndexContainer**
  - AlbumIndex
-  * AlbumItem
- - Footer
+  * AlbumIndexItem
 
-**AlbumContainer**
- - Header
+**AlbumDetailContainer**
  - AlbumDetail
  - TrackIndex
   * TrackItem
  - TrackForm
- - Footer
 
 **TrackContainer**
- - Header
  - TrackDetail
  - Lyrics
  - Annotation
@@ -39,14 +32,13 @@
  - CommentForm
  - CommentIndex
   * CommentItem
- - Footer
 
 
 ## Routes
 
 |Path   | Component   |
 |-------|-------------|
-| "/home" | "HomeContainer" |
+| "/" | "HomeContainer" |
 | "/sign-up" | "AuthFormContainer" |
 | "/sign-in" | "AuthFormContainer" |
 | "/profile" | "ProileContainer" |
