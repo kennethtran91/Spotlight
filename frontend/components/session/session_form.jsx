@@ -52,8 +52,7 @@ class SessionForm extends React.Component {
 
   demo(e) {
     e.preventDefault();
-    const user = {username: 'slfoster', password: '123456'};
-    this.props.processForm(user);
+    this.props.demo();
   }
 
   handleSubmit(e) {
@@ -67,7 +66,7 @@ class SessionForm extends React.Component {
       <div>
         { this.greeting() }
         <form>
-          <div>
+          <div className='errors'>
             { this.handleErrors() }
           </div>
           <input type='text' value={this.state.username}

@@ -7,9 +7,8 @@ const sessionLinks = () => (
       <a href={'/'}>Broadway Genius</a>
     </h1>
     <ul>
-      <li><Link to="/login" activeClassName="current">Demo</Link></li>
       <li><Link to="/login" activeClassName="current">Login</Link></li>
-      <li><Link to="/signup" activeClassName="current">Sign up!</Link></li>
+      <li><Link to="/signup" activeClassName="current">Sign up</Link></li>
     </ul>
   </nav>
 );
