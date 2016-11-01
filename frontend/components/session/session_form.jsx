@@ -8,9 +8,10 @@ class SessionForm extends React.Component {
       username: "",
       password: ""
     };
-    this.header = this.header.bind(this);
+    this.greeting = this.greeting.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleErrors = this.handleErrors.bind(this);
+    this.demo = this.demo.bind(this);
   }
 
   componentDidUpdate() {
@@ -39,22 +40,20 @@ class SessionForm extends React.Component {
     }
   }
 
-  header() {
+  greeting() {
     return (
-      <header>
-        Welcome to BenchBnB! Please {this.props.formType } below.
+      <p>
+        Welcome to BroadwayGenius! Please {this.props.formType } below.
         <br />
-        Otherwise, { this.linked() }
-      </header>
+        In a rush? Use our demo account.
+      </p>
     );
   }
 
-  linked() {
-    if (this.props.formType === 'login'){
-      return (<Link to="/signup">sign up</Link>);
-    } else {
-      return (<Link to="/login">login</Link>);
-    }
+  demo(e) {
+    e.preventDefault();
+    const user = {username: 'slfoster', password: '123456'};
+    this.props.processForm(user);
   }
 
   handleSubmit(e) {
@@ -66,7 +65,7 @@ class SessionForm extends React.Component {
   render() {
     return (
       <div>
-        { this.header() }
+        { this.greeting() }
         <form>
           <div>
             { this.handleErrors() }
@@ -80,6 +79,7 @@ class SessionForm extends React.Component {
             onChange={this.update("password")}></input>
           <br />
           <button onClick={this.handleSubmit}>Submit</button>
+          <button onClick={this.demo}>Demo Login</button>
         </form>
       </div>
     );

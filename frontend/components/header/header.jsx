@@ -3,11 +3,17 @@ import { Link } from 'react-router';
 
 const sessionLinks = () => (
   <nav className="login-signup">
-    <Link to="/login" activeClassName="current">Login</Link>
-    &nbsp;or&nbsp;
-    <Link to="/signup" activeClassName="current">Sign up!</Link>
+    <h1>
+      <a href={'/'}>Broadway Genius</a>
+    </h1>
+    <ul>
+      <li><Link to="/login" activeClassName="current">Demo</Link></li>
+      <li><Link to="/login" activeClassName="current">Login</Link></li>
+      <li><Link to="/signup" activeClassName="current">Sign up!</Link></li>
+    </ul>
   </nav>
 );
+
 
 const personalGreeting = (currentUser, logout) => (
 	<hgroup className="header-group">
@@ -16,8 +22,10 @@ const personalGreeting = (currentUser, logout) => (
 	</hgroup>
 );
 
-const Header = ({ currentUser, logout }) => (
-  currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
-);
+const Header = ({ currentUser, logout }) => {
+  return (
+    currentUser ? personalGreeting(currentUser, logout) : sessionLinks()
+  );
+};
 
 export default Header;

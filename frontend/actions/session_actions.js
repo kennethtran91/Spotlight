@@ -18,6 +18,11 @@ export const signup = user => ({
   user
 });
 
+export const demo = () =>({
+  type: "LOGIN",
+  user: {username: 'slfoster', password:  '123456'}
+});
+
 export const receiveCurrentUser = user => ({
   type: "RECEIVE_CURRENT_USER",
   user
