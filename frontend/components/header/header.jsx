@@ -14,14 +14,13 @@ const style = {
     z_index         : 10
   },
   content : {
-    position        : 'fixed',
-    top             : '100px',
-    left            : '150px',
-    right           : '150px',
-    bottom          : '100px',
-    border          : '1px solid #ccc',
-    padding         : '20px',
-    z_index         : 11
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)',
+    padding: '40px'
   }
 };
 
