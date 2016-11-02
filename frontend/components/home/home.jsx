@@ -4,12 +4,14 @@ const Home = () => (
   <main className='home'>
     <figure className='home-top'>
       <div className='home-pic'></div>
+      <h2>Spotlight</h2>
+      <h3>shedding light on the musicals you love</h3>
       <p>
-        Broadway Genius is the newest collection of song lyrics and crowdsourced knowledge for lovers of musical theater.
+        The newest collection of song lyrics for lovers of musical theater
       </p>
     </figure>
-    <article className='home-albums'>
-      <h1>Check out our annotated tracks from your favorite cast albums!</h1>
+    <article id='home-albums'>
+      <h2>Check out our annotated tracks from your favorite cast albums!</h2>
     </article>
   </main>
 );

@@ -4,7 +4,10 @@
   width: 100%;
   min-height: 580px;
   margin: auto;
-  background: -webkit-linear-gradient(right, rgba(0,0,0,0.5), rgba(0,0,0,1));
+  background-color: rgba(0,0,0,1);
+  color: white;
+  text-align: center;
+  font-weight: bold;
 }
 
 .home-pic {
@@ -12,29 +15,42 @@
   max-width: 1340px;
   width: 100%;
   min-height: 580px;
-  opacity: 0.4;
+  opacity: 0.3;
   background-image: url("http://res.cloudinary.com/doepem37s/image/upload/v1478043010/broadway_wsfzku.jpg");
 }
 
-.home p {
+.home-top h2 {
   position: absolute;
-  top: 60px;
+  top: 45px;
   left: 90px;
-  font-size: 40px;
-  font-weight: bold;
+  font-size: 60px;
   line-height: 1.5;
   width: 350px;
-  color: white;
-  text-align: center;
 }
 
-.home-albums {
+.home-top h3 {
+  position: absolute;
+  top: 75px;
+  left: 90px;
+  font-size: 50px;
+  line-height: 1.3;
+  width: 380px;
+}
+
+.home-top p {
+  position: absolute;
+  bottom: 60px;
+  right: 90px;
+  font-size: 40px;
+  line-height: 1;
+  width: 350px;
+}
+
+#home-albums h2 {
   background-color: black;
   color: white;
   text-align: center;
-}
-
-.home-albums h1{
-  font-size: 24px;
+  font-weight: bold;
+  font-size: 30px;
   padding: 10px;
 }
