@@ -6,7 +6,7 @@ const sessionLinks = () => (
     <h1>
       <a href={'/'}>
         <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
-        Broadway Genius
+        Spotlight
       </a>
     </h1>
     <ul>
@@ -21,12 +21,12 @@ const personalGreeting = (currentUser, logout) => (
     <h1>
       <a href={'/'}>
         <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
-        Broadway Genius
+        Spotlight
       </a>
     </h1>
     <ul>
       <li><button className="header-button" onClick={logout}>Log Out</button></li>
-      <li><Link to='/profile'>
+      <li><Link to={'/profile/'+currentUser.id}>
         <a className='header-username'>{currentUser.username}</a>
         <img src={currentUser.image_url} className='header-prof-pic'/>
         </Link>
