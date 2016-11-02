@@ -33,7 +33,7 @@ class SessionForm extends React.Component {
   handleErrors() {
     if (this.props.errors){
       return (
-        <ul>
+        <ul className='auth-errors'>
           { this.props.errors.map( (error,idx) => <li key={idx}>{error}</li> ) }
         </ul>
       );
@@ -42,8 +42,8 @@ class SessionForm extends React.Component {
 
   greeting() {
     return (
-      <p>
-        Welcome to BroadwayGenius! Please {this.props.formType } below.
+      <p className='auth-greeting'>
+        Please {this.props.formType } below.
         <br />
         In a rush? Use our demo account.
       </p>
@@ -63,22 +63,29 @@ class SessionForm extends React.Component {
 
   render() {
     return (
-      <div className='auth-form'>
+      <div className='auth-section'>
         { this.greeting() }
-        <form>
-          <div className='errors'>
+        <form className='auth-form'>
+            <br />
             { this.handleErrors() }
-          </div>
-          <input type='text' value={this.state.username}
-            placeholder='Username'
-            onChange={this.update("username")}></input>
+          <label className='auth-input'>
+            Username
+            <br />
+            <input type='text' value={this.state.username}
+              placeholder='Username'
+              onChange={this.update("username")}></input>
+          </label>
           <br />
-          <input type='password' value={this.state.password}
-            placeholder='Password'
-            onChange={this.update("password")}></input>
+          <label className='auth-input'>
+            Password
+            <br />
+            <input type='password' value={this.state.password}
+              placeholder='Password'
+              onChange={this.update("password")}></input>
+          </label>
           <br />
-          <button onClick={this.handleSubmit}>Submit</button>
-          <button onClick={this.demo}>Demo Login</button>
+          <button onClick={this.handleSubmit} className='auth-submit'>Submit</button>
+          <button onClick={this.demo} className='auth-demo'>Demo Login</button>
         </form>
       </div>
     );

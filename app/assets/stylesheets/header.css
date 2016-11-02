@@ -1,10 +1,12 @@
 nav {
   display: flex;
   justify-content: space-between;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background-color: red;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background-color: #B22222;
   color: white;
+  max-width: 1340px;
+  margin: auto;
 }
 
 nav ul {
@@ -17,4 +19,5 @@ nav li {
 
 nav h1 {
   font-family: 'Limelight', cursive;
+  padding-left: 10px;
 }

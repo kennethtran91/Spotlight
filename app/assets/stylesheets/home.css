@@ -1,0 +1,22 @@
+.home {
+  position: relative;
+  width: 1340px;
+  margin: auto;
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.3), rgba(0,0,0,1));
+}
+
+.home-pic {
+  opacity: 0.4;
+}
+
+.home p {
+  position: absolute;
+  top: 40px;
+  left: 100px;
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 1.5;
+  width: 350px;
+  color: white;
+  text-align: center;
+}
