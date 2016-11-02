@@ -2,15 +2,16 @@
   box-sizing: border-box;
   margin: auto;
   margin-top: 200px;
-  width: 257px;
+  width: 300px;
   padding: 20px;
   border: 1px solid black;
   border-radius: 5px;
+  background-color: white;
 }
 
 .auth-greeting {
   text-align: center;
-  font-size: 20px;
+  font-size: 26px;
 }
 
 .auth-errors {
@@ -23,5 +24,19 @@
 }
 
 .auth-input {
-  padding-top: 10px;
+  margin-bottom: 10px;
+  width: 200px;
+  font-size: 15px;
+}
+
+.auth-button {
+  padding: 5px;
+  border: 1px solid black;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+.auth-button:hover {
+  border: 1px solid #B22222;
+  color: #B22222;
 }

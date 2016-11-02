@@ -5,7 +5,7 @@ nav {
   padding-bottom: 7px;
   background-color: #B22222;
   color: white;
-  max-width: 1340px;
+  max-width: 1341px;
   margin: auto;
 }
 
@@ -17,7 +17,23 @@ nav li {
   padding-right: 10px;
 }
 
+nav li:hover {
+  color: black;
+}
+
 nav h1 {
   font-family: 'Limelight', cursive;
   padding-left: 10px;
+}
+
+nav h1:hover {
+  color: black;
+}
+
+.icon {
+  width: 20px;
+}
+
+.icon:hover {
+  
 }

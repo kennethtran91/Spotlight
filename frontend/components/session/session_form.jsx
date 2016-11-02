@@ -68,24 +68,24 @@ class SessionForm extends React.Component {
         <form className='auth-form'>
             <br />
             { this.handleErrors() }
-          <label className='auth-input'>
+          <label className='auth-label'>
             Username
             <br />
             <input type='text' value={this.state.username}
-              placeholder='Username'
+              placeholder='Username' className='auth-input'
               onChange={this.update("username")}></input>
           </label>
           <br />
-          <label className='auth-input'>
+          <label className='auth-label'>
             Password
             <br />
             <input type='password' value={this.state.password}
-              placeholder='Password'
+              placeholder='Password' className='auth-input'
               onChange={this.update("password")}></input>
           </label>
           <br />
-          <button onClick={this.handleSubmit} className='auth-submit'>Submit</button>
-          <button onClick={this.demo} className='auth-demo'>Demo Login</button>
+          <button onClick={this.handleSubmit} className='auth-button'>Submit</button>
+          <button onClick={this.demo} className='auth-button'>Demo Login</button>
         </form>
       </div>
     );
