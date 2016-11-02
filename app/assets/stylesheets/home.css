@@ -1,18 +1,24 @@
 .home {
   position: relative;
-  width: 1340px;
-  height: 746px;
+  max-width: 1340px;
+  width: 100%;
+  min-height: 580px;
   margin: auto;
   background: -webkit-linear-gradient(right, rgba(0,0,0,0.4), rgba(0,0,0,1));
 }
 
 .home-pic {
+  overflow: hidden;
+  max-width: 1340px;
+  width: 100%;
+  min-height: 580px;
   opacity: 0.4;
+  background-image: url("http://res.cloudinary.com/doepem37s/image/upload/v1478043010/broadway_wsfzku.jpg");
 }
 
 .home p {
   position: absolute;
-  top: 70px;
+  top: 60px;
   left: 90px;
   font-size: 40px;
   font-weight: bold;

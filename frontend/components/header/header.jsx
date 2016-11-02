@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const sessionLinks = () => (
-  <nav className="out-header">
+  <nav>
     <h1>
       <a href={'/'}>
         <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
