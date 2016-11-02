@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { logout } from '../../actions/session_actions';
+import { hashHistory } from 'react-router';
 import Header from './header';
 
 const mapStateToProps = ({ session }) => ({
@@ -7,7 +8,10 @@ const mapStateToProps = ({ session }) => ({
 });
 
 const mapDispatchToProps = dispatch => ({
-  logout: () => dispatch(logout())
+  logout: () => {
+    dispatch(logout());
+    hashHistory.replace('/');
+  }
 });
 
 export default connect(

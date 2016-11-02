@@ -28,4 +28,18 @@ html, body, div, ul, li, h1, h2, p, a, button {
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: #FFF5EE;
+  position: relative;
+  max-width: 1340px;
+  width: 100%;
+  min-height: 580px;
+  margin: auto;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
 }

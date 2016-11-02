@@ -1,10 +1,10 @@
-.home {
+.home-top {
   position: relative;
   max-width: 1340px;
   width: 100%;
   min-height: 580px;
   margin: auto;
-  background: -webkit-linear-gradient(right, rgba(0,0,0,0.4), rgba(0,0,0,1));
+  background: -webkit-linear-gradient(right, rgba(0,0,0,0.5), rgba(0,0,0,1));
 }
 
 .home-pic {
@@ -26,4 +26,15 @@
   width: 350px;
   color: white;
   text-align: center;
+}
+
+.home-albums {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.home-albums h1{
+  font-size: 24px;
+  padding: 10px;
 }

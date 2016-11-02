@@ -42,23 +42,24 @@ class SessionForm extends React.Component {
 
   greeting() {
     return (
-      <p className='auth-greeting'>
-        Please {this.props.formType } below.
+      <h2 className='auth-greeting'>
+        <img src="http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png" />
+        Please {this.props.formType } below
         <br />
-        In a rush? Use our demo account.
-      </p>
+        <p>In a rush? Use our demo account.</p>
+      </h2>
     );
   }
 
   demo(e) {
     e.preventDefault();
-    this.props.demo();
+    this.props.demo(this.props.closeModal);
   }
 
   handleSubmit(e) {
     e.preventDefault();
     const user = this.state;
-    this.props.processForm(user);
+    this.props.processForm(user, this.props.closeModal);
   }
 
   render() {

@@ -4,23 +4,26 @@ export const SIGNUP = 'SIGNUP';
 export const RECEIVE_CURRENT_USER = 'RECEIVE_CURRENT_USER';
 export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
 
-export const login = user => ({
+export const login = (user, closeModal) => ({
   type: "LOGIN",
-  user
+  user,
+  closeModal
 });
 
 export const logout = () => ({
   type: "LOGOUT"
 });
 
-export const signup = user => ({
+export const signup = (user, closeModal) => ({
   type: "SIGNUP",
-  user
+  user,
+  closeModal
 });
 
-export const demo = () =>({
+export const demo = closeModal =>({
   type: "LOGIN",
-  user: {username: 'slfoster', password:  '123456'}
+  user: {username: 'suttonlenore', password:  '123456'},
+  closeModal
 });
 
 export const receiveCurrentUser = user => ({
