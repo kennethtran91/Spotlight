@@ -7,6 +7,7 @@ nav {
   background-color: #B22222;
   max-width: 1341px;
   margin: auto;
+  font-size: 24px;
 }
 
 nav ul {
@@ -17,6 +18,7 @@ nav ul {
 nav li {
   padding-right: 10px;
   padding-left: 10px;
+  position: relative;
 }
 
 nav li:hover {
@@ -33,9 +35,22 @@ nav h1:hover {
 }
 
 .icon {
-  width: 20px;
+  width: 30px;
 }
 
-.icon:hover {
+.header-prof-pic{
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+  top: 2px;
+}
 
+.header-button {
+  vertical-align: top;
+}
+
+.header-username{
+  padding-right: 4px;
+  vertical-align: top;
 }

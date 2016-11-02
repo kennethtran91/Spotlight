@@ -6,4 +6,5 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create({username: 'slfoster', password: '123456', image_url: "https://en.wikipedia.org/wiki/Sutton_Foster#/media/File:Sutton_Foster.jpg"});
+User.create({username: 'slfoster', password: '123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478063525/sutton_ucztff.jpg"});
+User.create({username: 'lindsey', password:'123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478044295/spotlight_oybuda.png"})

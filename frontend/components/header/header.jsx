@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 
 const sessionLinks = () => (
-  <nav>
+  <nav className='out-header'>
     <h1>
       <a href={'/'}>
         <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
@@ -19,13 +19,17 @@ const sessionLinks = () => (
 const personalGreeting = (currentUser, logout) => (
 	<nav className="in-header">
     <h1>
-      <a href={'/'}>Broadway Genius</a>
+      <a href={'/'}>
+        <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
+        Broadway Genius
+      </a>
     </h1>
     <ul>
       <li><button className="header-button" onClick={logout}>Log Out</button></li>
       <li><Link to='/profile'>
+        <a className='header-username'>{currentUser.username}</a>
         <img src={currentUser.image_url} className='header-prof-pic'/>
-        {currentUser.username}</Link>
+        </Link>
       </li>
     </ul>
 	</nav>
