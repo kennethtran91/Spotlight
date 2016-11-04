@@ -19,9 +19,9 @@ class AlbumShow extends React.Component {
 
   loaded() {
     return (<main>
-      <section className='album-splash'>
+      <section className='show-splash'>
         <h1>{this.props.album.title}</h1>
-        <ul className='album-info'>
+        <ul className='show-info'>
           <li>Music by {this.props.album.composer}</li>
           <li>Lyrics by {this.props.album.lyricist}</li>
           <li>{this.props.album.year}</li>

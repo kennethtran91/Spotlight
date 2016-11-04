@@ -55,3 +55,8 @@
   color: #4c4c4c;
   border-color: #4c4c4c;
 }
+
+.auth-label input {
+  border: 1px solid white;
+  padding: 4px;
+}

@@ -16,6 +16,7 @@ class TrackForm extends React.Component {
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleErrors = this.handleErrors.bind(this);
     this.form = this.form.bind(this);
+    this.noForm = this.noForm.bind(this);
   }
 
   update(field) {
@@ -86,8 +87,16 @@ class TrackForm extends React.Component {
     );
   }
 
+  noForm() {
+    return (
+      <p className='no-track-form'>
+        Login or use the demo account to add a track to this album.
+      </p>
+    );
+  }
+
   render(){
-    return ( this.props.currentUser ) ? this.form() : (<main></main>);
+    return ( this.props.currentUser ) ? this.form() : this.noForm();
   }
 }
 

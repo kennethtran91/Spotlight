@@ -8,7 +8,7 @@ class Track extends React.Component {
   }
 
   componentDidMount() {
-    this.props.fetchTrack(this.props.trackId);
+    this.props.fetchTrack();
   }
 
   loading() {
@@ -20,19 +20,19 @@ class Track extends React.Component {
   loaded() {
     return (
       <main className='track-show'>
-        <section className='track-splash'>
+        <section className='show-splash'>
           <h1>{this.props.track.title}</h1>
-          <ul>
-            {this.props.show}
+          <ul className='show-info'>
+            <li>From: {this.props.albumTitle}</li>
+            <li>Performed by: {this.props.track.vocalists}</li>
+            <li>{this.props.track.context}</li>
           </ul>
         </section>
         <article className='track-body'>
-          <pre>{this.props.track.lyrics}</pre>
-          <details className='track-comments'>
-            <ul>
+          <pre className='track-lyrics'>{this.props.track.lyrics}</pre>
+          <ul className='track-comments'>
 
-            </ul>
-          </details>
+          </ul>
         </article>
       </main>
     );
@@ -43,3 +43,6 @@ class Track extends React.Component {
 }
 
 export default Track;
+
+
+// {this.props.track}

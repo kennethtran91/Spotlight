@@ -1,4 +1,4 @@
-import { RECEIVE_TRACK, REMOVE_TRACK, RECEIVE_ERRORS } from '../actions/track_actions';
+import { RECEIVE_TRACK, REMOVE_TRACK, RECEIVE_TRACK_ERRORS } from '../actions/track_actions';
 import merge from 'lodash/merge';
 import { hashHistory } from 'react-router';
 
@@ -15,9 +15,9 @@ export default (state = _nullTrack, action) =>{
       return merge ({}, _nullTrack, {track: {[action.track.id]: action.track}});
     case REMOVE_TRACK:
       let newState = merge({}, _nullTrack, state);
-      delete newState[action.track.id];
+      delete newState.track[action.track.id];
       return newState;
-    case RECEIVE_ERRORS:
+    case RECEIVE_TRACK_ERRORS:
       return merge({}, _nullTrack, {errors: action.errors});
     default:
       return state;

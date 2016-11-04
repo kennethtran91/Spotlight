@@ -3,7 +3,7 @@ export const CREATE_TRACK = "CREATE_TRACK";
 export const DELETE_TRACK = "DELETE_TRACK";
 export const RECEIVE_TRACK = "RECEIVE_TRACK";
 export const REMOVE_TRACK = "REMOVE_TRACK";
-export const RECEIVE_ERRORS = 'RECEIVE_ERRORS';
+export const RECEIVE_TRACK_ERRORS = 'RECEIVE_TRACK_ERRORS';
 
 export const fetchTrack = id => ({
   type: FETCH_TRACK,
@@ -30,7 +30,7 @@ export const removeTrack = track => ({
   track
 });
 
-export const receiveErrors = errors => ({
-  type: "RECEIVE_ERRORS",
+export const receiveTrackErrors = errors => ({
+  type: "RECEIVE_TRACK_ERRORS",
   errors
 });
