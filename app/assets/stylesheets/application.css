@@ -23,6 +23,7 @@ html, body, div, ul, li, h1, h2, p, a, button {
   text-decoration: inherit;
   color: inherit;
   background: transparent;
+  list-style-type: none;
 }
 
 body {
@@ -42,4 +43,8 @@ body {
 	content: " ";
 	clear: both;
 	height: 0;
+}
+
+input, button {
+  outline: none;
 }

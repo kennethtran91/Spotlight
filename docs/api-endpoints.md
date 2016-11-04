@@ -25,6 +25,8 @@
 - `GET /api/albums`
   - index of all albums
 - `GET /api/albums/:id`
+  - album information
+  - index of all tracks for an album
 
 - these are just to organize the tracks
 - users will not be able to add or delete albums, unless I have time
@@ -32,13 +34,14 @@
 ### Tracks
 
 - `GET /api/albums/:id/tracks`
-  - index of all tracks for an album
+  - not planning to use this anymore
 - `POST /api/tracks`
   - only if the user is signed in
 - `GET /api/tracks/:id`
   - has lyrics, comments, annotations for track
 - `DELETE /api/tracks/:id`
   - only if the user is signed in and track created by user
+- no updating tracks because then annotations will be messy
 
 ### Annotations
 

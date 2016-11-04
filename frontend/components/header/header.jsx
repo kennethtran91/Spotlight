@@ -49,6 +49,7 @@ class Header extends React.Component {
           </a>
         </h1>
         <ul>
+          <li><Link to='/albums'>Albums</Link></li>
           <li>
             <button className="header-button" onClick={this.props.logout}>
               Log Out
@@ -75,6 +76,7 @@ class Header extends React.Component {
           </a>
         </h1>
         <ul>
+          <li><Link to='/albums'>Albums</Link></li>
           <li><button onClick={this.openLoginModal}>Login</button></li>
           <li><button onClick={this.openSignupModal}>Sign up</button></li>
         </ul>

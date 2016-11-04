@@ -3,6 +3,11 @@ class User < ActiveRecord::Base
   validates :username, :session_token, uniqueness: true
   validates :password, length: {minimum: 6, allow_nil: true}
 
+  has_many :tracks
+  # has_many :comments
+  # has_many :annotations
+  # has_many :upvotes
+
   after_initialize :ensure_session_token
 
   def self.find_by_credentials(username, password)
