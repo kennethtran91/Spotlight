@@ -1,6 +1,6 @@
 import React from 'react';
 import { albumShowTrackArray } from '../../reducers/selectors';
-import { Link, hashHistory } from 'react-router';
+import { Link } from 'react-router';
 
 class AlbumShow extends React.Component {
   constructor(props) {

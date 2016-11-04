@@ -16,7 +16,7 @@ class Api::TracksController < ApplicationController
     @track = Track.find(params[:id])
     @album = Album.find(@track.album_id)
     @track.destroy
-    render "albums/:id"
+    render json: @track
   end
 
   def show

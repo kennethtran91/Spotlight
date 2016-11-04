@@ -1,5 +1,5 @@
 import React from 'react';
-import { withRouter, hashHistory } from 'react-router';
+import { withRouter } from 'react-router';
 import merge from 'lodash/merge';
 
 class TrackForm extends React.Component {

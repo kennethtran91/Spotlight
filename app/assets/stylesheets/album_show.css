@@ -20,8 +20,9 @@
   position: absolute;
   top: 70px;
   left: 50px;
-  font-size: 20px;
   font-weight: bold;
+  font-size: 20px;
+  width: 90%;
 }
 
 .album-art {

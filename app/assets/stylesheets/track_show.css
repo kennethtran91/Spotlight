@@ -5,3 +5,15 @@
 .track-lyrics {
   padding: 10px;
 }
+
+.back-to-album:hover {
+  font-weight: bolder;
+  font-size: 23px;
+}
+
+.track-delete img {
+  width: 20px;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
