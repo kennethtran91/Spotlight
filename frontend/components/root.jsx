@@ -8,8 +8,11 @@ import SessionFormContainer from './session/session_form_container';
 import ProfileContainer from './profile/profile_container';
 import AlbumIndexContainer from './album_index/album_index_container';
 import AlbumShowContainer from './album_show/album_show_container';
+import TrackFormContainer from './album_show/track_form_container';
+import TrackContainer from './track/track_container';
 
-import { fetchAlbums, fetchAlbum } from '../actions/album_actions';
+import { fetchAlbums } from '../actions/album_actions';
+// import { fetchTrack } from '../actions/track_actions';
 
 const Root = ({ store }) => {
   function _redirectIfLoggedIn () {
@@ -35,7 +38,12 @@ const Root = ({ store }) => {
           <IndexRoute component={HomeContainer} />
           <Route path="/profile/:userId" component={ProfileContainer} onEnter={_redirectIfLoggedOut} />
           <Route path='/albums' component={AlbumIndexContainer} onEnter={fetchAlbumsOnEnter} />
-          <Route path ='/albums/:albumId' component={AlbumShowContainer} />
+          <Route path='/albums/:albumId' component={AlbumShowContainer}>
+            <IndexRoute component={TrackFormContainer} />
+          </Route>
+          <Route path='/tracks/:trackId' component={TrackContainer}>
+
+          </Route>
         </Route>
       </Router>
     </Provider>
@@ -43,3 +51,5 @@ const Root = ({ store }) => {
 };
 
 export default Root;
+
+// <Route path='/tracks/:trackId' component={TrackContainer} />

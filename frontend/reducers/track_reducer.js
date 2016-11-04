@@ -1,10 +1,10 @@
-import { RECEIVE_TRACK, REMOVE_TRACK } from '../actions/track_actions';
+import { RECEIVE_TRACK, REMOVE_TRACK, RECEIVE_ERRORS } from '../actions/track_actions';
 import merge from 'lodash/merge';
+import { hashHistory } from 'react-router';
 
 const _nullTrack = Object.freeze({
-  id: {},
-  comments: [],
-  annotations: []
+  track: null,
+  errors: []
 });
 
 export default (state = _nullTrack, action) =>{
@@ -12,11 +12,13 @@ export default (state = _nullTrack, action) =>{
 
   switch(action.type) {
     case RECEIVE_TRACK:
-      return merge ({}, {[action.track.id]: action.track});
+      return merge ({}, _nullTrack, {track: {[action.track.id]: action.track}});
     case REMOVE_TRACK:
-      let newState = merge({}, state);
+      let newState = merge({}, _nullTrack, state);
       delete newState[action.track.id];
       return newState;
+    case RECEIVE_ERRORS:
+      return merge({}, _nullTrack, {errors: action.errors});
     default:
       return state;
   }

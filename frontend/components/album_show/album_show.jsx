@@ -1,5 +1,6 @@
 import React from 'react';
-import {albumShowTrackArray} from '../../reducers/selectors';
+import { albumShowTrackArray } from '../../reducers/selectors';
+import { Link, hashHistory } from 'react-router';
 
 class AlbumShow extends React.Component {
   constructor(props) {
@@ -26,15 +27,21 @@ class AlbumShow extends React.Component {
           <li>{this.props.album.year}</li>
         </ul>
       </section>
-      <aside className='album-art'><img src={this.props.album.image_url} /></aside>
-      <ul className ='album-track-list'>
-        {albumShowTrackArray(this.props.album).map ((track, idx) => (
-          <li key={idx}>
-            <h3>{track.title}</h3>
-            <p>{track.vocalists}</p>
-          </li>)
-        )}
-      </ul>
+
+      <aside className='album-art clearfix'><img src={this.props.album.image_url} /></aside>
+
+      <div className='album-tracks-container clearfix'>
+        <ul className ='album-track-list'>
+          {albumShowTrackArray(this.props.album).map ((track, idx) => (
+            <Link to={`/tracks/${track.id}`} key={idx}><li>
+              <h3>{track.title}</h3>
+              <p>{track.vocalists}</p>
+            </li></Link>)
+          )}
+        </ul>
+      </div>
+
+      { this.props.children }
     </main>);
   }
 

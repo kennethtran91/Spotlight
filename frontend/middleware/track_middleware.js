@@ -1,9 +1,9 @@
-import { receiveTrack, removeTrack,
+import { receiveTrack, removeTrack, receiveErrors,
   FETCH_TRACK, CREATE_TRACK, DELETE_TRACK } from '../actions/track_actions';
 import { fetchTrack, createTrack, deleteTrack } from '../util/track_api_util';
 
 export default ({dispatch}) => next => action => {
-  const errorCallback = data => console.log(data);
+  const errorCallback = data => dispatch(receiveErrors(data.responseJSON));
 
   switch(action.type) {
     case FETCH_TRACK:

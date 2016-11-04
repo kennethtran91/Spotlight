@@ -2,11 +2,6 @@ import React from 'react';
 import Masonry from 'react-masonry-component';
 import { Link } from 'react-router';
 
-const masonryOptions = {
-  transitionDuration: 0,
-  fitWidth: 200
-};
-
 class AlbumIndex extends React.Component {
   constructor(props) {
     super(props);
@@ -14,21 +9,14 @@ class AlbumIndex extends React.Component {
 
   render() {
     return (
-      <Masonry
-        className={'album-index'}
-        elementType={'ul'}
-        options={masonryOptions}
-        disableImagesLoaded={false}
-        updateOnEachImageLoad={false}>
-        <ul>
-          {this.props.albums.map( (album, idx) => (
-            <li key={idx}>
-              <Link to={'/albums/'+album.id}><img src={album.image_url} /></Link>
-              <p>{album.title}</p>
-            </li>
-          ))}
-        </ul>
-      </Masonry>
+      <ul className='album-index'>
+        {this.props.albums.map( (album, idx) => (
+          <li key={idx} className='album-item'>
+            <Link to={'/albums/'+album.id}><img src={album.image_url} />
+            <p>{album.title}</p></Link>
+          </li>
+        ))}
+      </ul>
     );
   }
 }

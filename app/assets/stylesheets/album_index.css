@@ -1,0 +1,15 @@
+.album-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.album-item img{
+  width: 270px;
+  height: 270px;
+  overflow: hidden;
+}
+
+.album-item {
+  margin: 20px;
+}

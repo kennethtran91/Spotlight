@@ -85,7 +85,9 @@ class SessionForm extends React.Component {
               onChange={this.update("password")}></input>
           </label>
           <br />
-          <button onClick={this.handleSubmit} disabled={!this.state.username || !this.state.password} className='auth-button'>Submit</button>
+          <button onClick={this.handleSubmit}
+            disabled={!this.state.username || !this.state.password}
+            className='auth-button'>Submit</button>
           <button onClick={this.demo} className='auth-button'>Demo Login</button>
         </form>
       </div>

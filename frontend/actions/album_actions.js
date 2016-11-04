@@ -3,6 +3,7 @@ export const FETCH_ALBUM = "FETCH_ALBUM";
 export const FETCH_HOME_ALBUMS = "FETCH_HOME_ALBUMS";
 export const RECEIVE_ALBUMS = "RECEIVE_ALBUMS";
 export const RECEIVE_ALBUM = "RECEIVE_ALBUM";
+export const RECEIVE_TRACK = "RECEIVE_TRACK";
 
 export const fetchAlbums = () => ({
   type: FETCH_ALBUMS
@@ -25,4 +26,9 @@ export const receiveAlbums = albums => ({
 export const receiveAlbum = album => ({
   type: RECEIVE_ALBUM,
   album
+});
+
+export const receiveTrack = track => ({
+  type: RECEIVE_TRACK,
+  track
 });
