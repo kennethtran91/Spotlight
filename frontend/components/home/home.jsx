@@ -1,4 +1,5 @@
 import React from 'react';
+import HomeAlbumIndexContainer from './home_album_index_container';
 
 const Home = () => (
   <main className='home'>
@@ -12,6 +13,7 @@ const Home = () => (
     </figure>
     <article id='home-albums'>
       <h2>Check out our annotated tracks from your favorite cast albums!</h2>
+      <HomeAlbumIndexContainer />
     </article>
   </main>
 );

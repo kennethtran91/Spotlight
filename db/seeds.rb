@@ -20,7 +20,7 @@ Album.create({title: 'Les Miserables', image_url: 'http://res.cloudinary.com/doe
   year: 1987, composer: 'Claude-Michel Schonberg', lyricist: 'Herbert Kretzmer and James Fenton'})
 Album.create({title: 'Oklahoma!', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478240983/Spotlight/oklahoma.jpg',
   year: 1943, composer: 'Richard Rodgers', lyricist: 'Oscar Hammerstein III'})
-Album.create({title: 'Lion King', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478235851/Spotlight/lion_king.jpg',
+Album.create({title: 'Lion King', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478324923/Spotlight/lion_king.jpg',
   year: 1997, composer: 'Elton John', lyricist: 'Tim Rice'})
 Album.create({title: 'Hamilton', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478240868/Spotlight/hamilton.jpg',
   year: 2015, composer: 'Lin-Manuel Miranda', lyricist: 'Lin-Manuel Miranda'})
@@ -762,11 +762,6 @@ Track.create({title: 'I Dreamed a Dream', user_id:2, album_id:3,
     So different now from what it seemed
     Now life has killed
     The dream I dreamed."})
-
-Track.create({title: 'delete meeee', user_id:1, album_id:4, vocalists:'kd', context: 'rewrwe', lyrics: "ffsdv"})
-Track.create({title: 'delete meee', user_id:1, album_id:4, vocalists:'kd', context: 'rewrwe', lyrics: "ffsdv"})
-Track.create({title: 'delete mee', user_id:1, album_id:4, vocalists:'kd', context: 'rewrwe', lyrics: "ffsdv"})
-Track.create({title: 'delete me', user_id:1, album_id:4, vocalists:'kd', context: 'rewrwe', lyrics: "ffsdv"})
 
 # Track.create({title: 'Surrey with the Fringe on Top', user_id:1, album_id:4, vocalists:'', context: '', lyrics: ""})
 # Track.create({title: 'Oklahoma!', user_id:1, album_id:4, vocalists:'', context: '', lyrics: ""})
