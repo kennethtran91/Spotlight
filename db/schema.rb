@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161102235659) do
+ActiveRecord::Schema.define(version: 20161105062737) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,30 @@ ActiveRecord::Schema.define(version: 20161102235659) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "annotations", force: :cascade do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "track_id",   null: false
+    t.integer  "start_idx",  null: false
+    t.integer  "end_idx",    null: false
+    t.text     "body",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "annotations", ["track_id"], name: "index_annotations_on_track_id", using: :btree
+  add_index "annotations", ["user_id"], name: "index_annotations_on_user_id", using: :btree
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "user_id",    null: false
+    t.integer  "track_id",   null: false
+    t.string   "body",       null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  add_index "comments", ["track_id"], name: "index_comments_on_track_id", using: :btree
+  add_index "comments", ["user_id"], name: "index_comments_on_user_id", using: :btree
+
   create_table "tracks", force: :cascade do |t|
     t.integer  "user_id",    null: false
     t.integer  "album_id",   null: false
@@ -39,6 +63,15 @@ ActiveRecord::Schema.define(version: 20161102235659) do
 
   add_index "tracks", ["album_id", "title"], name: "index_tracks_on_album_id_and_title", unique: true, using: :btree
   add_index "tracks", ["user_id"], name: "index_tracks_on_user_id", using: :btree
+
+  create_table "upvotes", force: :cascade do |t|
+    t.integer  "user_id",       null: false
+    t.integer  "annotation_id", null: false
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
+
+  add_index "upvotes", ["annotation_id", "user_id"], name: "index_upvotes_on_annotation_id_and_user_id", unique: true, using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "username",        null: false

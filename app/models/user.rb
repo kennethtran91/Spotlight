@@ -4,9 +4,9 @@ class User < ActiveRecord::Base
   validates :password, length: {minimum: 6, allow_nil: true}
 
   has_many :tracks
-  # has_many :comments
-  # has_many :annotations
-  # has_many :upvotes
+  has_many :comments
+  has_many :annotations
+  has_many :upvotes
 
   after_initialize :ensure_session_token
 

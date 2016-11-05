@@ -45,9 +45,9 @@
 
 ### Annotations
 
-- `GET /api/tracks/:id/annotations/:id`
+- `GET /api/annotations/:id`
   - just one annotation at a time
-  - displays upvotes on the annotation
+  - displays number of upvotes on the annotation (will retrieve with active record)
 - `POST /api/annotations`
   - only if the user is signed in
 - `DELETE /api/annotations/:id`
@@ -63,5 +63,10 @@
   - only if the user is signed in
 - `DELETE /api/comments/:id`
   - only if the user is signed in and comment written by user
-- `PATCH /api/comments/:id`
-  - only if the user is signed in and comment written by user
+
+### Upvotes
+
+- `POST /api/comments`
+  - only if the user is signed in
+- `DELETE /api/comments/:id`
+  - only if the user is signed in
