@@ -22,13 +22,15 @@ class AlbumShow extends React.Component {
       <section className='show-splash'>
         <h1>{this.props.album.title}</h1>
         <ul className='show-info'>
+          <li>{this.props.album.year}</li>
           <li>Music by {this.props.album.composer}</li>
           <li>Lyrics by {this.props.album.lyricist}</li>
-          <li>{this.props.album.year}</li>
         </ul>
       </section>
 
-      <aside className='album-art clearfix'><img src={this.props.album.image_url} /></aside>
+      <aside className='album-art clearfix'>
+        <img src={this.props.album.image_url} />
+      </aside>
 
       <div className='album-tracks-container clearfix'>
         <ul className ='album-track-list'>

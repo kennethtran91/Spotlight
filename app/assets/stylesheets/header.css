@@ -54,16 +54,16 @@ nav h1:hover {
   vertical-align: top;
 }
 
-footer {
+.footer {
   display: flex;
   background-color: #B22222;
   justify-content: center;
 }
 
-footer a{
+.footer a{
   padding: 7px;
 }
 
-footer img {
+.footer img {
   width: 25px;
 }

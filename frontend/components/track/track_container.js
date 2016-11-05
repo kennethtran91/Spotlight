@@ -20,7 +20,7 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   deleteTrack: ( trackId, albumId ) => {
     dispatch(deleteTrack(trackId));
     dispatch(emptyTrack());
-    hashHistory.replace(`/albums/${albumId}`);
+    hashHistory.replace(`/albums`);
   },
   fetchTrack: () => dispatch(fetchTrack(Number(ownProps.params.trackId))),
   emptyTrack: () => dispatch(emptyTrack())
