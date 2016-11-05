@@ -18,7 +18,7 @@ class AlbumShow extends React.Component {
   }
 
   loaded() {
-    return (<main>
+    return (<main className='album-show'>
       <section className='show-splash'>
         <h1>{this.props.album.title}</h1>
         <ul className='show-info'>
@@ -26,13 +26,14 @@ class AlbumShow extends React.Component {
           <li>Music by {this.props.album.composer}</li>
           <li>Lyrics by {this.props.album.lyricist}</li>
         </ul>
+        <div className='album-art'>
+          <img src={this.props.album.image_url} />
+        </div>
       </section>
 
-      <aside className='album-art clearfix'>
-        <img src={this.props.album.image_url} />
-      </aside>
 
-      <div className='album-tracks-container clearfix'>
+      <div className='album-tracks-container'>
+        <h2>Known Tracks</h2>
         <ul className ='album-track-list'>
           {albumShowTrackArray(this.props.album).map ((track, idx) => (
             <Link to={`/tracks/${track.id}`} key={idx}><li>

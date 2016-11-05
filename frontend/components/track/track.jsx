@@ -43,9 +43,9 @@ class Track extends React.Component {
   loaded() {
     return (
       <main className='track-show'>
-        <section className='show-splash'>
+        <section className='track-splash'>
           <h1>{this.props.track.title}</h1>
-          <ul className='show-info'>
+          <ul className='track-info'>
               <li>
                 <Link to={`/albums/${this.props.track.album_id}`} className='back-to-album'>
                   From: {this.props.albumTitle}

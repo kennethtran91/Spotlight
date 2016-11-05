@@ -1,6 +1,6 @@
 .show-splash {
   width: 100%;
-  height: 200px;
+  height: 230px;
   background-image: url("http://res.cloudinary.com/doepem37s/image/upload/v1478242224/Spotlight/theaterseats.jpg");
   background-size: cover;
   overflow: hidden;
@@ -12,51 +12,54 @@
   font-family: 'Limelight', cursive;
   font-size: 40px;
   position: absolute;
-  top: 20px;
-  left: 50px;
+  top: 30px;
+  left: 250px;
 }
 
 .show-info {
   position: absolute;
-  top: 70px;
-  left: 50px;
+  top: 80px;
+  left: 250px;
   font-weight: bold;
   font-size: 20px;
   width: 90%;
 }
 
 .album-art {
-  float: right;
-  width: 40%;
-  height: auto;
+  position: absolute;
   display: flex;
-  justify-content: center;
+  top: 15px;
+  left: 30px;
 }
 
-.album-art img{
-  width: 75%;
-  margin: auto;
+.album-art img {
+  height: 200px;
+  width: 200px;
 }
 
 .album-tracks-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
+}
+
+.album-tracks-container h2{
+  font-size: 30px;
 }
 
 .album-track-list {
   float: left;
-  width: 90%;
-  margin-top: 20px;
+  width: 65%;
+  min-width: 400px;
+  margin-top: 10px;
 }
 
 .album-track-list li {
   background-color: black;
   color: white;
-  border-bottom: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
   text-align: center;
+  margin-bottom: 12px;
 }
 
 .album-track-list li:hover {
@@ -85,8 +88,10 @@
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   margin-top: 10px;
   margin-bottom: 10px;
+  /*background-color: #a8a8a8;*/
 }
 
 .track-form h2{
@@ -99,28 +104,38 @@
 
 .track-form label {
   font-size: 18px;
-  width: 300px;
+  width: 80%;
   font-weight: bold;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: auto;
 }
 
 .track-form-input {
   margin: 5px;
   border: 1px solid black;
+  width: 100%;
+  /*background-color: #FFF5EE;*/
 }
 
 .track-form-lyrics textarea {
   border: 1px solid black;
   width: 100%;
-  height: 200px;
+  height: 300px;
+  /*background-color: #FFF5EE;*/
 }
 
 .track-form-button {
+  color: black;
   margin: auto;
-  border: 1px solid black;
+  border: 2px solid black;
   border-radius: 5px;
   margin-bottom: 7px;
+  padding: 7px;
+  font-weight: bold;
+}
+
+.track-form-button:hover {
+  color: #B22222;
+  border: 2px solid #B22222;
 }
 
 .track-errors {
