@@ -1,3 +1,8 @@
+.album-show {
+  color: white;
+  background-color: black;
+}
+
 .show-splash {
   width: 100%;
   height: 230px;
@@ -56,8 +61,8 @@
 }
 
 .album-track-list li {
-  background-color: black;
-  color: white;
+  background-color: #FFF5EE;
+  color: black;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -90,8 +95,6 @@
   flex-direction: column;
   justify-content: center;
   margin-top: 10px;
-  margin-bottom: 10px;
-  /*background-color: #a8a8a8;*/
 }
 
 .track-form h2{
@@ -113,18 +116,19 @@
   margin: 5px;
   border: 1px solid black;
   width: 100%;
-  /*background-color: #FFF5EE;*/
+  background-color: #FFF5EE;
 }
 
 .track-form-lyrics textarea {
   border: 1px solid black;
   width: 100%;
   height: 300px;
-  /*background-color: #FFF5EE;*/
+  background-color: #FFF5EE;
 }
 
 .track-form-button {
   color: black;
+  background-color: white;
   margin: auto;
   border: 2px solid black;
   border-radius: 5px;
