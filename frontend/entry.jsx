@@ -4,7 +4,6 @@ import Modal from 'react-modal';
 
 import configureStore from './store/store';
 import Root from './components/root';
-import { createUpvote, deleteUpvote } from './util/upvote_api_util';
 
 document.addEventListener('DOMContentLoaded', () => {
   let store;
@@ -20,6 +19,4 @@ document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(<Root store={store}/>, root);
 
   window.store = store;
-  window.createUpvote = createUpvote;
-  window.deleteUpvote = deleteUpvote;
 });
