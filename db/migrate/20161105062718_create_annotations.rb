@@ -11,5 +11,6 @@ class CreateAnnotations < ActiveRecord::Migration
 
     add_index :annotations, :user_id
     add_index :annotations, :track_id
+    add_index :annotations, [:start_idx, :end_idx]
   end
 end

@@ -1,6 +1,5 @@
 class Api::TracksController < ApplicationController
   before_action :logged_in?, only: [:create, :destroy]
-  # before_action :require_same_user, only: [:destroy]
 
   def create
     @track = Track.new(track_params)
@@ -14,9 +13,12 @@ class Api::TracksController < ApplicationController
 
   def destroy
     @track = Track.find(params[:id])
-    @album = Album.find(@track.album_id)
-    @track.destroy
-    render json: @track
+    if ( @track.user_id == current_user.id )
+      @track.destroy
+      render json: @track
+    else
+      render json: ["Only the creator of the track can delete it"], status: 404
+    end
   end
 
   def show

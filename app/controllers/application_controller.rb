@@ -23,8 +23,4 @@ class ApplicationController < ActionController::Base
   def logged_in?
     !!current_user
   end
-
-  # def require_same_user(info)
-  #   current_user == info.user_id
-  # end
 end

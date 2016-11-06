@@ -7,10 +7,10 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 User.create({username: 'suttonlenore', password: '123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478063525/sutton_ucztff.jpg"});
-User.create({username: 'lindsey', password:'123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478044295/spotlight_oybuda.png"})
-User.create({username: 'smassellsings', password:'password', image_url: ""})
-User.create({username: 'laurabenanti', password:'password', image_url: ""})
-User.create({username: 'chelseanachman', password:'password', image_url: ""})
+User.create({username: 'lindsey', password:'123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478397162/Spotlight/Whitley.jpg"})
+User.create({username: 'smassellsings', password:'password', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478396366/Spotlight/W8AlWIjG.jpg"})
+User.create({username: 'laurabenanti', password:'password', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478397109/Spotlight/Laura_Benanti_2016_Tony_Awards_Red_Carpet_OhOYZzlhFcHl.jpg"})
+User.create({username: 'chelseanachman', password:'password', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478396999/Spotlight/Selection_002.png"})
 
 Album.create({title: 'Wicked', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478145666/Spotlight/WickedCastRecording.jpg',
   year: 2003, composer: 'Stephen Schwartz', lyricist: 'Stephen Schwartz'})
@@ -235,16 +235,16 @@ Track.create({title: 'For Good', user_id: 1, album_id: 1, vocalists: 'Idina Menz
   (Both)
   Because I knew you...
   I have been changed for good...",
-  context: "make sure this works"})
+  context: "After Nessa's death, Glinda goes to warn Elphaba to release Dorothy. As they say goodbye for the last time, the two women forgive each other for all grievances and mistakes on both sides."})
 
 Track.create({title: 'Defying Gravity', user_id:2, album_id:1,
   vocalists:'Idina Menzel and Kristin Chenoweth',
-  context: "testing testing",
+  context: "After Elphaba realizes that the Wizard has no powers, he offers her and Glinda everything if they will help him. Elphaba is unable to comply and goes on her own to do what's best for her.",
   lyrics: "GLINDA
   (spoken) Elphaba - why couldn't you have just stayed calm for once, instead of flying off the handle!
   (sung) I hope you're happy!
   I hope you're happy now
-  I hope you're happy how you
+  I hope you're happy how you've
   Hurt your cause forever
   I hope you think you're clever!
 
@@ -384,7 +384,7 @@ Track.create({title: 'Defying Gravity', user_id:2, album_id:1,
 
 Track.create({title: 'Music of the Night', user_id:2, album_id:2,
   vocalists:'Michael Crawford',
-  context: 'stuff',
+  context: "In the Phantom's secret lair beneath the opéra house, he explains that he has chosen Christine to sing his music and enchants her with his own sublime voice.",
   lyrics:
     "Night time sharpens, heightens each sensation
     Darkness wakes and stirs imagination
@@ -425,7 +425,7 @@ Track.create({title: 'Music of the Night', user_id:2, album_id:2,
 
 Track.create({title: 'All I Ask of You', user_id:3, album_id:2,
   vocalists:'Steve Barton, Sarah Brightman, and Michael Crawford',
-  context: 'fill this in',
+  context: 'On the roof, Christine tells Raoul about her subterranean rendezvous with the Phantom. Raoul is sceptical, but swears to love and to protect her always.',
   lyrics:
     "(Raoul)
     No more talk of darkness
@@ -503,7 +503,7 @@ Track.create({title: 'All I Ask of You', user_id:3, album_id:2,
 
 Track.create({title: 'Point of No Return', user_id:1, album_id:2,
   vocalists:'Michael Crawford',
-  context: 'sdfsdaf',
+  context: "During their duet in the opera, Christine realizes that she is singing not with Piangi, but the Phantom. When he expresses his love for her, Christine rips off his mask, exposing his deformed face.",
   lyrics:
     "PHANTOM: Passarino - Go away for the trap it is set and waits for it's prey.
     You have come here
@@ -525,7 +525,7 @@ Track.create({title: 'Point of No Return', user_id:1, album_id:2,
     No backward glances
     Our games of make-believe are at an end.
 
-    Past the point of “if” or “when”
+    Past the point of 'if' or 'when'
     No use resisting
     Abandon thought and let the dream descend
 
@@ -587,7 +587,7 @@ Track.create({title: 'Point of No Return', user_id:1, album_id:2,
 
 Track.create({title: 'Stars', user_id:1, album_id:3,
   vocalists:'Terrence Mann',
-  context: 'sfsdasd',
+  context: "Javert makes a vow to the stars (which represent his belief in a just and ordered universe where suffering is a punishment for sin) that he will find Valjean and recapture him.",
   lyrics:
     "There, out in the darkness
     A fugitive running
@@ -640,7 +640,7 @@ Track.create({title: 'Stars', user_id:1, album_id:3,
 
 Track.create({title: 'Empty Chairs at Empty Tables', user_id:5, album_id:3,
   vocalists:'David Bryant',
-  context: 'sdafsd',
+  context: "In the wake of the failed revolution, Marius, wounded but alive, despairs at the sacrifice of so many lives.",
   lyrics:
     "There's a grief that can't be spoken.
     There's a pain goes on and on.
@@ -678,7 +678,7 @@ Track.create({title: 'Empty Chairs at Empty Tables', user_id:5, album_id:3,
 
 Track.create({title: 'On My Own', user_id:2, album_id:3,
   vocalists:'Frances Ruffelle',
-  context: 'sdfas',
+  context: "Éponine walks the streets of Paris alone, imagining that Marius is there with her, but laments that her love for Marius will never be reciprocated.",
   lyrics:
     "On my own
     Pretending he's beside me
@@ -724,7 +724,7 @@ Track.create({title: 'On My Own', user_id:2, album_id:3,
 
 Track.create({title: 'I Dreamed a Dream', user_id:2, album_id:3,
   vocalists:'Randy Graff',
-  context: 'fsdfsdsaf',
+  context: "Fantine reflects on her broken dreams and about Cosette's father, who abandoned them both. Desperate for money, she sells her locket and hair, finally becoming a prostitute.",
   lyrics:
     "There was a time when men were kind
     When their voices were soft
@@ -793,3 +793,6 @@ Track.create({title: 'I Dreamed a Dream', user_id:2, album_id:3,
 # Track.create({title: '', user_id:1, album_id:, vocalists:'', context: '', lyrics: ""})
 # Track.create({title: '', user_id:, album_id:, vocalists:'', context: '', lyrics: ""})
 # Track.create({title: '', user_id:, album_id:, vocalists:'', context: '', lyrics: ""})
+
+Annotation.create({track_id:1, user_id:1, start_idx:40, end_idx:50, body: "testing"})
+Annotation.create({track_id:1, user_id:1, start_idx:0, end_idx:10, body: "testtest"})

@@ -38,7 +38,7 @@
 - `POST /api/tracks`
   - only if the user is signed in
 - `GET /api/tracks/:id`
-  - has lyrics, comments, annotations for track
+  - gives track data and comment index for the track
 - `DELETE /api/tracks/:id`
   - only if the user is signed in and track created by user
 - no updating tracks because then annotations will be messy
@@ -57,8 +57,6 @@
 
 ### Comments
 
-- `GET /api/tracks/:id/comments`
-  - index of all comments for the track
 - `POST /api/comments`
   - only if the user is signed in
 - `DELETE /api/comments/:id`
@@ -66,7 +64,7 @@
 
 ### Upvotes
 
-- `POST /api/comments`
+- `POST /api/upvotes`
   - only if the user is signed in
-- `DELETE /api/comments/:id`
+- `DELETE /api/upvotes/:id`
   - only if the user is signed in
