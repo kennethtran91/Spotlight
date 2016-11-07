@@ -1,9 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router';
 
+import CommentsIndex from './comments_index';
+import CommentForm from './comment_form';
+
 class Track extends React.Component {
   constructor(props) {
     super(props);
+
     this.loaded = this.loaded.bind(this);
     this.loading = this.loading.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
@@ -58,9 +62,15 @@ class Track extends React.Component {
         </section>
         <article className='track-body'>
           <pre className='track-lyrics'>{this.props.track.lyrics}</pre>
-          <ul className='track-comments'>
-          </ul>
+          <CommentForm currentUser={this.props.currentUser}
+            trackId={this.props.track.id}
+            createComment={this.props.createComment}
+            deleteComment={this.props.deleteComment} />
+          <CommentsIndex comments={this.props.comments} />
         </article>
+        <aside className='annotations'>
+          
+        </aside>
       </main>
     );
   }

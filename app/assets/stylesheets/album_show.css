@@ -1,6 +1,7 @@
 .album-show {
   color: white;
   background-color: black;
+  height: 100%;
 }
 
 .show-splash {
@@ -87,14 +88,17 @@
 }
 
 .track-form {
-  width: 80%;
+  width: 70%;
   margin: auto;
+  border-radius: 10px;
   border: 2px solid black;
+  background-color: #4c4c4c;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .track-form h2{
@@ -107,14 +111,14 @@
 
 .track-form label {
   font-size: 18px;
-  width: 80%;
+  width: 85%;
   font-weight: bold;
   margin: auto;
 }
 
 .track-form-input {
   margin: 5px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 100%;
   background-color: #FFF5EE;
   color: black;
@@ -124,7 +128,7 @@
 .track-form-lyrics textarea {
   padding: 5px;
   color: black;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   width: 100%;
   height: 300px;
   background-color: #FFF5EE;
@@ -136,7 +140,6 @@
   margin: auto;
   border: 2px solid black;
   border-radius: 5px;
-  margin-bottom: 7px;
   padding: 7px;
   font-weight: bold;
 }

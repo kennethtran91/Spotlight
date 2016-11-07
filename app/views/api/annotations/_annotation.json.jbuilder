@@ -1,6 +1,6 @@
-json.extract! annotation, :id, :body, :track_id, :start_idx, :end_idx
+json.extract! annotation, :id, :body, :track_id, :start_idx, :end_idx, :user_id
 
-json.set! :username User.find(annotation.user_id).username
+json.set! :username, User.find(annotation.user_id).username
 
 json.set! :upvote do
   json.count annotation.upvotes.count

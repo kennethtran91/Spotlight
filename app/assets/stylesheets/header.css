@@ -4,7 +4,7 @@ nav {
   padding-top: 7px;
   padding-bottom: 7px;
   color: white;
-  background-color: #B22222;
+  background-color: black;
   max-width: 1341px;
   margin: auto;
   font-size: 24px;
@@ -21,7 +21,7 @@ nav li {
 }
 
 nav li:hover {
-  color: black;
+  color: #B22222;
 }
 
 nav h1 {
@@ -30,7 +30,7 @@ nav h1 {
 }
 
 nav h1:hover {
-  color: black;
+  color: #B22222;
 }
 
 .icon {

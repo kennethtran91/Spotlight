@@ -16,10 +16,15 @@ class Api::CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     if ( @comment.user_id == current_user.id )
       @comment.destroy
-      render json: @comment
+      render :index
     else
       render json: ["Only the creator of the comment can delete it"], status: 404
     end
+  end
+
+  def index
+    @comments = Track.find(comment_params[:track_id]).comments
+    render :index
   end
 
   private

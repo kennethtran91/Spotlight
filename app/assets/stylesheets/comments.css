@@ -1,0 +1,59 @@
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #B22222;
+  color: white;
+  width: 70%;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.comment-form h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px;
+}
+
+.comment-form-body {
+  width:80%;
+  height: 100px;
+  background-color: white;
+  color: black;
+  padding: 10px;
+}
+
+.comment-form button {
+  padding: 5px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.comment-form button:hover {
+  border-color: black;
+  color: black;
+}
+
+.comments-index {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 20px;
+}
+
+.comments-index li {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  width: 80%;
+  padding: 5px;
+}
+
+.comment-username {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.comments-index p {
+  font-size: 25px;
+}

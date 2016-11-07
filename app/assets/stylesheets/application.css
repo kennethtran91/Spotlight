@@ -45,6 +45,6 @@ body {
 	height: 0;
 }
 
-input, button {
+input, button, textarea {
   outline: none;
 }

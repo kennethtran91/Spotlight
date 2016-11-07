@@ -55,7 +55,6 @@ class TrackForm extends React.Component {
         <h2>Add a Track</h2>
         {this.handleErrors()}
         <label>
-          Title
           <br />
           <input type='text' placeholder='Title'
             onChange={this.update('title')}
@@ -63,7 +62,6 @@ class TrackForm extends React.Component {
             className='track-form-input'></input>
         </label>
         <label>
-          Vocalists
           <br />
           <input type='text' placeholder='Vocalists'
             onChange={this.update('vocalists')}
@@ -71,7 +69,6 @@ class TrackForm extends React.Component {
             className='track-form-input'></input>
         </label>
         <label>
-          Context
           <br />
           <input type='text' placeholder='Context of song in the show'
             onChange={this.update('context')}
@@ -79,7 +76,6 @@ class TrackForm extends React.Component {
             className='track-form-input'></input>
         </label>
         <label className='track-form-lyrics'>
-          Lyrics
           <br />
           <textarea placeholder='Lyrics'
             onChange={this.update('lyrics')}
@@ -87,6 +83,7 @@ class TrackForm extends React.Component {
         </label>
         <br />
         <button className='track-form-button' onClick={this.handleSubmit}>Add Track</button>
+        <br />
       </form>
     );
   }
@@ -103,6 +100,5 @@ class TrackForm extends React.Component {
     return ( this.props.currentUser ) ? this.form() : this.noForm();
   }
 }
-
 
 export default withRouter(TrackForm);

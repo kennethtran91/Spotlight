@@ -70,7 +70,6 @@ class SessionForm extends React.Component {
             <br />
             { this.handleErrors() }
           <label className='auth-label'>
-            Username
             <br />
             <input type='text' value={this.state.username}
               placeholder='Username' className='auth-input'
@@ -78,7 +77,6 @@ class SessionForm extends React.Component {
           </label>
           <br />
           <label className='auth-label'>
-            Password
             <br />
             <input type='password' value={this.state.password}
               placeholder='Password' className='auth-input'
