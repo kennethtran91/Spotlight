@@ -64,12 +64,13 @@ class Track extends React.Component {
           <pre className='track-lyrics'>{this.props.track.lyrics}</pre>
           <CommentForm currentUser={this.props.currentUser}
             trackId={this.props.track.id}
-            createComment={this.props.createComment}
-            deleteComment={this.props.deleteComment} />
-          <CommentsIndex comments={this.props.comments} />
+            createComment={this.props.createComment} />
+          <CommentsIndex comments={this.props.comments}
+            deleteComment={this.props.deleteComment}
+            currentUser={this.props.currentUser} />
         </article>
         <aside className='annotations'>
-          
+
         </aside>
       </main>
     );

@@ -2266,115 +2266,302 @@ The most miraculous one of all
 Is the one I thought could never be:
 God has given you to me!"})
 
-# Track.create({title: 'Seasons of Love', user_id:2, album_id:10,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Take Me or Leave Me', user_id:5, album_id:10,
-#   vocalists:'Idina Menzel and ',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'I'll Cover You', user_id:1, album_id:10,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'She Used to be Mine', user_id:1, album_id:11,
-#   vocalists:'Jesse Mueller',
-#   context: '',
-#   lyrics: ""})
+Track.create({title: 'Seasons of Love', user_id:2, album_id:10,
+  vocalists:'Company',
+  context: 'Act Two begins with the cast singing this song before the action resumes.',
+  lyrics: "Five hundred twenty-five thousand
+Six hundred minutes
+Five hundred twenty-five thousand
+Moments so dear
+Five hundred twenty-five thousand
+Six hundred minutes
+How do you measure - measure a year?
+In daylights - in sunsets
+In midnights - in cups of coffee
+In inches - in miles
+In laughter - in strife
 
-# Track.create({title: 'When He Sees Me', user_id:4, album_id:11,
-# vocalists:'Kikimo Glenn',
-# context: '',
-# lyrics: ""})
-#
-# Track.create({title: 'Never Getting Rid of Me', user_id:3, album_id:11,
-# vocalists:'Jonathan Fitzgerald',
-# context: '',
-# lyrics: ""})
-#
-# Track.create({title: 'You Matter to Me', user_id:1, album_id:11,
-# vocalists:'Drew Gehling and Jesse Mueller',
-# context: '',
-# lyrics: ""})
-#
-# Track.create({title: 'Carrying the Banner', user_id:3, album_id:12,
-#   vocalists:'Male Ensemble',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Watch What Happens', user_id:2, album_id:12,
-#   vocalists:'Kara Lindsay',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Seize the Day', user_id:5, album_id:12,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Once and For All', user_id:1, album_id:12,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'New Music', user_id:3, album_id:13,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Henry Ford', user_id:1, album_id:13,
-#   vocalists:'Brian Stokes Mitchell and Company',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'What Kind of Woman', user_id:2, album_id:13,
-#   vocalists:'Marin Mazzie',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'He Wanted to Say', user_id:5, album_id:13,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Agony', user_id:4, album_id:14,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'I Know Things Now', user_id:1, album_id:14,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'On the Steps of the Palace', user_id:4, album_id:14,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Moments in the Woods', user_id:1, album_id:14,
-#   vocalists:'',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'The Speed Test', user_id:1, album_id:15,
-#   vocalists:'Marc Kudisch, Angela Christian, and Sutton Foster',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'Gimme Gimme', user_id:2, album_id:15,
-#   vocalists:'Sutton Foster',
-#   context: '',
-#   lyrics: ""})
-#
-# Track.create({title: 'What Do I Need with Love', user_id:1, album_id:15,
-#   vocalists:'Gavin Creel',
-#   context: '',
-#   lyrics: ""})
+In - five hundred twenty-five thousand
+Six hundred minutes
+How do you measure
+A year in the life
+
+How about love?
+How about love?
+How about love?
+Measure in love
+
+Seasons of love
+Seasons of love
+
+Soloist number one
+Five hundred twenty-five thousand
+Six hundred minutes
+Five hundred twenty-five thousand
+Journeys to plan
+
+Five hundred twenty-five thousand
+Six hundred minutes
+How do you measure the life
+Of a woman or a man?
+
+Soloist number two
+In truths that she learned
+Or in times that he cried
+In bridges he burned
+Or the way that she died
+
+All
+It's time now - to sing out
+Tho' the story never ends
+Let's celebrate
+Remember a year in the life of friends
+
+Remember the love
+Remember the love
+Remember the love
+Measure in love
+
+Soloist number one
+Measure, measure your life in love
+
+Seasons of love
+Seasons of love"})
+
+Track.create({title: 'Take Me or Leave Me', user_id:5, album_id:10,
+  vocalists:'Idina Menzel and Fredi Walker',
+  context: "Maureen and Joanne are preparing another protest, and during rehearsal, Maureen cites Joanne's controlling behavior and Joanne cites Maureen's promiscuous mannerisms as they break up dramatically.",
+  lyrics: "[Maureen]
+Every single day,
+I walk down the street
+I hear people say 'baby so sweet'
+Ever since puberty
+Everybody stares at me
+Boys girls I can't help it baby
+So be kind and don't lose your mind
+Just remember that I'm your baby
+
+Take me for what I am
+Who I was meant to be
+And if you give a damn
+Take me baby
+Or leave me
+
+Take me or leave me
+
+A tiger in a cage
+Can never see the sun
+This diva needs her stage baby
+Lets have fun
+You are the one I choose
+Folks will kill to fill your shoes
+You love the lime light to now baby
+So be mine but don't waste my time
+Cryin' 'honey bear, are you still my, my, my baby?'
+
+Take me for what I am
+Who I was meant to be
+And if you give a damn
+Take me baby or leave me
+
+No way, can I be what I'm not
+But hey, don't you want your girl hot?
+Oh, don't fight, don't loose your head
+'cause every night who's in your bed?
+Who?
+Who's in your bed?
+[Spoken] Kiss, pookie
+
+[Joanne]
+It won't work
+I look before I leap
+I love margins and discipline
+I make list in my sleep baby
+Whats my sin?
+Never quit
+I follow through
+I hate mess but I love you
+What do with my improptu baby?
+So be wise 'cause this girl satisfies
+You got a prize but don't compromise
+You're one lucky baby
+
+[Joanne] Take me for what I am
+[Maureen] A control freak
+[Joanne] Who I was meant to be
+[Maureen] A snob yet over attentive
+[Joanne] And if you give a damn
+[Maureen] A loveable droll geek
+[Joanne] Take me baby or leave me
+[Maureen] And anal retentave
+
+[Both] Thats it
+[Joanne] The straw that breaks my back
+[Both] I quit
+[Joanne] Unless you take it back
+[Maureen] Women what is it about them?
+[Both] Can't live with them or without them
+
+[Both] Take me for what I am
+[Joanne] Who I was meant to be
+[Maureen] Who I was meant to be
+And if you give a damn
+[Joanne] and if you give a damn then
+Take me baby, or leave me
+[Maureen] Take me baby, take me or la-la-la-la-la-leave me
+[Both] Take me baby or leave me
+ Guess I'm leaving. I'm gone!"})
+
+Track.create({title: "I'll Cover You", user_id:1, album_id:10,
+  vocalists:'Jesse L. Martin and Wilson Jermaine Heredia',
+  context: 'After Collins tells Angel about his dream to move to Santa Fe, they declare their love for each other and vow to provide what the other needs.',
+  lyrics: "[Angel]
+Live in my house, I'll be your shelter
+Just pay me back
+With one thousand kisses
+Be my lover, I'll cover you
+
+[Collins]
+Open your door, I'll be your tenant
+Don't got much baggage, to lay at your feet
+But sweet kisses, I've got to spare
+I'll be there and I'll cover you
+
+[Both]
+I think they meant it
+When they said you can't buy love
+Now I know you can rent it
+A new lease you are my love
+On life, be my life
+
+Just slip me on, I'll be your blanket
+Wherever, whatever I'll be your coat
+
+[Angel]
+You'll be my king
+and I'll be your castle
+
+[Collins]
+No, you be my queen
+and I'll be your moat
+
+[Both]
+I think they meant it
+When they said you can't buy love
+Now I know you can rent it
+A new lease you are my love
+On life, oh my life
+
+I've longed to discover
+Something as true as this is
+
+So with a thousand sweet kisses, I'll cover you
+(If you're cold and you're lonely)
+With a thousand sweet kisses, I'll cover you
+(You've got one nickel only)
+
+With a thousand sweet kisses, I'll cover you
+(When you're worn out and tired)
+With a thousand sweet kisses, I'll cover you
+(When your heart has expired)
+
+Oh lover, I'll cover you, yeah
+Oh lover, I'll cover you"})
+
+Track.create({title: 'She Used to be Mine', user_id:1, album_id:11,
+  vocalists:'Jesse Mueller',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'When He Sees Me', user_id:4, album_id:11,
+vocalists:'Kikimo Glenn',
+context: '',
+lyrics: ""})
+
+Track.create({title: 'Never Getting Rid of Me', user_id:3, album_id:11,
+vocalists:'Jonathan Fitzgerald',
+context: '',
+lyrics: ""})
+
+Track.create({title: 'You Matter to Me', user_id:1, album_id:11,
+vocalists:'Drew Gehling and Jesse Mueller',
+context: '',
+lyrics: ""})
+
+Track.create({title: 'Carrying the Banner', user_id:3, album_id:12,
+  vocalists:'Male Ensemble',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Watch What Happens', user_id:2, album_id:12,
+  vocalists:'Kara Lindsay',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Seize the Day', user_id:5, album_id:12,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Once and For All', user_id:1, album_id:12,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'New Music', user_id:3, album_id:13,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Henry Ford', user_id:1, album_id:13,
+  vocalists:'Brian Stokes Mitchell and Company',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'What Kind of Woman', user_id:2, album_id:13,
+  vocalists:'Marin Mazzie',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'He Wanted to Say', user_id:5, album_id:13,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Agony', user_id:4, album_id:14,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'I Know Things Now', user_id:1, album_id:14,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'On the Steps of the Palace', user_id:4, album_id:14,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Moments in the Woods', user_id:1, album_id:14,
+  vocalists:'',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'The Speed Test', user_id:1, album_id:15,
+  vocalists:'Marc Kudisch, Angela Christian, and Sutton Foster',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'Gimme Gimme', user_id:2, album_id:15,
+  vocalists:'Sutton Foster',
+  context: '',
+  lyrics: ""})
+
+Track.create({title: 'What Do I Need with Love', user_id:1, album_id:15,
+  vocalists:'Gavin Creel',
+  context: '',
+  lyrics: ""})
 
 
 

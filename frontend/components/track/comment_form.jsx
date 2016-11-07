@@ -9,7 +9,7 @@ class CommentForm extends React.Component {
     this.state = {
       body: '',
       track_id: props.trackId,
-      user_id: props.currentUser.id
+      user_id: (props.currentUser) ? props.currentUser.id : null
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);

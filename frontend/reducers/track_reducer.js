@@ -35,7 +35,13 @@ export default (state = _nullTrack, action) =>{
     case RECEIVE_ANNOTATIONS:
       return merge({}, state, {annotations: action.annotations});
     case RECEIVE_COMMENTS:
-      return merge({}, state, {comments: action.comments});
+      newState = merge({},
+        {track: state.track,
+          errors: state.errors,
+          annotations: state.annotations},
+        {comments: action.comments});
+      debugger
+      return newState;
     default:
       return state;
   }
