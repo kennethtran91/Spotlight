@@ -241,7 +241,8 @@ Track.create({title: 'Defying Gravity', user_id:2, album_id:1,
   vocalists:'Idina Menzel and Kristin Chenoweth',
   context: "After Elphaba realizes that the Wizard has no powers, he offers her and Glinda everything if they will help him. Elphaba is unable to comply and goes on her own to do what's best for her.",
   lyrics: "GLINDA
-(spoken) Elphaba - why couldn't you have just stayed calm for once, instead of flying off the handle!
+(spoken) Elphaba - why couldn't you have just stayed calm for once,
+  instead of flying off the handle!
 (sung) I hope you're happy!
 I hope you're happy now
 I hope you're happy how you've
@@ -2567,8 +2568,8 @@ Track.create({title: 'What Do I Need with Love', user_id:1, album_id:15,
 
 Annotation.create({track_id:1, user_id:1, start_idx:40, end_idx:50, body: "testing"})
 Annotation.create({track_id:1, user_id:1, start_idx:0, end_idx:10, body: "testtest"})
-Annotation.create({track_id:1, user_id:2, start_idx:0, end_idx:10, body: "shouldn't"})
-Annotation.create({track_id:1, user_id:3, start_idx:0, end_idx:10, body: "hopefully not"})
+Annotation.create({track_id:2, user_id:2, start_idx:0, end_idx:10, body: "shouldn't"})
+Annotation.create({track_id:3, user_id:3, start_idx:0, end_idx:10, body: "hopefully not"})
 Comment.create({track_id:1, user_id:4, body: "Idina KILLLS it here"})
 Comment.create({track_id:1, user_id:2, body: "all of the good foreshadowing"})
 Comment.create({track_id:12, user_id:1, body: "love love love"})

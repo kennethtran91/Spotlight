@@ -29,7 +29,9 @@ class Api::AnnotationsController < ApplicationController
   def destroy
     @annotation = Annotation.find(params[:id])
     if ( @annotation.user_id == current_user.id )
+      @track = Track.find(@annotation.track_id)
       @annotation.destroy
+      @annotations = @track.annotations
       render :index
     else
       render json: ["Only the creator of the annotation can delete it"], status: 404

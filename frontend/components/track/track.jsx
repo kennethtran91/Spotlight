@@ -3,14 +3,29 @@ import { Link } from 'react-router';
 
 import CommentsIndex from './comments_index';
 import CommentForm from './comment_form';
+import AnnotationForm from './annotation_form';
+import AnnotationShow from './annotation_show';
+
+import { highlightLines } from '../../reducers/selectors';
+import { range } from 'lodash';
 
 class Track extends React.Component {
   constructor(props) {
     super(props);
 
+    this.state = {
+      formDisabled: true,
+      showDisabled: true
+    };
+
     this.loaded = this.loaded.bind(this);
     this.loading = this.loading.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
+    this.startAnnotating = this.startAnnotating.bind(this);
+    this.stopAnnotating = this.stopAnnotating.bind(this);
+    this.closeForm = this.closeForm.bind(this);
+    this.openAnnotation = this.openAnnotation.bind(this);
+    this.enableShow = this.enableShow.bind(this);
   }
 
   componentWillMount() {
@@ -44,9 +59,90 @@ class Track extends React.Component {
     }
   }
 
+  startAnnotating(e) {
+    e.preventDefault();
+    if (e.target.className !== 'highlight') {
+      this.start_idx = Number(e.target.id);
+    }
+  }
+
+  stopAnnotating(e) {
+    e.preventDefault();
+    if (e.target.className !== 'highlight') {
+      this.end_idx = Number(e.target.id);
+      this.setState({formDisabled: false, showDisabled: true});
+    }
+  }
+
+  closeForm() {
+    this.setState({formDisabled: true, showDisabled: true});
+  }
+
+  newAnnotation() {
+    if ( !this.state.formDisabled ) {
+      return (<AnnotationForm currentUser={this.props.currentUser}
+        trackId={this.props.track.id}
+        start={this.start_idx} end={this.end_idx}
+        createAnnotation={this.props.createAnnotation}
+        closeForm={this.closeForm} />);
+    } else {
+      return <div></div>;
+    }
+  }
+
+  enableShow(e){
+    e.preventDefault();
+    this.setState({formDisabled: true, showDisabled: false});
+    debugger
+    const line = Number(e.target.id);
+    let selectedAnnotation;
+    this.props.annotations.forEach( annotation => {
+      if (range(annotation.start_idx, annotation.end_idx + 1).includes(line)){
+        selectedAnnotation = annotation;
+      }
+    });
+    debugger;
+    this.openAnnotation(selectedAnnotation);
+  }
+
+  openAnnotation(selectedAnnotation) {
+    if ( !this.state.showDisabled ) {
+      return (<AnnotationShow disabled={this.showDisabled}
+        annotation={selectedAnnotation}
+        deleteAnnotation={this.props.deleteAnnotation}
+        editAnnotation={this.props.editAnnotation}
+        currentUser={this.props.currentUser} />);
+    } else {
+      return <div></div>;
+    }
+  }
+
+  lyrics() {
+    const lyricsArray = this.props.track.lyrics.split("\n");
+    const annotatedLines = highlightLines(this.props.annotations);
+
+    return (<pre className='track-lyrics'
+      onMouseDown={ this.startAnnotating }
+      onMouseUp={ this.stopAnnotating }>
+      { lyricsArray.map( (line, idx) => {
+        if (line === "") {
+          return <br key={idx} id={idx}/>;
+        } else {
+          return (
+            <p key={idx} id={idx}
+              className={(annotatedLines.includes(idx)) ? "highlight" : ""}
+              onClick={(annotatedLines.includes(idx)) ? this.enableShow : ""}>
+              {line}
+            </p>
+          );
+        }
+      })}
+    </pre>);
+  }
+
   loaded() {
     return (
-      <main className='track-show'>
+      <main className='track-show clearfix'>
         <section className='track-splash'>
           <h1>{this.props.track.title}</h1>
           <ul className='track-info'>
@@ -61,7 +157,7 @@ class Track extends React.Component {
           {this.deleteButton()}
         </section>
         <article className='track-body'>
-          <pre className='track-lyrics'>{this.props.track.lyrics}</pre>
+          { this.lyrics() }
           <CommentForm currentUser={this.props.currentUser}
             trackId={this.props.track.id}
             createComment={this.props.createComment} />
@@ -70,11 +166,13 @@ class Track extends React.Component {
             currentUser={this.props.currentUser} />
         </article>
         <aside className='annotations'>
-
+          { this.newAnnotation() }
+          { this.openAnnotation() }
         </aside>
       </main>
     );
   }
+
   render() {
     return ( this.props.track ) ? this.loaded() : this.loading();
   }

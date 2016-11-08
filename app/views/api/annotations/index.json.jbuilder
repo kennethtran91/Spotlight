@@ -1,5 +1,3 @@
-@annotations.each do |annotation|
-  json.set! annotation.id do
-    json.partial! 'api/annotations/annotation', annotation: annotation
-  end
+json.array! @annotations do |annotation|
+  json.partial! 'api/annotations/annotation', annotation: annotation
 end

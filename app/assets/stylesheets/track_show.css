@@ -25,10 +25,6 @@
   width: 90%;
 }
 
-.track-body {
-  width: 60%;
-}
-
 .track-lyrics {
   padding: 25px;
 }
@@ -43,4 +39,18 @@
   position: absolute;
   bottom: 10px;
   left: 10px;
+}
+
+.track-show article {
+  float: left;
+  width: 60%;
+}
+
+.track-show aside {
+  float: right;
+  width: 40%;
+}
+
+.track-lyrics .highlight {
+  background-color: #CDCDCD;
 }
