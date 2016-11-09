@@ -15,7 +15,7 @@ class Api::UpvotesController < ApplicationController
   def destroy
     @upvote = Upvote.find(params[:id])
     if ( @upvote.user_id == current_user.id )
-      @annotation = Annotation.find(upvote_params[:annotation_id])
+      @annotation = Annotation.find(@upvote.annotation_id)
       @upvote.destroy
       render :show
     else
@@ -25,6 +25,6 @@ class Api::UpvotesController < ApplicationController
 
   private
   def upvote_params
-    params.require(:upvote).permit(:annotation_id, :user_id)
+    params.require(:upvote).permit(:annotation_id)
   end
 end

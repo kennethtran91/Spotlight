@@ -7,12 +7,14 @@ class AnnotationShow extends React.Component {
 
     this.state = {
       showDisabled: false,
-      editDisabled: true
+      editDisabled: true,
+      upvote: this.props.annotation.upvote
     };
 
     this.handleDelete = this.handleDelete.bind(this);
     this.handleEdit = this.handleEdit.bind(this);
     this.upvoteButton = this.upvoteButton.bind(this);
+    this.toggleVote = this.toggleVote.bind(this);
   }
 
   handleDelete(e) {
@@ -32,7 +34,7 @@ class AnnotationShow extends React.Component {
         <AnnotationEditForm
           annotation={this.props.annotation}
           closeEdit={this.closeEdit.bind(this)}
-          updateAnnotation={this.props.updateAnnotation}/>
+          updateAnnotation={this.props.updateAnnotation} />
       );
     }
   }
@@ -49,7 +51,7 @@ class AnnotationShow extends React.Component {
         </section>
         <section className='upvotes'>
           { this.upvoteButton() }
-          { this.props.annotation.upvote.count }
+          { this.state.upvote.count }
         </section>
         <p className='annotation-body'>{this.props.annotation.body}</p>
       </div>);
@@ -86,20 +88,27 @@ class AnnotationShow extends React.Component {
   }
 
   toggleVote() {
-    if (this.props.upvote.user_voted) {
-      this.props.deleteUpvote(this.props.annotation.upvote);
+    if (this.state.upvote.user_voted) {
+      const newCount = this.state.upvote.count - 1;
+      const voteStatus = !this.state.upvote.user_voted;
+      this.setState({upvote: {count: newCount, user_voted: voteStatus}});
+      this.props.deleteUpvote(this.state.upvote.id);
     } else {
-      this.props.createUpvote();
+      const newCount = this.state.upvote.count + 1;
+      const voteStatus = !this.state.upvote.user_voted;
+      this.setState({upvote: {count: newCount, user_voted: voteStatus}});
+      this.props.createUpvote({annotation_id: this.props.annotation.id});
     }
   }
 
   upvoteImage() {
-    if (this.props.annotation.upvote.user_voted) {
-      return <p className='upvote-button'>test</p>;
+    if (this.state.upvote.user_voted) {
+      return <p className='upvote-button'>f</p>;
     } else {
       return <img className='upvote-button' src='http://res.cloudinary.com/doepem37s/image/upload/v1478626744/Spotlight/Thumbsup-Icon.png' />;
     }
   }
+
 
   upvoteButton() {
     if (this.props.currentUser){

@@ -82,7 +82,6 @@ class Track extends React.Component {
   }
 
   closeForm() {
-    debugger
     this.setState({formDisabled: true, showDisabled: true});
   }
 
