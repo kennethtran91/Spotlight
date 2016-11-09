@@ -49,6 +49,7 @@
 .track-show aside {
   float: right;
   width: 40%;
+  position: absolute;
 }
 
 .track-lyrics .highlight {

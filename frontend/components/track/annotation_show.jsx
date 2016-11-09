@@ -49,11 +49,13 @@ class AnnotationShow extends React.Component {
             { this.editButton() }
           </nav>
         </section>
-        <section className='upvotes'>
-          { this.upvoteButton() }
-          { this.state.upvote.count }
-        </section>
         <p className='annotation-body'>{this.props.annotation.body}</p>
+        <footer className='annotation-footer'>
+          <section className='upvotes clearfix'>
+            { this.upvoteButton() }
+            { this.state.upvote.count }
+          </section>
+        </footer>
       </div>);
     }
   }
@@ -103,7 +105,7 @@ class AnnotationShow extends React.Component {
 
   upvoteImage() {
     if (this.state.upvote.user_voted) {
-      return <p className='upvote-button'>f</p>;
+      return <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478731204/Spotlight/Thumbsup-Icon-red.png' className='upvote-button' />;
     } else {
       return <img className='upvote-button' src='http://res.cloudinary.com/doepem37s/image/upload/v1478626744/Spotlight/Thumbsup-Icon.png' />;
     }

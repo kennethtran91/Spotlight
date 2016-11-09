@@ -6,41 +6,41 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-User.create({username: 'suttonlenore', password: '123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478063525/sutton_ucztff.jpg"});
-User.create({username: 'lindsey', password:'123456', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478397162/Spotlight/Whitley.jpg"})
-User.create({username: 'smassellsings', password:'password', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478396366/Spotlight/W8AlWIjG.jpg"})
-User.create({username: 'laurabenanti', password:'password', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478397109/Spotlight/Laura_Benanti_2016_Tony_Awards_Red_Carpet_OhOYZzlhFcHl.jpg"})
-User.create({username: 'chelseanachman', password:'password', image_url: "http://res.cloudinary.com/doepem37s/image/upload/v1478396999/Spotlight/Selection_002.png"})
+User.create({username: 'suttonlenore', password: '123456', image_url: "https://res.cloudinary.com/doepem37s/image/upload/v1478063525/sutton_ucztff.jpg"});
+User.create({username: 'lindsey', password:'123456', image_url: "https://res.cloudinary.com/doepem37s/image/upload/v1478397162/Spotlight/Whitley.jpg"})
+User.create({username: 'smassellsings', password:'password', image_url: "https://res.cloudinary.com/doepem37s/image/upload/v1478396366/Spotlight/W8AlWIjG.jpg"})
+User.create({username: 'laurabenanti', password:'password', image_url: "https://res.cloudinary.com/doepem37s/image/upload/v1478397109/Spotlight/Laura_Benanti_2016_Tony_Awards_Red_Carpet_OhOYZzlhFcHl.jpg"})
+User.create({username: 'chelseanachman', password:'password', image_url: "https://res.cloudinary.com/doepem37s/image/upload/v1478396999/Spotlight/Selection_002.png"})
 
-Album.create({title: 'Wicked', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478145666/Spotlight/WickedCastRecording.jpg',
+Album.create({title: 'Wicked', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478145666/Spotlight/WickedCastRecording.jpg',
   year: 2003, composer: 'Stephen Schwartz', lyricist: 'Stephen Schwartz'})
-Album.create({title: 'Phantom of the Opera', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478145944/Spotlight/phantom.jpg',
+Album.create({title: 'Phantom of the Opera', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478145944/Spotlight/phantom.jpg',
   year: 1986, composer: 'Andrew Lloyd Webber', lyricist: '	Charles Hart and Richard Stilgoe'})
-Album.create({title: 'Les Miserables', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478235616/Spotlight/LesMisLogo.png',
+Album.create({title: 'Les Miserables', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478235616/Spotlight/LesMisLogo.png',
   year: 1987, composer: 'Claude-Michel Schonberg', lyricist: 'Herbert Kretzmer and James Fenton'})
-Album.create({title: 'Oklahoma!', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478240983/Spotlight/oklahoma.jpg',
+Album.create({title: 'Oklahoma!', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478240983/Spotlight/oklahoma.jpg',
   year: 1943, composer: 'Richard Rodgers', lyricist: 'Oscar Hammerstein III'})
-Album.create({title: 'Lion King', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478324923/Spotlight/lion_king.jpg',
+Album.create({title: 'Lion King', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478324923/Spotlight/lion_king.jpg',
   year: 1997, composer: 'Elton John', lyricist: 'Tim Rice'})
-Album.create({title: 'Hamilton', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478240868/Spotlight/hamilton.jpg',
+Album.create({title: 'Hamilton', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478240868/Spotlight/hamilton.jpg',
   year: 2015, composer: 'Lin-Manuel Miranda', lyricist: 'Lin-Manuel Miranda'})
-Album.create({title: 'Hairspray', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478235970/Spotlight/Hairspray_OBC.jpg',
+Album.create({title: 'Hairspray', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478235970/Spotlight/Hairspray_OBC.jpg',
   year: 2002, composer: 'Marc Shaiman', lyricist: 'Scott Wittman and Marc Shaiman'})
-Album.create({title: 'Grease', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236030/Spotlight/greaseobc.jpg',
+Album.create({title: 'Grease', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236030/Spotlight/greaseobc.jpg',
   year: 1972, composer: 'Jim Jacobs, Warren Casey, and John Farrar', lyricist: 'Jim Jacobs, Warren Casey, and John Farrar'})
-Album.create({title: 'Fiddler on the Roof', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236099/Spotlight/fiddler2016.jpg',
+Album.create({title: 'Fiddler on the Roof', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236099/Spotlight/fiddler2016.jpg',
   year: 2016, composer: 'Jerry Bock', lyricist: 'Sheldon Harnick'})
-Album.create({title: 'Rent', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236147/Spotlight/rent.jpg',
+Album.create({title: 'Rent', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236147/Spotlight/rent.jpg',
   year: 1996, composer: 'Jonathan Larson', lyricist: 'Jonathan Larson'})
-Album.create({title: 'Waitress', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236207/Spotlight/waitress.jpg',
+Album.create({title: 'Waitress', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236207/Spotlight/waitress.jpg',
   year: 2016, composer: 'Sara Bareilles', lyricist: 'Sara Bareilles'})
-Album.create({title: 'Newsies', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236256/Spotlight/newsies.jpg',
+Album.create({title: 'Newsies', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236256/Spotlight/newsies.jpg',
   year: 2012, composer: 'Alan Menken', lyricist: 'Jack Feldman'})
-Album.create({title: 'Ragtime', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236305/Spotlight/ragtime.jpg',
+Album.create({title: 'Ragtime', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236305/Spotlight/ragtime.jpg',
   year: 1998, composer: 'Stephen Flaherty', lyricist: 'Lynn Ahrens'})
-Album.create({title: 'Into the Woods', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236463/Spotlight/intothewoods.jpg',
+Album.create({title: 'Into the Woods', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236463/Spotlight/intothewoods.jpg',
   year: 1987, composer: 'Stephen Sondheim', lyricist: 'Stephen Sondheim'})
-Album.create({title: 'Thoroughly Modern Millie', image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478236529/Spotlight/millie.jpg',
+Album.create({title: 'Thoroughly Modern Millie', image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478236529/Spotlight/millie.jpg',
   year: 2002, composer: 'Jeanine Tesori', lyricist: 'Dick Scanlan'})
 
 Track.create({title: 'The Wizard and I', user_id: 1, album_id: 1,

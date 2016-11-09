@@ -69,6 +69,11 @@ class Track extends React.Component {
   startAnnotating(e) {
     e.preventDefault();
     if (e.target.className !== 'highlight') {
+      const box = document.getElementById('annotations');
+      box.style.position = "absolute";
+      box.style.left = '60%';
+      box.style.top = e.pageY +'px';
+
       this.start_idx = Number(e.target.id);
     }
   }
@@ -114,6 +119,11 @@ class Track extends React.Component {
         this.setState({ selectedId: annotation.id});
       }
     });
+
+    const box = document.getElementById('annotations');
+    box.style.position = "absolute";
+    box.style.left = '60%';
+    box.style.top = e.pageY +'px';
   }
 
   openAnnotation() {
@@ -148,10 +158,12 @@ class Track extends React.Component {
           return <br key={idx} id={idx}/>;
         } else {
           return (
-            <p key={idx} id={idx}
-              className={(annotatedLines.includes(idx)) ? "highlight" : ""}
-              onClick={(annotatedLines.includes(idx)) ? this.enableShow : ""}>
-              {line}
+            <p key={idx}>
+              <span id={idx}
+                className={(annotatedLines.includes(idx)) ? "highlight" : ""}
+                onClick={(annotatedLines.includes(idx)) ? this.enableShow : ""} >
+                {line}
+              </span>
             </p>
           );
         }
@@ -184,7 +196,7 @@ class Track extends React.Component {
             deleteComment={this.props.deleteComment}
             currentUser={this.props.currentUser} />
         </article>
-        <aside className='annotations'>
+        <aside className='annotations' id='annotations'>
           { this.newAnnotation() }
           { this.openAnnotation() }
         </aside>
