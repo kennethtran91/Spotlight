@@ -11,7 +11,11 @@ export default (state = _nullAlbum, action) =>{
     case RECEIVE_ALBUM:
       return merge({}, state, {[action.album.id]: action.album});
     case RECEIVE_NEW_TRACK:
-      return merge({}, state, {[action.track.album_id]: {tracks: {[action.track.id]: action.track}}});
+      const albumId = action.track.track_info.album_id;
+      const trackId = action.track.track_info.id;
+      const newState = merge({}, state,
+        {[albumId]: {tracks: {[trackId]: action.track.track_info}}});
+      return newState;
     default:
       return state;
   }

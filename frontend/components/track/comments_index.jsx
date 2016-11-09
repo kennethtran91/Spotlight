@@ -1,4 +1,5 @@
 import React from 'react';
+import SmartTimeAgo from 'react-smart-time-ago';
 
 class CommentsIndex extends React.Component{
   constructor(props){
@@ -32,6 +33,7 @@ class CommentsIndex extends React.Component{
               <h3 className='comment-username'>{comment.username}</h3>
               { this.deleteButton(comment) }
             </section>
+            <SmartTimeAgo className='comment-time' value={comment.updated_at} />
             <p className='comment-body'>{comment.body}</p>
           </li>) )}
       </ul>

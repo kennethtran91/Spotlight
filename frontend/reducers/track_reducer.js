@@ -7,7 +7,9 @@ import { RECEIVE_ANNOTATIONS,
 import { RECEIVE_COMMENTS,
   RECEIVE_NEW_COMMENT,
   REMOVE_COMMENT } from '../actions/comment_actions';
+  import {RECEIVE_NEW_TRACK } from '../actions/album_actions';
 import merge from 'lodash/merge';
+
 
 const _nullTrack = Object.freeze({
   track: null,
@@ -23,7 +25,11 @@ export default (state = _nullTrack, action) =>{
     case RECEIVE_TRACK:
       return merge ({}, _nullTrack, {track: action.track.track_info,
         comments: action.track.comments,
-        annotations: action.track.annotations});
+        annotations: action.track.annotations, errors: []});
+    case RECEIVE_NEW_TRACK:
+      return merge ({}, _nullTrack, {track: action.track.track_info,
+        comments: action.track.comments,
+        annotations: action.track.annotations, errors: []});
     case EMPTY_TRACK:
       return merge({}, _nullTrack);
     case REMOVE_TRACK:
@@ -36,8 +42,7 @@ export default (state = _nullTrack, action) =>{
       return merge({},
         {track: state.track,
           errors: state.errors,
-          comments: state.comments},
-        {annotations: action.annotations});
+          comments: state.comments, annotations: action.annotations});
     case RECEIVE_COMMENTS:
       newState = merge({},
         {track: state.track,

@@ -5,18 +5,17 @@ import merge from 'lodash/merge';
 class AnnotationEditForm extends React.Component {
   constructor(props){
     super(props);
-
+    
     this.state = {
-      body: '',
-      track_id: props.trackId,
-      user_id: (props.currentUser) ? props.currentUser.id : null,
-      start_idx: ,
-      end_idx:
+      id: props.annotation.id,
+      body: props.annotation.body,
+      track_id: props.annotation.track_id,
+      user_id: props.annotation.user_id,
+      start_idx: props.annotation.start_idx,
+      end_idx: props.annotation.end_idx
     };
 
     this.handleSubmit = this.handleSubmit.bind(this);
-    this.form = this.form.bind(this);
-    this.noForm = this.noForm.bind(this);
   }
 
   update(field) {
@@ -28,17 +27,19 @@ class AnnotationEditForm extends React.Component {
   handleSubmit(e){
     e.preventDefault();
     const annotation = this.state;
-    this.props.createAnnotation(annotation);
+    this.props.updateAnnotation(annotation);
     this.setState({
+      id: null,
       body: '',
       track_id: this.props.trackId,
-      user_id: this.props.currentUser.id,
+      user_id: this.props.annotation.user_id,
       start_idx: 0,
       end_idx: 0
     });
+    this.props.closeEdit();
   }
 
-  form() {
+  render(){
     return (
       <form className='annotation-form'>
         <h2>Edit Annotation</h2>
@@ -51,18 +52,6 @@ class AnnotationEditForm extends React.Component {
         <br />
       </form>
     );
-  }
-
-  noForm() {
-    return (
-      <p className='no-annotation-form'>
-        Login or use the demo account to add a annotation to this track.
-      </p>
-    );
-  }
-
-  render(){
-    return ( this.props.currentUser ) ? this.form() : this.noForm();
   }
 }
 

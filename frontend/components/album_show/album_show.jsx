@@ -36,10 +36,12 @@ class AlbumShow extends React.Component {
         <h2>Known Tracks</h2>
         <ul className ='album-track-list'>
           {albumShowTrackArray(this.props.album).map ((track, idx) => (
-            <Link to={`/tracks/${track.id}`} key={idx}><li>
-              <h3>{track.title}</h3>
-              <p>{track.vocalists}</p>
-            </li></Link>)
+            <Link to={`/tracks/${track.id}`} key={idx}>
+              <li>
+                <h3>{track.title}</h3>
+                <p>{track.vocalists}</p>
+              </li>
+            </Link>)
           )}
         </ul>
       </div>

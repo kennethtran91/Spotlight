@@ -54,3 +54,7 @@
 .track-lyrics .highlight {
   background-color: #CDCDCD;
 }
+
+.track-lyrics .highlight:hover {
+  background-color: #ffff7f;
+}

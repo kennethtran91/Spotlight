@@ -2471,108 +2471,1948 @@ Oh lover, I'll cover you"})
 
 Track.create({title: 'She Used to be Mine', user_id:1, album_id:11,
   vocalists:'Jesse Mueller',
-  context: '',
-  lyrics: ""})
+  context: "After Jenna gives in to Earl, she reflects on who she is and how she has changed. Emotionally, this is her loneliest and most disappointed point.",
+  lyrics: "It's not simple to say
+That most days I don't recognize me
+That these shoes and this apron
+That place and it's patrons
+Have taken more than I gave them
+It's not easy to know
+I'm not anything like I used to be
+Although it's true
+I was never attention's sweet center
+I still remember that girl
+
+She's imperfect but she tries
+She is good but she lies
+She is hard on herself
+She is broken and won't ask for help
+She is messy but she's kind
+She is lonely most of the time
+She is all of this mixed up
+And baked in a beautiful pie
+She is gone but she used to be mine
+
+It's not what I asked for
+Sometimes life just slips in through a back door
+And carves out a person
+And makes you believe it's all true
+And now I've got you
+And you're not what I asked for
+If I'm honest I know I would give it all back
+For a chance to start over
+And rewrite an ending or two
+For the girl that I knew
+
+Who'll be reckless just enough
+Who'll get hurt but
+Who learns how to toughen up when she's bruised
+And gets used by a man who can't love
+And then she'll get stuck and be scared
+Of the life that's inside her
+Growing stronger each day
+'Til it finally reminds her
+To fight just a little
+To bring back the fire in her eyes
+That's been gone but it used to be mine
+
+Used to be mine
+She is messy but she's kind
+She is lonely most of the time
+She is all of this mixed up and baked in a beautiful pie
+She is gone but she used to be mine"})
 
 Track.create({title: 'When He Sees Me', user_id:4, album_id:11,
-vocalists:'Kikimo Glenn',
-context: '',
-lyrics: ""})
+vocalists:'Kikimo Glenn, Jessie Mueller, and Keala Settle',
+context: "Before Dawn's blind date, she explains what she is afraid of in love and what she really longs for.",
+lyrics: "DAWN:
+I stick with real things,
+Usually facts and figures.
+When information's in its place,
+I minimize the guessing game.
+Guess what?
+
+JENNA/BECKY:
+What?
+
+DAWN:
+I don't like guessing games.
+Or when I feel things,
+Before I know the feelings.
+How am I supposed to operate,
+If I'm just tossed around by fate?
+Like on an unexpected date?
+
+With a stranger who might talk too fast,
+Or ask me questions about myself,
+Before I've decided that,
+He can ask me questions about myself.
+He might sit too close.
+Or call the waiter by his first name,
+Or eat Oreos,
+But eat the cookie before the cream?
+But what scares me the most,
+what scares me the most,
+
+Is what if when he sees me, what if he doesn't like it?
+What if he runs the other way and I can't hide from it?
+What happens then?
+If when he knows me, he's only disappointed?
+What if I give myself away, to only get it given back?
+I couldn't live with that.
+
+So, I'm just fine, inside my shell-shaped mind.
+This way I get the best view.
+So that when he sees me, I want him to.
+
+JENNA:
+Dawn, don't you think you're being a little, I mean maybe just a tad-
+
+DAWN:
+I'm not defensive!
+I'm simply being cautious.
+I can't risk reckless dating,
+Due to my miscalculating.
+While a certain suitor stands in line,
+I've seen in movies,
+Most made for television,
+You cannot be too careful,
+When it comes to sharing your life.
+I could end up a miserable wife.
+
+Sorry girls,
+But he could be criminal, some sort of psychopath
+who escaped from an institution,
+somewhere where they don't have girls.
+He could have masterminded some way to find me.
+He could be colorblind.
+How untrustworthy is that.
+He could be less than kind.
+Or even worse he could be very nice, have lovely eyes.
+And make me laugh, come out of hiding.
+What do I do with that?
+Oh, God.
+
+What if when he sees me,
+I like him and he knows it?
+What if he opens up a door,
+And I can't close it?
+What happens then?
+If when he holds me,
+My heart is set in motion,
+I'm not prepared for that.
+I'm scared of breaking open.
+But still I can't help from hoping,
+To find someone to talk to,
+Who likes the way I am.
+Someone who when he sees me,
+Wants to again."})
 
 Track.create({title: 'Never Getting Rid of Me', user_id:3, album_id:11,
 vocalists:'Jonathan Fitzgerald',
-context: '',
-lyrics: ""})
+context: "After their first date, Ogie shows up at the diner to declare his love for Dawn and make sure that she understands he is serious.",
+lyrics: "I will never let you let me leave
+I promise I'm not lying
+Go ahead ask anybody who has seen me trying
+I'm not going, if it seems like I did
+I'm probably waiting outside
+
+Such a stubborn man you'll likely never meet another
+When we have our family dinner you can ask my mother
+She's the best, learn more about her on our family history test
+
+I'm gonna do this right
+Show you I'm not moving
+Wherever you go, I won't be far to follow
+Oh, I'm gonna love you so
+You'll learn what I already know
+I love you means you're never, ever, ever getting rid of me
+You can try, oh, but I
+I love you means you're never, ever, ever getting rid of me
+
+I grew up an only child in a suburb of the city
+Spent my days alone my only friend was a stray kitty called Sardine
+I though it was hilarious to call a cat a kind of fish
+She played hard to get hissing while she scratched me
+What she was trying to say was 'Ogie come and catch me'
+I learned quickly,
+perserverance stood between a cat and her new best friend, me
+
+Oh, I'm gonna do this right
+Show you I'm not moving
+Wherever you go, I won't be far to follow
+Oh, I'm gonna love you so
+You'll learn what I already know
+I love you means you're never, ever, ever getting rid of me
+You can try, oh, but I
+I love you means you're never, ever, ever getting rid of me
+You can try, oh, but I
+I love you means you're never, ever, ever getting rid of me"})
 
 Track.create({title: 'You Matter to Me', user_id:1, album_id:11,
 vocalists:'Drew Gehling and Jesse Mueller',
-context: '',
-lyrics: ""})
+context: "Jenna stays home from work and Dr. Pomater comes to keep her company. At this point, it is clear that their relationship is about more than lust.",
+lyrics: "DR POMATER:
+I could find the whole meaning of life in those sad eyes.
+They've seen things you never quite say, but I hear.
+Come out and find me, I'm right here beside you,
+and I'll stay there as long as you'll let me.
+
+Because you matter to me
+Simple and plain and not much to ask from somebody.
+You matter to me
+I promise you do, you matter to,
+I promise you do, you'll see,
+you matter to me
+
+JENNA:
+Too addicted the minute you let yourself think
+The things that I say just might matter to someone
+All of this time I've been tripping or lying or running away
+For the first time I think I'm considered safe
+
+Because you matter to me.
+Simple and plain and not much to ask from somebody.
+You matter to me,
+I promise you do, you matter to,
+I promise you do, you'll see,
+you matter to me.
+
+Dear baby,
+I hope someday somebody wants to hold you for twenty minutes
+straight and that's all they do. They don't pull away,
+they don't look at your face, they don't try to kiss you,
+all they do is wrap their arms around you and hold on without
+an ounce of selfishness to it. I hope you become addicted, baby.
+I hope you become addicted to saying things and having them matter to someone.
+
+BOTH:
+You matter to me.
+Simple and plain and not much to ask from somebody.
+You matter to me,
+
+JENNA:
+I promise you do, you matter to,
+I promise you do, you matter to,
+you matter to
+
+DR POMATER:
+Come out and find me, I'm right here beside you,
+As long as you let me
+I, you matter to,
+you matter to me
+
+BOTH:
+You'll see,
+you matter to me."})
 
 Track.create({title: 'Carrying the Banner', user_id:3, album_id:12,
-  vocalists:'Male Ensemble',
-  context: '',
-  lyrics: ""})
+  vocalists:'Newsies',
+  context: 'As the sun rises, the newsies awaken and prepare for another day on the job.',
+  lyrics: "Racetrack:
+That's my cigar
+
+Snipeshooter:
+You'll steal another
+
+Kid Blink:
+Hey, look, it's bath time at the zoo
+
+Specs:
+I thought that I'd suprise my mother
+
+Snipeshooter:
+If you could find her
+
+Several Newsies:
+Who asked you
+
+Mush:
+From Bottle Alley to the harbor
+
+Racetrack:
+There's easy pickings guaranteed
+
+Jack:
+Try any banker, bum, or barber...
+
+Skittery:
+They almost all knows how to read!
+
+Jack:
+It's a crooked game we're playin'
+One we'll never lose
+Long as suckers don't mind payin'
+Just to get bad news
+
+Newsies:
+Ain't it a fine life
+Carryin' the banner through it all
+A mighty fine life
+Carryin' the banner tough and tall
+When the bell rings
+We goes where we wishes
+We's as free as fishes
+Sure beats washing dishes
+What a fine life
+Carryin' the banner home-free all!
+
+(Spoken)
+Jack:
+Hey Crutchie, what your leg say, gonna rain?
+
+Crutchie:
+No rain... Ha, partly cloudy clear by evenin'!
+
+Jack:
+And the limp sells 50 papes all by itself!
+
+Crutchie:
+I don't need a limp to sell papes. I've got personality.
+
+(Sung)
+It takes a smile that spreads like butter
+The kind that turns a lady's head
+
+Racetrack:
+It takes an orphan with a stutter
+
+Jack:
+Who's also blind
+
+Mush:
+And mute
+
+Kid Blink:
+And dead!
+
+Newsies:
+Summer stinks and winter's freezing
+When you works outdoors
+Start out sweating end up sneezing
+In between it pours!
+Still, it's a fine life
+Carryin' the banner with me chums
+A bunch of big shots
+Tossin' out a freebie to the bums
+
+Race:
+Hey! What's the hold up
+Waitin' makes me antsy
+I likes living chancey
+
+Newsies:
+Harlem to Delancey
+What a fine life
+Carryin' the banner through the
+
+Three Nuns:
+Blessed children
+Though you wander lost and depraved
+Jesus loves you
+You shall be saved!
+
+SUNG IN COUNTERPOINT:
+
+Curdled (just give me half a cup)
+coffee (something to wake me up)
+Concrete donuts (I gotta find an angle)
+sprinkled with mold (it's gettin' bad out here)
+Homemade (papers is all I got)
+biscuits (it's 88 degrees)
+(Jack says to change my spot) (wish I could catch a breeze)
+Just two (maybe it's worth a shot)
+years old (all I can catch is fleas)
+
+Newsies:
+If I hate the headlines
+I'll make up a headline
+And I'll say anything I hafta
+'Cause at two for a penny
+If I take too many
+Weasel just makes me eat 'em afta
+
+SUNG IN COUNTERPOINT:
+
+Group one:
+Got a feelin' bout the headline
+I smells me a headline
+Papes is gonna sell like we was givin' em' away
+Betcha dinner it's a doozy
+'bout a pistol-packing floozey
+Who knows how to make a newsie's day
+
+Group two:
+I do too! So it must be true
+What a switch! Soon we'll all be rich
+Don't know a better way to make a newsie's day
+
+Newsies:
+You wanna move the next edition
+Give us an earthquake or a war
+
+Snipeshooter:
+How 'bout a crooked politician
+
+Newsies:
+Ya nitwit, that ain't news no more
+Uptown to Grand Central Station
+Down to City Hall
+We improves our circulation
+Walking till we fall
+
+SUNG IN COUNTERPOINT:
+
+Group one:
+But we'll be out there
+Carrying the banner man to man!
+We're always out there
+Soakin' every sucker that we can!
+See the headline:
+Newsies on a mission!
+
+Group two:
+Got a feelin' bout the headline
+I smells me a headline
+Papes is gonna sell like we was givin' em' away
+Betcha dinner it's a doozy
+'bout a pistol-packing floozey
+Don't know any better way to make a newsie's day
+
+Group one:
+Kill the competition
+Sell the next edition
+We'll be out there, carryin' the banner
+See us out there, carryin' the banner
+Always out there, carryin' the banner
+
+Group two:
+I was stakin' out the circus
+and then someone said that coney's really hot
+But when I got there, there was Spot with all his cronies
+Heck, I'm gonna take what little dough I got and play with the ponies
+We at least deserve a headline for the hours that they work us
+Jeez, I bet if I just stayed a little longer at the circus
+
+We'll all be out there, carryin' the banner man to man
+We're always out there, soakin' evey sucker that we can
+Here's the headline:
+Newsies on a mission
+Kill the competition
+Sell the next edition
+We'll be out there, carryin' the banner
+See us out there, carryin' the banner
+Always out there, carryin' the banner
+Ah, ah, ah, go!"})
 
 Track.create({title: 'Watch What Happens', user_id:2, album_id:12,
   vocalists:'Kara Lindsay',
-  context: '',
-  lyrics: ""})
+  context: "Katherine, inspired by Jack's leadership and artistic abilities, sees the newsies' strike as an opportunity to become a more successful reporter and decides to cover the protest.",
+  lyrics: "'Write what you know'
+so they say, all I know is I don't know what to write
+or the right way to write it.
+This is big, lady, don't screw it up,
+This is not some little vaudeville I'm reviewing.
+Poor little kids versus rich greedy sour pusses
+Ha! It's a cinch!
+
+It could practically write itself--
+And let's pray it does, cause as I may have mentioned,
+I have no clue what I'm doing.
+Am I insane? This is what I've been waiting for.
+Well that, plus the screaming of ten angry editors.
+A girl? It's a girl! How the hell? Is that even legal?
+
+Look, just go and get her!
+Not only that, there's a story behind the story:
+Thousands of children, exploited, invisible.
+Speak up, take a stand, and there's someone to write about it.
+That's how things get better.
+Give life's little guys some ink,
+and when it dries just watch what happens.
+Those kids will live and breathe right on the page
+and once they're center stage, you watch what happens.
+And who's there with her camera and her pen
+as boys turn into men
+they'll storm the gates and then just watch what happens when they do.
+
+*squeal*
+Picture a handsome, heroically charismatic--
+plain spoken, know nothing, skirt-chasing, cocky little son of a--
+lie down with dogs and you wake up with a raise and a promotion.
+So, he's a flirt,
+a complete ego maniac.
+The fact is he's also the face of the strike--
+
+What a face--
+face the fact, that's a face that could save us all from sinking in the ocean.
+Like someone said, 'Power tends to corrupt'
+and absolute power, wait! Wait, corrupts!?
+Absolutely, that is genius!
+But give me some time, I'll be twice as good as that six months from never.
+Just look around at the world we're inheriting
+
+and think of the one we'll create.
+Their mistake is they got old, that is not a mistake we'll be making.
+No sir, we'll stay young forever!
+Give those kids and me the brand new century and watch what happens.
+It's David and Goliath, do or die
+the fight is on and I can't watch what happens.
+
+But all I know is nothing happens if you just give in.
+It can't be any worse than how it's been.
+And it just so happens that we just might win,
+so whatever happens! Let's begin!"})
 
 Track.create({title: 'Seize the Day', user_id:5, album_id:12,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists: 'Ben Fankhauser, Jeremy Jordan, Andrew Keenan-Bolger, and Newsies',
+  context: "The next day, Jack fails to properly motivate the newsies, as he isn't always the best with words, but Davey steps in and rallies the newsies for a full scale strike against the New York World.",
+  lyrics: "DAVEY:
+Now is the time to seize the day
+Stare down the odds and seize the day
+Minute by minute that's how you win it
+We will find a way
+But let us seize the day
+Courage cannot erase our fear
+Courage is when we face our fear
+Tell those with power safe in their tower
+We will not obey!
+
+DAVEY & JACK:
+Behold the brave battalion that stands side by side
+Too few in number and too proud to hide
+Then say to the others who did not follow through
+You're still our brothers, and we will fight for you
+
+DAVEY, JACK, and CRUTCHIE:
+Now is the time to seize the day
+Stare down the odds and seize the day
+
+NEWSIES:
+Once we've begun
+If we stand as one
+Someday becomes somehow
+And a prayer becomes a vow
+
+JACK:
+And the strike starts right damn now!
+
+DAVEY:
+Now is the time to seize the day
+
+NEWSIES:
+Now is the time to seize the day
+
+DAVEY:
+Answer the call and don't delay
+
+NEWSIES:
+Answer the call and don't delay
+
+TYLER & NEWSIES:
+Wrongs will be righted
+If we're united
+Let us seize the day
+
+JACK:
+Now let 'em hear it loud and clear
+
+NEWSIES:
+Now let 'em hear it loud and clear
+
+JACK:
+Like it or not we're drawing near
+
+NEWSIES:
+Like it or not we're drawing near
+
+JACK & NEWSIES:
+Proud and defiant
+We'll slay the giant
+Judgment day is here
+Houston to Harlem, look what's begun
+One for all and all for one!
+Strike! Strike! Strike! Strike! Strike! Strike!
+Oh! Strike!
+
+(Instrumental-Dance Number)
+
+Now is the time to seize the day
+They're gonna see there's hell to pay
+Nothing can break us
+No one can make us quit before we're done
+One for all and all for
+One for all and all for
+One for all and all for one!"})
 
 Track.create({title: 'Once and For All', user_id:1, album_id:12,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists:"Ben Fankhauser, Jeremy Jordan, Kara Lindsay, and Newsies",
+  context: 'Jack and Katherine then join the newsies in printing their own paper; one that will determine the outcome of the strike.',
+  lyrics: "Jack:
+There's change coming once and for all
+You makes the front page and man, you is major news
+
+Jack and Davey:
+Tomorrow they'll see what we are
+
+Jack, Davey and Katherine:
+And sure as a star, we ain't come this far... to lose
+
+Race:
+Here they come!!
+
+Ensemble:
+This is the story we needed to write as we're kept out of sight, but no more
+In a few hours by dawns early light we'll be ready to fight us a war
+This time we're in it to stay, talk about seizing the day
+
+Jack:
+Write it in ink or in blood, it's the same either way.
+They're gonna damn well pay!
+
+Ensemble:
+See old man Pulitzer snug in his bed, he don't care if we're dead or alive
+Three satin pillows are under his head, while we's begging for bread to survive
+Joe, you can stop counting sheep, we're gonna sing ya to sleep
+You've got your thugs with their sticks and their slugs, Yeah!
+But we got a promise to keep!
+
+Jack:
+Once and for all if they don't find their manners, we'll bleed 'em! (Bleed 'em!)
+
+Race:
+Once and for all we won't carry no banners that don't spell freedom!
+
+Ensemble:
+Finally we's raising the stakes
+This time whatever it takes!
+This time the union awakes, once and for all!
+
+Jack:
+Come on, boys!
+
+Ensemble:
+Yeah!!
+This is for kids shining shoes on the street with no shoes on their feet everyday
+This is for guys sweating blood in the shops while their bosses and cops look away
+I'm seeing kids standing tall, glaring and raring a brawl
+Armies of guys who are sick of the lies getting ready to rise to the call!
+Once and for all there'll be blood on the wall if they doubt us
+They think they're running this town, but this town will shut down without us
+Ten thousand kids in the square (ten thousand kids in the square), ten thousand fists in the air! (ten thousand fists)
+Joe, you is gonna play fair, once and for all!
+Once and for all! (once and for all)
+Once and for all!! (once and for all)
+Once and for all!!! (once and for all)
+There's change coming once and for all
+You're getting too old, too weak to keep holding on
+A new world is gunning for you, and Joe, we is too!
+Til once and for all you're gone!
+
+Davey:
+Once and for all!
+
+Jack:
+Once and for all!!
+
+Ensemble:
+Once and for all!
+
+Jack:
+(Once and for all!!)"})
 
 Track.create({title: 'New Music', user_id:3, album_id:13,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists:'Mark Jacoby, Marin Mazzie, Steven Sutcliffe, Brian Stokes Mitchell, and Audra McDonald',
+  context: "Father returns home from the north pole to find Coalhouse playing Ragtime in the Family's parlor. Mother is unsympathetic to his complaints about the unorthodox changes to his household. Hearing Coalhouse's music, Sarah finally descends to forgive him, and the lovers are joyfully reunited.",
+  lyrics: "[FATHER]
+Where have I been?
+How did we change,
+Caught in this strange
+New music?
+Say,
+Was I away too long?
+
+[MOTHER]
+Just like that tune,
+Simple and clear,
+I've come to hear
+New music.
+
+[FATHER]
+New music.
+Why,
+Why can't you hear the song?
+
+[YOUNGER BROTHER]
+His fingers stoke those keys,
+And every note says 'Please',
+And every chord says 'Turn my way.'
+
+[MOTHER, FATHER]
+I thought I knew
+What love was but these lovers play...
+
+[MOTHER, FATHER, YOUNGER BROTHER]
+New music!
+Haunting me,
+And somehow taunting me-
+My love was never half as true.
+
+[FATHER]
+And I ask myself,
+Why can't I sing it too?
+
+[WORKERS, NEIGHBORS]
+His fingers stoke those keys,
+And every note says 'Please',
+And every chord says 'Turn my way.'
+
+[WORKERS, NEIGHBORS, FAMILY]
+I thought I knew
+What love was
+but these lovers play
+New music!
+
+[ALL]
+Haunting me,
+And somehow taunting me-
+My love was
+Never half as true.
+
+[COALHOUSE]
+Sarah, my life has changed.
+Sarah, you've got to see.
+Sarah, we got a son!
+Sarah, come down to me...
+
+[SARAH]
+You and your music
+Singing deep in me,
+Making nice to me,
+Saying something so new-
+
+[COALHOUSE]
+New
+
+[SARAH]
+Changing everything,
+Meaning everything,
+
+[COALHOUSE]
+Music
+
+[SARAH]
+Calling my heart to you...
+
+[COALHOUSE]
+All for you, girl.
+You, Sarah.
+
+[SARAH]
+Play that melody,
+Your sweet melody,
+Calling my heart to you.
+
+[COALHOUSE]
+You.
+
+[ALL (except Coalhouse & Sarah)]
+Just like that tune,
+Simple and clear,
+I've come to hear
+New music-
+Breaking my heart,
+Op'ning a door,
+Changing the world!
+New music!
+I'll
+Hear it forevermore!"})
 
 Track.create({title: 'Henry Ford', user_id:1, album_id:13,
-  vocalists:'Brian Stokes Mitchell and Company',
-  context: '',
-  lyrics: ""})
+  vocalists:'Larry Daggett, Brian Stokes Mitchell, and Company',
+  context: "As Coalhouse prepares to visit Sarah, he visits Henry Ford's factory for a brand new Model T, and the inventor proudly explains his system of automated production.",
+  lyrics: "[FORD]
+See my people?
+Well, here's my theory
+Of what this country
+Is moving toward.
+Every worker
+A cog in motion.
+Well, that's the notion of
+Henry Ford!
+One man tightens
+And one man ratchets
+And one man reaches
+To pull one cord.
+Car keeps moving
+In one direction.
+
+[ENSEMBLE]
+A genuflection to
+Henry Ford!
+Hallelujah!
+Praise the maker
+Of the Model T!
+
+[FORD]
+Speed up the belt.
+Speed up the belt, Sam.
+
+[ENSEMBLE]
+Hallelujah!
+
+[COALHOUSE]
+Hell, I'll take her!
+
+[ENSEMBLE]
+Sure amazin'
+How far some fellas can see!
+
+[FORD]
+Speed up the belt.
+Speed up the belt, Sam.
+Speed up the belt.
+Speed up the belt, Sam!
+
+[ENSEMBLE & FORD]
+Speed up the, speed up the, speed up the speed up the belt!
+
+[ENSEMBLE]
+Mass production
+Will sweep the nation.
+A simple notion,
+The world's reward.
+
+[FORD]
+Even people who ain't too clever
+Can learn to tighten a nut forever,
+Attach one pedal
+Or pull one lever
+
+[ENSEMBLE]
+For Henry Ford!
+Henry Ford!
+Henry Ford!
+Henry Ford!
+
+[FORD]
+Grab yor goggles
+
+[ENSEMBLE & FORD]
+And climb aboard!
+
+[COALHOUSE]
+I'm ready, Lord!"})
 
 Track.create({title: 'What Kind of Woman', user_id:2, album_id:13,
-  vocalists:'Marin Mazzie',
-  context: '',
-  lyrics: ""})
+  vocalists:'Marin Mazzie and Ensemble',
+  context: "Mother unearths a newborn black baby in her garden. The police arrive with Sarah, the baby's mother, and on an impulse Mother takes responsibility for both Sarah and her child.",
+  lyrics: "[MOTHER]
+Get Kathleen
+
+[LITTLE BOY]
+Get Kathleen, I tell you! Call the doctor!
+
+[KATHLEEN]
+Is it alive? Oh, please, God, let it be.
+
+[MOTHER]
+It's alive. It's a Negro child. A newborn baby boy.
+What kind of woman
+Would do such a thing?
+Why in God's name
+Is my husband not here?
+I'm such a fool!
+Why did I say
+He was free to go?
+What am I to do?
+Where are your instructions,
+My dear?
+You left me lists.
+Everything in lists!
+Well, your little lists
+Aren't very helpful,
+I fear!
+Each day, the maids
+Trudge up the hill.
+The hired help arrives.
+I never stopped to think
+They might
+have lives beyond out lives...
+
+[POLICEMAN]
+We found her in the cellar of a home on the next
+block. She's a washwoman there. Her name is Sarah.
+
+[MOTHER]
+Where will you take her?
+
+[POLICEMAN]
+to the charity ward. Eventually she will have to
+stand trial.
+
+[YOUNGER BROTHER]
+What charges?
+
+[POLICEMAN]
+Well, attempted murder, I should think.
+
+[MOTHER]
+What's going to happen to the baby?
+
+[DOCTOR]
+They have places for unfortunates like this.
+
+[MOTHER]
+I will take responsibility for mother and child.
+Please take Miss Sarah inside.
+What kind of woman
+Would do what I've done-
+Open the door
+to such chaos and pain!
+You would have
+Gently closed the door,
+And gently turned the key,
+And gently told me not to look,
+For fear of what I'd see.
+What kind of woman
+Would that have made me?"})
 
 Track.create({title: 'He Wanted to Say', user_id:5, album_id:13,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists:'Brian Stokes Mitchell, Judy Kaye, Steven Sutcliffe, and Ensemble',
+  context: "Younger Brother arrives at Coalhouse's Gang's hideout and is unable to articulate why he wants to join the fight. The men's profound thoughts are narrated by Emma Goldman.",
+  lyrics: "COALHOUSE
+I said, no music.
+
+COALHOUSE FOLLOWER
+He's here.
+
+COALHOUSE
+Bring him in.
+
+What is it you want?
+
+YOUNGER BROTHER
+I...I...I want to...I know that if...
+
+EMMA
+He wanted to say:
+I am here because I have to be.
+He wanted to say:
+I am here for what is right.
+Every day I wake up knowing
+What you've lost and what is owing.
+I would shed this skin if I could
+To stand with you and fight.
+He wanted to say:
+
+YOUNGER BROTHER
+I am not who I appear to be.
+
+EMMA
+He wanted to say:
+
+YOUNGER BROTHER
+Don not blame me for my past.
+
+BOTH
+We different lives and faces
+But our hearts have common places.
+This was deep inside me
+And you helped me find it at last.
+
+EMMA
+Two men meeting
+For a moment in the darkness
+
+COALHOUSE
+One turning from...
+
+YOUNGER BROTHER
+One waking to...
+
+ALL THREE
+...America!
+Two men finding
+FOr a moment in the darkness...
+
+YOUNGER BROTHER & COALHOUSE
+They're the same. EMMA
+They're the same.
+
+COALHOUSE'S MEN
+He wanted to say:
+
+COALHOUSE
+I envy you your innocence.
+
+EMMA & COALHOUSE'S MEN
+He wanted to say:
+
+YOUNGER BROTHER
+By your side, I could be brave.
+If there's such a thing as justice,
+Let me help you find you justice.
+This I do for you and for Sarah
+Who lies in her grave...
+
+EMMA & MEN
+But all he said was...
+
+YOUNGER BROTHER
+I know how to blow things up...
+
+EMMA & COALHOUSE'S MEN
+Two men meeting
+For a moment
+In the darkness.
+For a moment
+In the darkness."})
 
 Track.create({title: 'Agony', user_id:4, album_id:14,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists:'Robert Westenberg and Chuck Wagner',
+  context: "Cinderella's Prince and Rapunzel's Prince, who are brothers, meet and compare the misery of their newfound and unobtainable loves.",
+  lyrics: "[CINDERELLA'S PRINCE]
+Did I abuse her
+Or show her disdain?
+Why does she run from me?
+If I should lose her,
+How shall I regain,
+The heart she has won from me?
+
+Agony!
+Beyond power of speech,
+When the one thing you want
+Is the only thing out of your reach.
+
+[RAPUNZEL'S PRINCE]
+High in her tower,
+She sits by the hour,
+Maintaining her hair.
+Blithe and becoming and frequently humming
+A lighthearted air:
+Ah-ah-ah-ah-ah-ah-ah-
+
+Agony!
+Far more painful than yours,
+When you know she would go with you
+If there only were doors.
+
+[BOTH]
+Agony!
+Oh, the torture they teach!
+
+[RAPUNZEL'S PRINCE]
+What's as intriguing-
+
+[CINDERELLA'S PRINCE]
+Or half so fatiguing-
+
+[BOTH]
+As what's out of reach?
+
+[CINDERELLA'S PRINCE]
+Am I not sensitive,
+Clever,
+Well-mannered,
+Considerate,
+Passionate,
+Charming,
+As kind as I'm handsome
+And heir to a throne?
+
+[RAPUNZEL'S PRINCE]
+You are everything maidens could wish for!
+
+[CINDERELLA'S PRINCE]
+Then why no-?
+
+[RAPUNZEL'S PRINCE]
+Do I know?
+
+[CINDERELLA'S PRINCE]
+The girl must be mad!
+
+[RAPUNZEL'S PRINCE]
+You know nothing of madness
+Till you're climbing her hair
+And you see her up there
+As you're nearing her,
+All the while hearing her:
+Ah-ah-ah-ah-ah-ah-ah-ah-
+
+[BOTH]
+Agony!
+
+[CINDERELLA'S PRINCE]
+Misery!
+
+[RAPUNZEL'S PRINCE]
+Woe!
+
+[BOTH]
+Though it's different for each.
+
+[CINDERELLA'S PRINCE]
+Always ten steps behind-
+
+[RAPUNZEL'S PRINCE]
+Always ten feet below-
+
+[BOTH]
+And she's just out of reach.
+Agony
+That can cut like a knife!
+
+I must have her to wife."})
 
 Track.create({title: 'I Know Things Now', user_id:1, album_id:14,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists:'Danielle Ferland',
+  context: "The Baker slays the Wolf, pulling Little Red and her grandmother from the beast's innards. Little Red rewards him with the red cape and reflects on her new experiences.",
+  lyrics: "Mother said,
+'Straight ahead,
+Not to delay
+or be misled.'
+I should have heeded
+Her advice...
+But he seemed so nice.
+And he showed me things
+Many beautiful things,
+That I hadn't thought to explore.
+They were off my path,
+So I never had dared.
+I had been so careful,
+I never had cared
+And he made me feel excited-
+Well, excited and scared.
+When he said, 'Come in!'
+With that sickening grin,
+How could I know what was in store?
+Once his teeth were bared,
+Though, I really got scared-
+Well, excited and scared-
+But he drew me close
+And he swallowed me down,
+Down a dark slimy path
+Where lie secrets that I never want to know
+And when everything familiar seems to disappear forever
+At the end of the path was granny once again
+As we lie in the dark till you came and set us free
+And you brought us to the light
+And we're back at the start
+
+And I know things now,
+Many valuable things,
+That I hadn't known before:
+Do not put your faith
+In a cape and a hood,
+They will not protect you
+The way that they should.
+And take extra care with strangers,
+Even flowers have their dangers.
+And though scary is exciting,
+Nice is different than good.
+Now I know:
+Don't be scared.
+Granny is right,
+Just be prepared.
+Isn't it nice to know a lot!
+And a little bit not..."})
 
 Track.create({title: 'On the Steps of the Palace', user_id:4, album_id:14,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+  vocalists:'Kim Crosby',
+  context: "Cinderella, returning from the last night of the festival, describes how the Prince had spread pitch on the stairs to stop her escape. She eventually resolves to let the Prince decide.",
+  lyrics: "He's a very smart Prince
+He's a Prince who prepares
+Knowing this time I'd run from him
+He spread pitch on the stairs
+I was caught unawares
+And I thought: well, he cares
+This is more than just malice
+Better stop and take stock
+While you're standing here stuck
+On the steps of the palace
 
-Track.create({title: 'Moments in the Woods', user_id:1, album_id:14,
-  vocalists:'',
-  context: '',
-  lyrics: ""})
+You think, what do you want?
+You think, make a decision
+Why not stay and be caught?
+You think, well, it's a thought
+What would be his response?
+But then what if he knew
+Who you were when you know
+That you're not what he thinks
+That he wants?
+
+And then what if you are
+What a Prince would envision?
+Although how can you know
+Who you are till you know
+What you want, which you don't?
+So then which do you pick
+Where you're safe, out of sight
+And yourself, but where everything's wrong?
+Or where everything's right
+And you know that you'll never belong?
+
+And whichever you pick
+Do it quick
+'Cause you're starting to stick
+To the steps of the palace
+
+It's your first big decision
+The choice isn't easy to make
+To arrive at a ball
+Is exciting and all
+Once you're there, though, it's scary
+And it's fun to deceive
+When you know you can leave
+But you have to be wary
+There's a lot that's at stake
+But you've stalled long enough
+'Cause you're still standing stuck
+In the stuff on the steps
+
+Better run along home
+And avoid the collision
+Even though they don't care
+You'll be better off there
+Where there's nothing to choose
+So there's nothing to lose
+So you pry up your shoes
+Then from out of the blue
+And without any guide
+You know what your decision is
+Which is not to decide
+You'll just leave him a clue
+For example, a shoe
+And then see what he'll do
+Now it's he and not you
+Who is stuck with a shoe
+In a stew
+In the goo
+And you've learned something, too
+Something you never knew
+On the steps of the palace"})
+
+Track.create({title: 'Any Moment/Moments in the Woods', user_id:1, album_id:14,
+  vocalists:'Joanna Gleason and Robert Westenberg',
+  context: "The Baker's Wife meets Cinderella's Prince, and he easily seduces her. The Prince leaves the Baker's Wife with a few platitudes, and she realizes her error and returns to her happy life.",
+  lyrics: "CINDERELLA'S PRINCE
+Anything can happen in the woods.
+May I kiss you-?
+Any moment we could be crushed.
+
+BAKER'S WIFE
+uh-
+
+CINDERELLA'S PRINCE
+Don't feel rushed.
+
+BAKER'S WIFE
+This is ridiculous,
+What am I doing here?
+I'm in the wrong story.
+
+Wait one moment, please, sir! We can't- we can't do this!
+You have a princess.
+
+CINDERELLA'S PRINCE
+Well, yes. I do.
+
+BAKER'S WIFE
+And I have a... a baker.
+
+CINDERELLA'S PRINCE
+Of course, you're right. How foolish.
+
+Foolishness can happen in the woods.
+Once again, please-
+Let your hesitations be hushed.
+Any moment, big or small,
+Is a moment, after all.
+Seize the moment, skies may fall
+Any moment.
+
+Days are made of moments,
+All are worth exploring.
+Many kinds of moments-
+None is worth ignoring.
+All we have are moments,
+Memories for storing.
+One would be so boring...
+
+BAKER'S WIFE
+No, no,no,no!
+This is not right!
+
+CINDERELLA'S PRINCE
+Right and wrong don't matter in the woods,
+Only feelings.
+Let us meet the moment unblushed.
+Life is often so unpleasant-
+You must know that, as a peasant-
+Best to take the moment present
+As a present for the moment.
+
+I must leave you.
+
+BAKER'S WIFE
+Why?
+
+CINDERELLA'S PRINCE
+The Giant.
+
+BAKER'S WIFE
+Will we find each other in the woods again?
+
+CINDERELLA'S PRINCE
+This was just a moment in the woods.
+Our moment,
+Shimmering and lovely and sad.
+Leave the moment, just be glad
+For the moment that we had.
+Every moment is of moment
+When you're in the woods...
+
+Goodbye.
+
+BAKER'S WIFE
+What was that?
+
+Was that me?
+Was that him?
+Did a Prince really kiss me?
+And kiss me?
+And kiss me?
+And did I kiss him back?
+
+Was it wrong?
+Am I mad?
+Is that all?
+Does he miss me?
+Was he suddenly
+Getting bored with me?
+
+Wake up! Stop dreaming.
+Stop prancing about the woods.
+It's not besseming.
+What is it about the woods?
+
+Back to life, back to sense,
+Back to child, back to husband,
+You can't live in the woods.
+There are vows, there are ties,
+There are needs, there are standards,
+There are shouldn'ts and shoulds.
+
+Why not both instead?
+There's the answer, if you're clever:
+have a child for warmth,
+And a Baker for bread,
+And a Prince for whatever-
+Never!
+It's these woods.
+
+Face the facts, find the boy,
+Join the group, stop the Giant-
+Just get out of these woods.
+Was that him? yes it was.
+Was that me? No it wasn't,
+Just a trick of the woods.
+
+Just a moment,
+One peculiar passing moment...
+Must it all be either less or more,
+Either plain or grand?
+Is it always 'or'?
+Is it never 'and'?
+That's what woods are for:
+For those moments in the woods...
+
+Oh. if life were made of moments,
+Even now and then a bad one-!
+But if life were only moments,
+Then you'd never know you had one.
+
+First a Witch, then a child,
+Then a Prince, then a moment-
+Who can live in the woods?
+And to get what you wish,
+Only just for a moment-
+These are dangerous woods...
+
+Let the moment go...
+Don't forget it for a moment, though.
+Just remembering you've had and 'and',
+When you're back to 'or',
+Makes the 'or' mean more
+Than it did before.
+Now I understand-
+
+And it's time to leave the woods."})
+
+Track.create({title: 'Agony (Reprise)', user_id:3, album_id:14,
+  vocalists: 'Robert Westenberg and Chuck Wagner',
+  context: "The Princes have grown bored and frustrated with their marriages and now lust after two beautiful women asleep in the woods - Snow White and Sleeping Beauty.",
+  lyrics: "CINDERELLA'S PRINCE
+High in a tower-
+Like yours was, but higher-
+A beauty asleep.
+All round the tower
+A thicket of briar
+A hundred feet deep.
+
+Agony!
+No frustration mor keen,
+When the one thing you want
+Is a thing that you've not even seen.
+
+RAPUNZEL'S PRINCE
+I found a casket
+Entirely of glass-
+No, it's unbreakable.
+Inside- don't ask it-
+A maiden, alas,
+Just as unwakable-
+
+BOTH
+What unmistakable agony!
+Is the way always barred?
+
+RAPUNZEL'S PRINCE
+She has skin white as snow-
+
+CINDERELLA'S PRINCE
+Did you learn her name?
+
+RAPUNZEL'S PRINCE
+No,
+There's a dwarf standing guard.
+
+BOTH
+Agony!
+Such that Princes must weep!
+Always in thrall most
+To anything almost,
+Or something asleep.
+
+CINDERELLA'S PRINCE
+If it were not for the thicket-
+
+RAPUNZEL'S PRINCE
+A thicket's no trick.
+Is it thick?
+
+CINDERELLA'S PRINCE
+It's the thickest.
+
+RAPUNZEL'S PRINCE
+The quickest
+Is pick it
+Apart with a stick-
+
+CINDERELLA'S PRINCE
+yes, but even one prick-
+It's my thing about blood.
+
+RAPUNZEL'S PRINCE
+Well, it's sick!
+
+CINDERELLA'S PRINCE
+It's no sicker
+Than you thing with dwarves.
+
+RAPUNZEL'S PRINCE
+Dwarfs.
+
+CINDERELLA'S PRINCE
+Dwarfs...
+
+RAPUNZEL'S PRINCE
+Dwarfs are every upsetting.
+
+BOTH
+Not forgetting
+The tasks unacheivable,
+Mountains unscalable-
+If it's conceivable
+But unavailable,
+Ahhhhhhhhhhhhhhhhh-
+
+Agony!
+
+CINDERELLA'S PRINCE
+Misery!
+
+BOTH
+Not to know what you miss.
+
+CINDERELLA'S PRINCE
+While they lie there for years-
+
+RAPUNZEL'S PRINCE
+And you cry on their biers-
+
+BOTH
+What unbearable bliss!
+Agony
+That can cut like a knife!
+
+Ah, well, back to my wife..."})
 
 Track.create({title: 'The Speed Test', user_id:1, album_id:15,
   vocalists:'Marc Kudisch, Angela Christian, and Sutton Foster',
-  context: '',
-  lyrics: ""})
+  context: "After researching the richest and most eligible bachelors in the world, Millie comes to Sincere Trust to gain a job and the company's boss, Trevor Graydon III.",
+  lyrics: "MR. GRAYDON:
+Take a letter. To a Mr. John Hudson, Hudson's Floor Wax.
+You will find an invoice in the file for the address.
+'Dear Mr. Hudson,' colon
+'My eyes are fully open to my awful situation
+So I'm writing you a letter to demand an explanation
+When the floor wax that we bought from you
+Arrived here Monday morning
+We discovered upon usage that the fume
+Should have a warning
+Since the only possibility is that the wax is rancid
+I request a full refund of all the money we advanced
+And unless you can convince me
+You've improved the floor wax batter
+We will take our business elsewhere
+So I hope you solve this matter.'
+How's my speed, Miss Dillmount?
+
+MILLIE:
+A little slow, perhaps.
+
+MR. GRAYDON:
+Ah!
+
+'Enclosed you'll find a small container
+Of the stuff I talk about
+Just carefully remove the lid
+And take a whiff if you've a doubt
+I'm sure you wouldn't want me
+To alert the daily papers
+With the news of how our office
+Was affected by your vapours
+Which is why I choose to write to you
+A confidential letter
+Full of strong recommendation
+That you make your floor wax better
+I just hope it won't require us
+To have our floor relaid and
+If it does you may expect a bill
+Sincerely, Trevor Graydon'
+Now, read that back to me please.
+
+MILLIE:
+Certainly. 'Dear Mr. Hudson,' colon:
+'My eyes are fully open to my awful situation
+So I'm writing you a letter to demand an explanation
+When the floor wax that we bought from you
+Arrived here Monday morning
+We discovered upon usage that the fume
+Should have a warning
+Since the only possibility is that the wax is rancid
+I request a full refund of all the money we advanced'
+
+MR. GRAYDON:
+Nice!
+
+MILLIE:
+'And unless you can convince me
+You've improved the floor wax batter
+We will take our business elsewhere
+So I hope you solve this matter.'
+
+MR. GRAYDON:
+Not half bad. Continue please.
+
+MILLIE:
+'Enclosed you'll find a small container
+Of the stuff I talk about
+Just carefully remove the lid
+And take a whiff if you've a doubt
+I'm sure you wouldn't want me
+To alert the daily papers
+With the news of how our office
+Was affected by your vapours
+Which is why I choose to write to you
+A confidential letter
+Full of strong recommendation
+That you make your floor wax better
+I just hope it won't require us
+To have our floor relaid and
+If it does you may expect a bill
+Sincerely, Trevor Graydon'
+
+MR. GRAYDON:
+Miss Dillmount, may I speak frankly?
+
+MILLIE:
+Yes?
+
+MR. GRAYDON:
+If I could be so lucky
+As to have a good stenographer
+To keep this place as up-to-date
+As her short skirt and bobbed coiffure
+I wouldn't have to worry 'bout
+Our soured office planking
+And could concentrate on generating
+Profits ripe for banking
+That is why I'm testing you
+With this outrageous correspondence
+Which I don't intend to actually mail
+To the respondents
+So if you can make sense of my unintelligble patter
+Then the job is yours and Hudson's Floor Wax doesn't matter
+
+MILLIE:
+Hudson's Floor Wax doesn't matter?
+Matter, matter, matter, matter
+Hudson's Floor Wax doesn't matter?
+Matter, matter, matter, matter
+MR. GRAYDON (at the same time):
+Hudson's Floor Wax doesn't matter!
+Matter, matter, matter, matter
+Hudson's Floor Wax doesn't matter!
+OFFICE WORKERS (at the same time):
+Hudson's Floor Wax doesn't matter!
+Matter, matter, matter, matter
+
+MR. GRAYDON:
+Now, I want that letter on my desk in two minutes flat. Man your machine! Go!
+(Millie's rapid fire typing/tapping dazzles the office workers. She presents the finished letter to Mr. Graydon.)
+Time! 'Dear Mr. Hudson,'
+
+MILLIE AND OFFICE WORKERS:
+Colon.
+
+MR. GRAYDON:
+'My eyes are fully open to my awful situation
+So I'm writing you a letter to demand an explanation
+When the floor wax that we bought from you
+Arrived here Monday morning
+We discovered upon usage that the fume
+Should have a warning
+Since the only possibility is that the wax is rancid
+I request a full refund of all the money we advanced
+And unless you can convince me
+You've improved the floor wax batter
+We will take our business elsewhere
+So I hope you solve this matter.'
+
+MILLIE AND OFFICE WORKERS:
+So I hope you solve this matter
+So I hope you solve this matter
+So I hope you solve this matter
+Matter, matter, matter, matter
+
+MR. GRAYDON:
+Going on.
+'Enclosed you'll find a small container
+Of the stuff I talk about
+Just carefully remove the lid
+And take a whiff if you've a doubt
+I'm sure you wouldn't want me
+To alert the daily papers
+With the news of how our office
+Was affected by your vapours
+Which is why I choose to write to you
+A confidential letter
+Full of strong recommendation
+That you make your floor wax better
+I just hope it won't require us
+To have our floor relaid and
+If it does you may expect a bill
+Sincerely, Trevor Graydon'
+You have made the team Miss Dillmount!
+
+OFFICE WORKERS:
+You have made the team Miss Dillmount!
+
+MILLIE:
+Tell me where my desk is
+When we eat lunch
+How much I'll be paid, and
+Nice to meet you, I know we'll be friends
+Just call me Millie Graydon
+
+MR. GRAYDON and OFFICE WORKERS:
+Millie Graydon?
+
+MILLIE:
+I mean Dillmount!
+
+MR. GRAYDON and OFFICE WORKERS:
+Millie Dillmount?
+
+MILLIE:
+Someday Graydon!
+
+MR. GRAYDON and OFFICE WORKERS:
+Graydon? Dillmount? Dillmount?
+Graydon? Graydon? Dillmount?
+
+MILLIE:
+Graydon!
+
+ALL:
+Ahhhhhhh!"})
 
 Track.create({title: 'Gimme Gimme', user_id:2, album_id:15,
   vocalists:'Sutton Foster',
-  context: '',
-  lyrics: ""})
+  context: "Millie reconsiders her feelings and finally realizes that she would rather have a green-glass love with Jimmy, than an emerald one with a wealthy man she doesn't love.",
+  lyrics: "A simple choice, nothing more
+This or that, either or
+Marry well, social whirl, business man, clever girl
+Or pin my future on a green glass love
+What kind of life am I dreaming of?
+
+I say gimme, gimme ... gimme, gimme
+Gimme, gimme that thing called love
+I want it
+Gimme, gimme that thing called love
+I need it
+Highs and lows, tears and laughter
+Gimme happy ever after
+Gimme, gimme that thing called love
+
+Gimme, gimme that thing called love
+I crave it
+Gimme, gimme that thing called love
+I'll brave it
+Thick and thin, rich or poor time
+Gimme years and I'll want more time
+Gimme, gimme that thing called love
+
+Gimme, gimme that thing called love
+I'm free now
+Gimme, gimme that thing called love
+I see now
+Fly, dove! Sing, sparrow!
+Gimme Cupid's famous arrow
+Gimme, gimme that thing called love
+
+I don't care if he's a nobody
+In my heart he'll be a somebody
+Somebody to love me!
+
+I need it
+Gimme, gimme that thing called love
+I want it
+Here I am, St. Valentine
+My bags are packed, I'm first in line
+
+Aphrodite, don't forget me
+Romeo and Juliet me
+Fly, dove! Sing, sparrow!
+Gimme fat boy's famous arrow
+Gimme, gimme that thing called love!"})
 
 Track.create({title: 'What Do I Need with Love', user_id:1, album_id:15,
   vocalists:'Gavin Creel',
-  context: '',
-  lyrics: ""})
+  context: "To celebrate their success the girls go to a speakeasy, where they meet Jimmy, but the club is raided by the police. While waiting for his release in the jail cell, Jimmy realizes that he loves Millie.",
+  lyrics: "Oh, the places I would like to show you
+Although I hardly know you
+I've a funny feeling we make a perfect pair
+Famous sites I want to see you seeing
+Then nights of you and me-ing
+Me. You. We -
+Wait a minute! Just a minute! No, no, no, no!
+I'm a Joe with just one aim
+Ev'ry night to date a diff'rent dame
+Call each one of 'em the same pet name
+'Hey, baby!'
+In a row, I have my ducks
+Loads of gals to give me loads of yucks
+Leave the cooing to the other clucks
+I don't mean maybe
+Got it good. What do I need with love?
+Always practice what I preach
+Keep temptation out of easy reach
+Stick to dolls who wash their hair in bleach
+I'm happy
+Come and go the way I choose
+Never gonna sing the tied-down blues
+Other guys would kill to fill my shoes
+No wing-clipped sappy
+Got it good. What do I need with love?
+That was a near miss, talk about a close shave
+Flirted with disaster
+There must be someone up there watching over me
+Talk about a four-leaf-clover-me
+Peter Rabbit's missing footsie
+Means I roll without a tootsie
+Got it good. What do I need with love?
+I got it good. What do I need with love?
+Skip the vows and all that rot
+Tell the minister that 'I do' not
+Bright and breezy is the -
+Birds and bees-y is the -
+Free and easy is the life I got
+Without her.
+Although I hardly know you
+What do I need with love?
+I got it good
+Got it good
+But now I got it bad!"})
 
 
 
-Annotation.create({track_id:1, user_id:1, start_idx:40, end_idx:50, body: "testing"})
-Annotation.create({track_id:1, user_id:1, start_idx:0, end_idx:10, body: "testtest"})
-Annotation.create({track_id:2, user_id:2, start_idx:0, end_idx:10, body: "shouldn't"})
-Annotation.create({track_id:3, user_id:3, start_idx:0, end_idx:10, body: "hopefully not"})
+Annotation.create({track_id:1, user_id:2, start_idx:11, end_idx:11, body: "defin-ish: almost definite"})
+Annotation.create({track_id:1, user_id:3, start_idx:32, end_idx:32, body: "While this is a nice play on words since Munchkins are small compared to humans, Elphaba also has a life-time of experience with Munchkins reacting to her sin."})
+Annotation.create({track_id:1, user_id:1, start_idx:4, end_idx:6, body: "At this point, we should start getting wary of Madame Morrible and the Wizard. Since Elphaba doesn't know how the story ends, but the audience is assumed to know the truth about the Wizard, this a moment of dramatic irony."})
+Annotation.create({track_id:2, user_id:5, start_idx:1, end_idx:10, body: "The music and wording of this stanza is reminiscent of Defying Gravity. This brings up a direct comparison of how 'unlimited' Elphaba felt when she realized her power and started her journey for good with her current defeat and feeling unable to accomplish anything she intended. She realizes that her tactics, despite their pure intentions, haven't been working and it's time for a change. Since she still trusts Glinda, Elphaba passes her the responsibility to make Oz a place of justice and equality."})
+Annotation.create({track_id:2, user_id:1, start_idx:20, end_idx:21, body: "Until now, it would be easy to dismiss Glinda as selfish and unwilling to accept reality based her actions. At this point, we see her admit that Elphaba, the person she loathed, softened her and opened her eyes."})
+Annotation.create({track_id:3, user_id:3, start_idx:1, end_idx:8, body: "Glinda "})
+# Annotation.create({track_id:3, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:3, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:4, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:4, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:4, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:5, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:5, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:6, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:6, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:6, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:7, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:7, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:7, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:8, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:8, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:8, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:9, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:9, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:9, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:10, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:10, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:10, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:11, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:11, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:11, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:12, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:12, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:12, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:13, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:13, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:13, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:14, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:14, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:14, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:15, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:15, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:15, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:16, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:16, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:16, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:17, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:17, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:17, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:18, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:18, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:18, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:19, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:19, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:19, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:20, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:20, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:20, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:21, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:21, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:21, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:22, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:22, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:22, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:23, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:23, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:23, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:24, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:24, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:24, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:25, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:25, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:25, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:26, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:26, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:26, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:27, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:27, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:27, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:28, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:28, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:28, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:29, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:29, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:29, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:30, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:30, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:30, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:31, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:31, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:31, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:32, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:32, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:32, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:33, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:33, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:33, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:34, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:34, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:34, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:35, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:35, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:35, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:36, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:36, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:36, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:37, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:37, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:37, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:38, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:38, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:38, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:39, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:39, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:39, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:40, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:40, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:40, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:41, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:41, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:41, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:42, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:42, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:42, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:43, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:43, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:43, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:44, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:44, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:44, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:45, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:45, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:45, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:46, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:46, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:46, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:47, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:47, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:47, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:48, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:48, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:48, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:49, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:49, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:49, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:50, user_id:1, start_idx:, end_idx:, body: ""})
+
 Comment.create({track_id:1, user_id:4, body: "Idina KILLLS it here"})
 Comment.create({track_id:1, user_id:2, body: "all of the good foreshadowing"})
-Comment.create({track_id:12, user_id:1, body: "love love love"})
 Comment.create({track_id:2, user_id:2, body: "my (sorority) sister. so lovely."})
-Comment.create({track_id:3, user_id:1, body: "chilllll"})
+Comment.create({track_id:3, user_id:1, body: "so beautiful"})
+Comment.create({track_id:12, user_id:1, body: "love love love"})
 Comment.create({track_id:17, user_id:5, body: "what even. so amazing."})
+Comment.create({track_id:52, user_id:5, body: "Gavin has the most beautiful man-voice on Broadway!"})
+Comment.create({track_id:52, user_id:3, body: "I learned from the best. GO BLUE"})

@@ -15,8 +15,9 @@ class Api::UpvotesController < ApplicationController
   def destroy
     @upvote = Upvote.find(params[:id])
     if ( @upvote.user_id == current_user.id )
+      @annotation = Annotation.find(upvote_params[:annotation_id])
       @upvote.destroy
-      render json: @upvote
+      render :show
     else
       render json: ["Only the creator of the upvote can delete it"], status: 404
     end

@@ -30,13 +30,13 @@ class TrackForm extends React.Component {
     const track = this.state;
     track.album_id = Number(this.props.params.albumId);
     track.user_id = this.props.currentUser.id;
-    this.props.createTrack(track);
     this.setState({
       title: '',
       context: '',
       lyrics: '',
       vocalists: ''
     });
+    this.props.createTrack(track);
   }
 
   handleErrors(){
@@ -53,7 +53,7 @@ class TrackForm extends React.Component {
     return (
       <form className='track-form'>
         <h2>Add a Track</h2>
-        {this.handleErrors()}
+        { this.handleErrors() }
         <label>
           <br />
           <input type='text' placeholder='Title'
@@ -64,8 +64,8 @@ class TrackForm extends React.Component {
         <label>
           <br />
           <input type='text' placeholder='Vocalists'
-            onChange={this.update('vocalists')}
-            value={this.state.vocalists}
+            onChange={ this.update('vocalists') }
+            value={ this.state.vocalists }
             className='track-form-input'></input>
         </label>
         <label>

@@ -15,7 +15,8 @@ class Track extends React.Component {
 
     this.state = {
       formDisabled: true,
-      showDisabled: true
+      showDisabled: true,
+      selectedId: null
     };
 
     this.loaded = this.loaded.bind(this);
@@ -24,6 +25,8 @@ class Track extends React.Component {
     this.startAnnotating = this.startAnnotating.bind(this);
     this.stopAnnotating = this.stopAnnotating.bind(this);
     this.closeForm = this.closeForm.bind(this);
+    this.closeEditOpenShow = this.closeEditOpenShow.bind(this);
+    this.closeAfterDelete = this.closeAfterDelete.bind(this);
     this.openAnnotation = this.openAnnotation.bind(this);
     this.enableShow = this.enableShow.bind(this);
   }
@@ -34,6 +37,10 @@ class Track extends React.Component {
 
   componentWillUnmount() {
     this.props.emptyTrack();
+  }
+
+  componentWillReceiveProps(nextProps){
+    this.openAnnotation();
   }
 
   loading() {
@@ -75,6 +82,15 @@ class Track extends React.Component {
   }
 
   closeForm() {
+    debugger
+    this.setState({formDisabled: true, showDisabled: true});
+  }
+
+  closeEditOpenShow() {
+    this.setState({formDisabled:true, showDisabled: false});
+  }
+
+  closeAfterDelete(){
     this.setState({formDisabled: true, showDisabled: true});
   }
 
@@ -93,25 +109,29 @@ class Track extends React.Component {
   enableShow(e){
     e.preventDefault();
     this.setState({formDisabled: true, showDisabled: false});
-    debugger
     const line = Number(e.target.id);
-    let selectedAnnotation;
     this.props.annotations.forEach( annotation => {
       if (range(annotation.start_idx, annotation.end_idx + 1).includes(line)){
-        selectedAnnotation = annotation;
+        this.setState({ selectedId: annotation.id});
       }
     });
-    debugger;
-    this.openAnnotation(selectedAnnotation);
   }
 
-  openAnnotation(selectedAnnotation) {
-    if ( !this.state.showDisabled ) {
-      return (<AnnotationShow disabled={this.showDisabled}
+  openAnnotation() {
+    if ( !this.state.showDisabled && this.state.selectedId ) {
+      const callback = annotation => annotation.id === this.state.selectedId;
+      const selectedAnnotation = this.props.annotations.find(callback);
+      return (<AnnotationShow disabled={this.state.showDisabled}
         annotation={selectedAnnotation}
+        selectedId={this.state.selectedId}
         deleteAnnotation={this.props.deleteAnnotation}
-        editAnnotation={this.props.editAnnotation}
-        currentUser={this.props.currentUser} />);
+        updateAnnotation={this.props.updateAnnotation}
+        currentUser={this.props.currentUser}
+        createUpvote={this.props.createUpvote}
+        deleteUpvote={this.props.deleteUpvote}
+        closeAfterDelete={this.closeAfterDelete}
+        closeForm={this.closeForm}
+        closeEditOpenShow={this.closeEditOpenShow} />);
     } else {
       return <div></div>;
     }
@@ -174,7 +194,11 @@ class Track extends React.Component {
   }
 
   render() {
-    return ( this.props.track ) ? this.loaded() : this.loading();
+    if ( this.props.track ) {
+      return this.loaded();
+    } else{
+      return this.loading();
+    }
   }
 }
 
