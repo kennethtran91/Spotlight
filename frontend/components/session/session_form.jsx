@@ -6,7 +6,8 @@ class SessionForm extends React.Component {
     super(props);
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478044295/spotlight_oybuda.png'
     };
     this.greeting = this.greeting.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);

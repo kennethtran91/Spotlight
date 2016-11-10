@@ -12,7 +12,6 @@ import TrackFormContainer from './album_show/track_form_container';
 import TrackContainer from './track/track_container';
 
 import { fetchAlbums } from '../actions/album_actions';
-// import { fetchTrack } from '../actions/track_actions';
 
 const Root = ({ store }) => {
   function _redirectIfLoggedIn () {
@@ -41,9 +40,7 @@ const Root = ({ store }) => {
           <Route path='/albums/:albumId' component={AlbumShowContainer}>
             <IndexRoute component={TrackFormContainer} />
           </Route>
-          <Route path='/tracks/:trackId' component={TrackContainer}>
-
-          </Route>
+          <Route path='/tracks/:trackId' component={TrackContainer} />
         </Route>
       </Router>
     </Provider>
@@ -51,5 +48,3 @@ const Root = ({ store }) => {
 };
 
 export default Root;
-
-// <Route path='/tracks/:trackId' component={TrackContainer} />

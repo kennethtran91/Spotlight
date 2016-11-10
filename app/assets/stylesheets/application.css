@@ -48,3 +48,7 @@ body {
 input, button, textarea {
   outline: none;
 }
+
+button:hover{
+  cursor: pointer;
+}

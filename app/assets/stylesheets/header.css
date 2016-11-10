@@ -52,14 +52,21 @@ nav li:hover {
 
 nav .dropdown-header {
   margin-right: 10px;
+  position: relative;
 }
 
 .nav-dropdown {
   display: none;
-  width: 150px;
+  font-size: 18px;
+  width: 130px;
   background-color: black;
   position: absolute;
+  text-align: center;
   z-index: 1;
+}
+
+.nav-dropdown li{
+  padding-bottom: 3px;
 }
 
 .header-prof-pic{

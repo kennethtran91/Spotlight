@@ -5,24 +5,31 @@
 }
 
 .profile h1 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: bold;
 }
 
 .prof-pic {
   border: 3px solid white;
-  width: 300px;
+  max-width: 300px;
+  width: 70%;
   height: auto;
   margin: auto;
 }
 
 .user-details {
   box-sizing: border-box;
-  width: 40%;
+  width: 30%;
   text-align: center;
   float: left;
   position: relative;
   top: -60px;
+}
+
+.user-details h2{
+  margin-top: 15px;
+  margin-bottom: 7px;
+  font-size: 20px;
 }
 
 .splash-img-box {
@@ -34,19 +41,89 @@
 
 .contributions {
   float: right;
-  width: 60%;
-}
-
-.drop-word:hover {
-  color: #B22222;
+  width: 70%;
 }
 
 .stats-list img {
   height: 25px;
   width: 25px;
+  position: absolute;
+  left: -25px;
 }
 
 .stats-list li {
-  padding: 5px;
+  padding: 7px;
   vertical-align: center;
+}
+
+.stats-list span {
+  position: relative;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.contributions h2{
+  font-size: 20px;
+  /*text-align: center;*/
+  margin-top: 20px;
+}
+
+.contributions{
+  position: relative;
+}
+
+.contributions-menu:hover {
+  color: #B22222;
+}
+
+.contributions-menu:hover ul{
+  display: block;
+}
+
+.contributions-menu ul {
+  display: none;
+  width: 115px;
+  left: auto;
+  background-color: white;
+  position: absolute;
+  color: black;
+}
+
+.contributions-menu li{
+  border-top: 1px solid black;
+  padding: 3px;
+}
+
+.contributions-menu li:hover{
+  color: #B22222;
+}
+
+.contribution-list {
+  width:90%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.contribution-list li {
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  background-color: gray;
+  padding: 5px;
+  text-align: center;
+}
+
+.contribution-list ul:last-child{
+  border-bottom: 1px solid white;
+  margin-bottom: 20px;
+}
+
+.contribution-list li:hover{
+  background-color: #B22222;
+}
+
+.contribution-title {
+  font-size: 20px;
+  font-weight: bold;
 }
