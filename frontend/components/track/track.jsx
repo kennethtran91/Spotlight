@@ -140,7 +140,8 @@ class Track extends React.Component {
         deleteUpvote={this.props.deleteUpvote}
         closeAfterDelete={this.closeAfterDelete}
         closeForm={this.closeForm}
-        closeEditOpenShow={this.closeEditOpenShow} />);
+        closeEditOpenShow={this.closeEditOpenShow}
+        fetchTrack={this.props.fetchTrack} />);
     } else {
       return <div></div>;
     }

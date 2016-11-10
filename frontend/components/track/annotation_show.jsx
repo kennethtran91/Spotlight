@@ -17,6 +17,12 @@ class AnnotationShow extends React.Component {
     this.toggleVote = this.toggleVote.bind(this);
   }
 
+  componentWillMount(){
+    // debugger
+    this.props.fetchTrack();
+    this.setState({upvote: this.props.annotation.upvote});
+  }
+
   componentWillReceiveProps(nextProps){
     this.setState({upvote: nextProps.annotation.upvote});
   }

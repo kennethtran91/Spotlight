@@ -1,7 +1,8 @@
 import { connect } from 'react-redux';
 import { deleteTrack, fetchTrack, emptyTrack } from '../../actions/track_actions';
 import { createComment, deleteComment } from '../../actions/comment_actions';
-import { createAnnotation, deleteAnnotation, updateAnnotation } from '../../actions/annotation_actions';
+import { createAnnotation, deleteAnnotation,
+  updateAnnotation } from '../../actions/annotation_actions';
 import { createUpvote, deleteUpvote } from '../../actions/upvote_actions';
 import Track from './track';
 import { hashHistory } from 'react-router';
