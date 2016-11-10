@@ -17,6 +17,10 @@ class AnnotationShow extends React.Component {
     this.toggleVote = this.toggleVote.bind(this);
   }
 
+  componentWillReceiveProps(nextProps){
+    this.setState({upvote: nextProps.annotation.upvote});
+  }
+
   handleDelete(e) {
     e.preventDefault();
     this.props.deleteAnnotation(this.props.annotation.id);

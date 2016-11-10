@@ -68,7 +68,7 @@ class Track extends React.Component {
 
   startAnnotating(e) {
     e.preventDefault();
-    if (e.target.className !== 'highlight') {
+    if (e.target.className !== 'highlight' && e.target.className !== 'annotated') {
       const box = document.getElementById('annotations');
       box.style.position = "absolute";
       box.style.left = '60%';
@@ -80,7 +80,7 @@ class Track extends React.Component {
 
   stopAnnotating(e) {
     e.preventDefault();
-    if (e.target.className !== 'highlight') {
+    if (e.target.className !== 'highlight' && e.target.className !== 'annotated') {
       this.end_idx = Number(e.target.id);
       this.setState({formDisabled: false, showDisabled: true});
     }
@@ -158,7 +158,7 @@ class Track extends React.Component {
           return <br key={idx} id={idx}/>;
         } else {
           return (
-            <p key={idx}>
+            <p key={idx} className={(annotatedLines.includes(idx)) ? "annotated" : ""}>
               <span id={idx}
                 className={(annotatedLines.includes(idx)) ? "highlight" : ""}
                 onClick={(annotatedLines.includes(idx)) ? this.enableShow : ""} >
@@ -188,6 +188,10 @@ class Track extends React.Component {
           {this.deleteButton()}
         </section>
         <article className='track-body'>
+          <h4>
+            Click on the gray lines to read the annotation. Click and drag your mouse over the un-annotated lines to start the Spotlight annotation for them.
+          </h4>
+
           { this.lyrics() }
           <CommentForm currentUser={this.props.currentUser}
             trackId={this.props.track.id}

@@ -59,3 +59,8 @@
 .track-lyrics .highlight:hover {
   background-color: #ffff7f;
 }
+
+.track-body h4{
+  margin-left: 25px;
+  margin-bottom: 0;
+}
