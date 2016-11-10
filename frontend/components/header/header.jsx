@@ -39,6 +39,26 @@ class Header extends React.Component {
     this.closeModal = this.closeModal.bind(this);
   }
 
+  dropdown(){
+    return (
+      <div className='nav-dropdown'>
+        <ul>
+          <li>
+            <Link to={'/profile/'+this.props.currentUser.id}>
+              My Profile
+            </Link>
+          </li>
+          <li><Link to='/albums'>Albums</Link></li>
+          <li>
+            <button className="header-button" onClick={this.props.logout}>
+              Log Out
+            </button>
+          </li>
+        </ul>
+      </div>
+    );
+  }
+
   loggedInHeader() {
     return (
       <nav className="in-header">
@@ -48,20 +68,11 @@ class Header extends React.Component {
             Spotlight
           </a>
         </h1>
-        <ul>
-          <li><Link to='/albums'>Albums</Link></li>
-          <li>
-            <button className="header-button" onClick={this.props.logout}>
-              Log Out
-            </button>
-          </li>
-          <li>
-            <Link to={'/profile/'+this.props.currentUser.id}>
-              <a className='header-username'>{this.props.currentUser.username}</a>
-              <img src={this.props.currentUser.image_url} className='header-prof-pic'/>
-            </Link>
-          </li>
-        </ul>
+        <div className='dropdown-header'>
+          <a className='header-username'>{this.props.currentUser.username}</a>
+          <img src={this.props.currentUser.image_url} className='header-prof-pic'/>
+          {this.dropdown()}
+        </div>
       </nav>
     );
   }

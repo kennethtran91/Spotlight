@@ -20,21 +20,46 @@ nav li {
   position: relative;
 }
 
-nav li:hover {
-  color: #B22222;
-}
-
 nav h1 {
   font-family: 'Limelight', cursive;
   padding-left: 10px;
+}
+
+.icon {
+  width: 30px;
 }
 
 nav h1:hover {
   color: #B22222;
 }
 
-.icon {
-  width: 30px;
+nav li:hover {
+  color: #B22222;
+}
+
+.dropdown-header:hover .header-username{
+  color: #B22222;
+}
+
+.nav-dropdown ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-header:hover .nav-dropdown{
+  display: block;
+}
+
+nav .dropdown-header {
+  margin-right: 10px;
+}
+
+.nav-dropdown {
+  display: none;
+  width: 150px;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
 }
 
 .header-prof-pic{
