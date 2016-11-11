@@ -109,9 +109,9 @@ class AnnotationShow extends React.Component {
 
   upvoteImage() {
     if (this.state.upvote.user_voted) {
-      return <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478731204/Spotlight/Thumbsup-Icon-red.png' className='upvote-button' />;
+      return <div className='unvote-button'></div>;
     } else {
-      return <img className='upvote-button' src='https://res.cloudinary.com/doepem37s/image/upload/v1478626744/Spotlight/Thumbsup-Icon.png' />;
+      return <div className='upvote-button'></div>;
     }
   }
 
@@ -119,7 +119,7 @@ class AnnotationShow extends React.Component {
   upvoteButton() {
     if (this.props.currentUser){
       return (
-        <button onClick={this.toggleVote} >
+        <button onClick={this.toggleVote}>
           { this.upvoteImage() }
         </button>
       );

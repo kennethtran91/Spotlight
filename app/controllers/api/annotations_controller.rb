@@ -17,7 +17,6 @@ class Api::AnnotationsController < ApplicationController
     if ( @annotation.user_id == current_user.id )
       if @annotation.update(annotation_params)
         @annotations = Track.find(annotation_params[:track_id]).annotations.includes(:upvotes)
-        # debugger
         render :index
       else
         render json: @annotation.errors.full_messages, status: 422

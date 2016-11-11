@@ -90,6 +90,14 @@
 
 .upvote-button {
   width: 15px;
+  height: 15px;
+  background-image: url("https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1478626744/Spotlight/Thumbsup-Icon.png");
+}
+
+.unvote-button {
+  width: 15px;
+  height: 15px;
+  background-image: url("https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1478731204/Spotlight/Thumbsup-Icon-red.png");
 }
 
 .upvotes {
