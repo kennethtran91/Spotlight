@@ -10,7 +10,7 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
 ### Profile
 
-  When a user is logged in, they have access to their profile page which lists 
+  Upon log in, the store fetches user data from the user, annotations, tracks, and comments tables. A logged in user has access to the `Profile` component, which lists counts of their contributions and a drop-down to see an index of all of the tracks, annotations, and comments they have added to the database, along with links to the tracks.
 
 ### Album Rendering
 
@@ -32,22 +32,28 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
   ![image of track show](wireframes/logged-in-track-component.png)
 
+  Each line of the lyrics is rendered as a span with classes given to represent whether or not the line has already been annotated. If the line has been annotated, it is highlighted in gray.
+
+### Annotations
+
+  Annotations begin on the backend in a table with columns: `id`, `user_id`, `track_id`, `start_idx`, `end_idx`, and `body`. When a `Track` is rendered, the information for all annotations for the track are included in the state. Within the annotation slice of the track state, information about upvotes for the annotation is stored.
+
+  If a user clicks on a line or group of lines that have not been annotated, a form to add an annotation appears. If an annotated line is selected, the annotation appears. For annotations added by the current user, there are options to delete and edit the annotation. Annotations are re-received for the track when upvotes are created/destroyed or annotations are created/destroyed/updated.
+
 ### Comments
 
-As with notebooks, tags are stored in the database through a `tag` table and a join table.  The `tag` table contains the columns `id` and `tag_name`.  The `tagged_notes` table is the associated join table, which contains three columns: `id`, `tag_id`, and `note_id`.  
+  The backend for comments is a table with columns for `id`, `track_id`, `user_id`, `body`, and `created_at`. The comment information for a track is stored within the comments slice of the track state. Comments are rendered in an index with each item containing the username of the creator, how long ago it was added, and the content.
 
-Tags are maintained on the frontend in the `TagStore`.  Because creating, editing, and destroying notes can potentially affect `Tag` objects, the `NoteIndex` and the `NotebookIndex` both listen to the `TagStore`.  It was not necessary to create a `Tag` component, as tags are simply rendered as part of the individual `Note` components.  
-
-![tag screenshot](wireframes/tag-search.png)
+  Comments can be added in the `CommentForm` container and deleted by the author of the comment. Either of these actions will re-receive the comments slice of the state and re-render the track component.
 
 ## Future Directions for the Project
 
-In addition to the features already implemented, I plan to continue work on this project.  The next steps for FresherNote are outlined below.
+In addition to the features already implemented, I plan to continue work on this project.  The next steps for Spotlight are outlined below.
 
 ### Search
 
-Searching notes is a standard feature of Evernote.  I plan to utilize the Fuse.js library to create a fuzzy search of notes and notebooks.  This search will look go through tags, note titles, notebook titles, and note content.  
+Searching for tracks is a standard feature of Genius. This will search all track titles that contain the input string.
 
-### Direct Messaging
+### Playing Songs on Track Show
 
-Although this is less essential functionality, I also plan to implement messaging between FresherNote users.  To do this, I will use WebRTC so that notifications of messages happens seamlessly.  
+Although this is less essential functionality, I also plan to implement the ability to listen to the music while on the track show page.  To do this, I plan to use the react-player gem.
