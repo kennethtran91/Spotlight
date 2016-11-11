@@ -6,7 +6,8 @@ class Api::UpvotesController < ApplicationController
     @upvote.user_id = current_user.id
     if @upvote.save
       @annotation = Annotation.find(upvote_params[:annotation_id])
-      render :show
+      @annotations = Track.find(@annotation.track_id).annotations.includes(:upvotes)
+      render "api/annotations/index"
     else
       render json: @upvote.errors.full_messages, status: 422
     end
@@ -16,8 +17,9 @@ class Api::UpvotesController < ApplicationController
     @upvote = Upvote.find(params[:id])
     if ( @upvote.user_id == current_user.id )
       @annotation = Annotation.find(@upvote.annotation_id)
+      @annotations = Track.find(@annotation.track_id).annotations.includes(:upvotes)
       @upvote.destroy
-      render :show
+      render "api/annotations/index"
     else
       render json: ["Only the creator of the upvote can delete it"], status: 404
     end
