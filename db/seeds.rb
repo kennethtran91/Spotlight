@@ -390,7 +390,7 @@ Track.create({title: 'Music of the Night', user_id:2, album_id:2,
 Darkness wakes and stirs imagination
 Silently the senses abandon their defenses
 Helpless to resist the notes I write
-For I compose the music of the night1
+For I compose the music of the night
 
 Slowly, gently night unfurls it's splendor
 Grasp it, sense it, tremulous and tender
@@ -738,6 +738,7 @@ And dreams were made and used and wasted
 There was no ransom to be paid
 No song unsung
 No wine untasted
+
 But the tigers come at night
 With their voices soft as thunder
 As they tear your hope apart
@@ -745,11 +746,13 @@ And they turn your dream to shame
 He slept a summer by my side
 He filled my days with endless wonder
 He took my childhood in his stride
+
 But he was gone when autumn came
 And still I dream he'll come to me
 That we'll live the years together
 But there are dreams that cannot be
 And there are storms we cannot weather
+
 I had a dream my life would be
 So different from this hell I'm living
 So different now from what it seemed
@@ -1022,7 +1025,7 @@ I've never seen a king of beasts
 With quite so little hair
 
 SIMBA:
-I'm gonna be the mane event
+I'm gonna be the main event
 Like no king was before
 I'm brushing up on looking down
 I'm working on my roar
@@ -1477,6 +1480,11 @@ And if you try to hold me down
 I'm gonna spit in your eye and say
 That you cant stop the beat!
 
+TRACY
+(spoken) Whaddya have to say, Penny?
+PENNY
+(spoken) I am now a checkerboard Chick!
+
 PENNY
 You can't stop a river
 As it rushes to the sea
@@ -1696,7 +1704,7 @@ Hey Trace, my moms pitching a platter party at our record shop
 up off North Avenue. Wanna come 'check it out'?
 
 PENNY
-May I also come 'check it out?'
+May I also come 'check it out'?
 
 SEAWEED
 Oh, you surely may!
@@ -1705,10 +1713,10 @@ TRACY
 I've never been to North Avenue!
 
 LINK
-Would it b safe up there for, you know... Us?
+Would it be safe up there for, you know... us?
 
 SEAWEED
-Yeah don't worry cracker boy, It's cool!
+Don't worry cracker boy, It's cool!
 
 PENNY
 Imagine, being invited places by colored people!
@@ -2219,22 +2227,27 @@ Track.create({title: 'Far From the Home I Love', user_id:3, album_id:9,
 Why I do, what I do,
 Why I must travel to a distant land
 Far from the home I love?
+
 Once I was happily content to be
 As I was, where I was
 Close to the people who are close to me
 Here in the home I love...
+
 Who could see that a man would come
 Who would change the shape of my dreams?
 Helpless, now, I stand with him
 Watching older dreams grow dim.
+
 Oh, what a melancholy choice this is,
 Wanting home, wanting him,
 Closing my heart to every hope but his,
 Leaving the home I love.
+
 There where my heart has settled long ago,
 I must go, I must go.
 Who could imagine I'd be wand'ring so
 Far from the home I love?
+
 Yet, there with my love, I'm home."})
 
 Track.create({title: 'Miracle of Miracles', user_id:1, album_id:9,
@@ -4271,84 +4284,70 @@ Annotation.create({track_id:3, user_id:3, start_idx:17, end_idx:18, body: "The t
 Annotation.create({track_id:3, user_id:1, start_idx:32, end_idx:35, body: "These lines are what make this song the perfect end to Act One. The first act we see Elphaba trying to fit in, learning how to be herself, growing in her understanding of what's right, and playing by the rules to make change. This is where the shift into Act Two occurs; she has seen that the system is a lie and cannot continue working within the corruption."})
 Annotation.create({track_id:3, user_id:4, start_idx:90, end_idx:91, body: "These words have a completely different meaning than they did at the beginning of the song. Here we see Glinda truly wishing her friend well as their lives diverge from each other. The ending tone for Elphaba and the Wizard is unchanged, but Elphaba and Glinda have restored their mutual respect and love."})
 Annotation.create({track_id:4, user_id:1, start_idx:13, end_idx:14, body: "Here we start to see who the Phantom truly is and what he thinks of himself. He understands that the world will not accept him at face value, so his chances are better in darkness."})
-# Annotation.create({track_id:4, user_id:2, start_idx:3, end_idx:3, body: ""})
-# Annotation.create({track_id:5, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:5, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:5, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:6, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:6, user_id:1, start_idx:, end_idx:, body: ""})
+Annotation.create({track_id:4, user_id:2, start_idx:3, end_idx:3, body: "Our senses are like defences from the outside world, in a way, so that we can perceive the threats of the jungle cat. then we try to rationalize it so we think it’s just the wind (and this time, let’s say we don’t become a midnight snack, because I’m really enjoying myself writing this) and carry on with our lives. We let the truth in."})
+Annotation.create({track_id:4, user_id:3, start_idx:7, end_idx:7, body: "The “splendour” of the night is that things may not always appear as what they are-that tree branch, for example, is really just a tree. Also, our eyes get used to the darkness and the splendour is that  we can see things in a different “light”…or absence thereof."})
+Annotation.create({track_id:4, user_id:1, start_idx:8, end_idx:8, body: "Music is abstract. It  is not something you can hold touch. But you can feel it, sometimes physically, other times emotionally."})
+Annotation.create({track_id:5, user_id:3, start_idx:15, end_idx:16, body: "Aside from the beautiful musical score, the lyrics include so many simple words that all warm-blooded human beings would love to hear — shelter, warmth, calm, light, safety, freedom, no more fear, being needed, the truth, sharing a lifetime together, and, above all, to be loved."})
+Annotation.create({track_id:6, user_id:2, start_idx:9, end_idx:9, body: "'flames' 'past' and 'seduction', used elsewhere in the song, all have to do with passion. In my eyes, the Phantom is attracted to Christine and he begins questioning what chance will they have together, and what they could make of it. He's asking what would trigger their possible affection for one another."})
+Annotation.create({track_id:6, user_id:1, start_idx:56, end_idx:56, body: "This love would be forbidden since she cannot love the Phantom because she knows that it is him although no one else does. This is why she reveals him and takes off his mask in front of the audience."})
 Annotation.create({track_id:7, user_id:2, start_idx:1, end_idx:6, body: "From Javert's perspective the darkness is the absence of good, which is the absence of God. He sees Valjean (the fugitive) as a sinner, making him distinct from Javert, upon which it is his duty to carry out divine justice. Since Javert sees his position as a police officer as a commission from God, he swears to God that he will accomplish the job of recapturing Valjean."})
 Annotation.create({track_id:7, user_id:5, start_idx:10, end_idx:13, body: "The path of darkness, which Javert believes Valjean to be traveling, is the opposite of the way of the Lord/the path of the righteous. You might say that Javert is a bit of a Pharisee with the way he compares Valjean, a man who is changing, with his own consistent reliance on the justice he can see."})
 Annotation.create({track_id:7, user_id:1, start_idx:18, end_idx:23, body: "Javert looks to the stars, their beautiful and steadfastness, for his inspiration. He sees himself in them- calling the sentinels and providing order where there is nothing. The description that follows of the stars is what Javert aspires to be."})
 Annotation.create({track_id:8, user_id:2, start_idx:6, end_idx:8, body: "While he sings this, Marius is in the now empty ABC Cafe where he and his revolutionary friends planned their rallies and the new order they would usher into France."})
 Annotation.create({track_id:8, user_id:1, start_idx:19, end_idx:20, body: "Marius reveals his guilt at surviving the barricade, though he still doesn't know how he was able to do so. He seems to be remembering not only the good times they had, but tormenting himself with hypothetical scenarios about what might have gone differently and who might have survived if he had perished."})
-# Annotation.create({track_id:9, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:9, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:9, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:10, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:10, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:10, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:11, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:11, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:11, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:12, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:12, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:12, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:13, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:13, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:13, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:14, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:14, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:14, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:15, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:15, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:15, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:16, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:16, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:16, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:17, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:17, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:17, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:18, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:18, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:18, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:19, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:19, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:19, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:20, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:20, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:20, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:21, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:21, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:21, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:22, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:22, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:22, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:23, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:23, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:23, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:24, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:24, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:24, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:25, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:25, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:25, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:26, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:26, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:26, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:27, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:27, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:27, user_id:4, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:28, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:28, user_id:5, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:28, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:29, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:29, user_id:3, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:29, user_id:1, start_idx:, end_idx:, body: ""})
+Annotation.create({track_id:9, user_id:4, start_idx:0, end_idx:0, body: "This song is sung to the same tune as 'Come to Me/Fantine's Death'."})
+Annotation.create({track_id:9, user_id:1, start_idx:40, end_idx:40, body: "In the original French production, the song bears title 'Mon histoire', which means 'My Story'."})
+Annotation.create({track_id:9, user_id:5, start_idx:2, end_idx:2, body: "Throughout the show, we see Eponine's position changing. As a child she has more standing than Cosette, but when they are adults, she is lonely and caught in hopeless love."})
+Annotation.create({track_id:10, user_id:3, start_idx:21, end_idx:27, body: "Fantine is a very naive, destitute working-class girl who is seduced by a wealthy student, Felix Tholomyes. Tholomytes gets Fantine pregnant and abandons Fantine and their illegitimate daughter, Cosette. In order to support Cosette, Fantine asks the Thenardiers, corrupt owners of The Sergeant at Waterloo Inn, to care for her while she works at a factory, owned by Jean Valjean, to earn money to support her daughter. The Thenardiers then begin to extort money from Fantine, claiming that Cosette is ill and requires costly care. When the factory manager discovers that Fantine is an unwed mother, she is fired from her job. Subsequently, she turns to prostitution to support Cosette and soon, because she is living in the streets, Fantine becomes very ill."})
+Annotation.create({track_id:10, user_id:4, start_idx:9, end_idx:18, body: "Fantine has deluded herself with empty dreams, and she hoped that God would not hold her accountable for her foolish, carefree behavior."})
+Annotation.create({track_id:10, user_id:1, start_idx:39, end_idx:39, body: "The coda expresses her final lament — full of poignancy and anguish."})
+Annotation.create({track_id:11, user_id:2, start_idx:62, end_idx:62, body: "It's a lot like the Greased Lightning scene in Grease, where at the end, the sweet car was all a daydream. Curly was just trying to get Laurey excited."})
+Annotation.create({track_id:11, user_id:1, start_idx:2, end_idx:2, body: "The style of music relates closely to the specific lyrics, as heard in 'The Surrey with the Fringe on Top' with its steady, clip-clop rhythm mimicking the sound of horses’ hooves."})
+Annotation.create({track_id:12, user_id:1, start_idx:2, end_idx:2, body: "This song is a good example of Rodgers and Hammerstein's idea that songs should express the deepest thoughts and feelings of the characters at that moment. Lyrics describe specific actions and events within the story and follow the natural speech patterns of the characters in the vernacular of the play. The characters of Oklahoma! speak and sing as westerners, not opera virtuosos."})
+Annotation.create({track_id:12, user_id:4, start_idx:28, end_idx:28, body: "This show was one of the first if not the first of the new American musicals to invade the British West End after the Second World War."})
+Annotation.create({track_id:12, user_id:1, start_idx:5, end_idx:6, body: "'Oklahoma!' might be described as a hymn to the State. Evidently the politicians thought so because in 1953 it was adopted as the official State Song"})
+Annotation.create({track_id:13, user_id:2, start_idx:8, end_idx:11, body: "Ado Annie is 1906's version of Cyndi Lauper- the girl just wants to have fun."})
+Annotation.create({track_id:14, user_id:4, start_idx:0, end_idx:10, body: "The opening of “The Circle of Life” is in Zulu, the language of the Zulu people. It's spoken by over 10 million people, including 95% of South Africa."})
+Annotation.create({track_id:14, user_id:1, start_idx:12, end_idx:21, body: "The song presents a spiritual slant on our life journey, appealing to our imagination by opening our minds to the boundless possibilities. This is established by the steady rhythm sending us into a trance and by the soothing and reflective sounds of the flute setting a mood where the listener is able to overcoming adversity."})
+Annotation.create({track_id:14, user_id:3, start_idx:30, end_idx:37, body: "This stanza enforces the fact that the imagination means possibilities are boundless. Though the imagination may be intangible every opportunity counts as we are searching for self improvement. The increase in volume towards the ends with drum which is about hope leaving us with hope a forward movement and the joy of being `blessed and altered' is evident in the vitality of the beat."})
+Annotation.create({track_id:15, user_id:1, start_idx:8, end_idx:8, body: "This line is a play on words between mane and main, since he'll have a mane when he's king."})
+Annotation.create({track_id:16, user_id:4, start_idx:0, end_idx:4, body: "The musical pattern here stands in both comparison and contrast to the opening track 'Alexander Hamilton.' It is an almost identical repurposing of the chord progression from that song with a few exceptions of walking bass lines that are different. There’s even an added twist of contrast in meter: 'Burn' is in 6/8 meter while 'Alexander Hamilton' is in 4/4. This sets up a speaking juxtaposition between the two tracks: the first track has a strong beat, an almost militant certainty in and optimism about Alexander’s character, while this track slows and whirls for a more reflective and tragic depiction of doubt and acrimony against him. In the last three lines, you can physically see the damage that Hamilton’s infidelity has caused to Eliza and their relationship; she goes from being certain about their love, to accusing, to regretful and knowing that she had thought wrong."})
+Annotation.create({track_id:16, user_id:1, start_idx:10, end_idx:11, body: "Throughout the play, Angelica always has a clearer understanding of Hamilton and his motives than Eliza does. However, Angelica misses the mark with this analysis; throughout the rest of the show, as Miranda puts it in his 60 Minutes interview, it’s clear that “Hamilton was ready to die from the time he was 14 years old.” Washington spots it right away. Hamilton doesn’t care about his own personal survival. What he cares about is the survival of his reputation and his legacy, which he’s determined will outlive him."})
+Annotation.create({track_id:16, user_id:2, start_idx:21, end_idx:21, body: "This finishes off Eliza’s methodical reductions in certainty that Hamilton is hers – first she knew it, then he said it, then she thought it, and now she acknowledges it as a thing of the past (if it ever was at all)."})
+Annotation.create({track_id:16, user_id:3, start_idx:24, end_idx:25, body: "In this first part she claims the world seemed to burn, meaning that she was on fire with her passion for her future husband. Next time she says burn, she physically burns the records of their love, the letters they wrote back and forth that she claims may have redeemed him in the eyes of the public. Lastly she says she hopes he burns, this time meaning his political career. Ironically after his death she spent nearly 50 years collecting anything that he had written to help tell Alexander’s story."})
+Annotation.create({track_id:17, user_id:1, start_idx:1, end_idx:1, body: "With this opening, we’re invited to compare Burr and Hamilton (yet again!)—this time in their habit of writing daily letters to the women they loved."})
+Annotation.create({track_id:17, user_id:2, start_idx:8, end_idx:10, body: "This chorus becomes a chance for Burr to discuss many of the biggest, most fickle influences on his life. He says the same thing about death, and life, and Hamilton. Both Burr and Hamilton have this sinner/saint duality. They are, at the core, good men, but both are extremely flawed."})
+Annotation.create({track_id:17, user_id:3, start_idx:28, end_idx:28, body: "Unlike Hamilton, who has nothing to lose, Burr’s parents left him a lot, but not many memories. Both his parents died before he was two, so all he can do to keep their memory alive is protect their legacy. This burden he’s taken on holds him in check because any action risks jeopardizing it. Hamilton has no legacy, he must write it himself and this forces him to take risks in order to secure it."})
+Annotation.create({track_id:18, user_id:1, start_idx:9, end_idx:9, body: "Burr considers himself to be a very smart man, for good reason, yet Theodosia is a revelation to him. The things he’s learned about the world, and about himself, with the advent of her birth aren’t something he could have learned in books. He’s gained a new kind of knowledge and wisdom."})
+Annotation.create({track_id:18, user_id:4, start_idx:22, end_idx:22, body: "When Miranda wrote this song, he was not a father, but had recently gotten a puppy. He said in an interview with Emma Watson that this song was largely written with that inspiration."})
+Annotation.create({track_id:18, user_id:1, start_idx:23, end_idx:23, body: "Hamilton was by all accounts a doting father. From one of two surviving letters to Philip: 'For I know that you can do a great deal, if you please, and I am sure you have too much spirit not to exert yourself, that you may make us every day more and more proud of you.'"})
+Annotation.create({track_id:19, user_id:5, start_idx:5, end_idx:5, body: "King George makes an exaggerated pout after the line, mocking the dismay of his “subjects,” then follows up with the scolding, “Remember we made an arrangement…”"})
+Annotation.create({track_id:19, user_id:1, start_idx:9, end_idx:9, body: "At this point in Alex Lacamoire’s arrangement, the accompaniment switches from piano to harpsichord, harking back the 18th century (“You’ll be back” indeed) and moving this creepy possessive-love ballad into the Baroque pop of the Beatles. The staccato quarter notes also set the tempo for the rest of the song, not to mention the tone — jaunty and a bit menacing."})
+Annotation.create({track_id:19, user_id:4, start_idx:27, end_idx:30, body: "Playing on words here: “subject” as both “topic” and “one under authority.” And he’s so pleased with himself about it that he repeats it two more times. The real King George III used the term “subject” many times in his Proclamation of Rebellion, which this song is based on, in response to the Battle of Bunker Hill in June of 1775."})
+Annotation.create({track_id:20, user_id:1, start_idx:33, end_idx:33, body: "meaning that she is a white girl with an African American boyfriend.  This is significant, because not only is this new for the time period, but Penny has always been sheltered by her overbearing mother, and is the least likely character to have done this."})
+Annotation.create({track_id:20, user_id:5, start_idx:53, end_idx:67, body: "The ensemble is much more active in this section than in the first B section, as they sing a consonant harmony to accompany the melody."})
+Annotation.create({track_id:21, user_id:2, start_idx:60, end_idx:60, body: "At the conclusion of the song, Link and Tracy kiss, making her daydream in 'I Can Hear the Bells' seem more realistic."})
+Annotation.create({track_id:21, user_id:1, start_idx:0, end_idx:0, body: "‘It Takes Two’ is unique because it is written in a ‘50s ballad style, and it indeed sounds convincingly like a ‘50s ballad if one is not paying keen attention. However, upon closer examination, the piece actually bears many harmonic differences from the typical diatonic style of ‘50s ballads."})
+Annotation.create({track_id:22, user_id:3, start_idx:41, end_idx:42, body: "The playfully seductive lyrics seem to send the message that diversity benefits society the same way a multitude of flavors can enhance a meal."})
+Annotation.create({track_id:22, user_id:1, start_idx:55, end_idx:55, body: "The phrase 'Run And Tell That' has roots in African American religious and secular songs. Literally, it means: 'to exhort someone to go quickly and give information or news to another person or persons', however in this context it is more like 'declaring to your adversary you will succeed in the near future, and that he or she should let the world world know that fact'."})
+Annotation.create({track_id:23, user_id:2, start_idx:3, end_idx:3, body: "Greased lightning is something exceedingly fast. IT's not only as fast as light (lightning), but the friction is reduced from being greased."})
+Annotation.create({track_id:23, user_id:1, start_idx:26, end_idx:26, body: "'Greased Lightning' combines two of the three major cultural forces of the 50s, cars and rock and roll. This is a companion piece to 'Freddy My Love.' This is the guys’ perspective in the language of doo-wop: it’s all about sex, cars, and sex in cars. This is the unfettered sexuality that terrifies the adult world, and it does the same to Sandy."})
+Annotation.create({track_id:24, user_id:1, start_idx:1, end_idx:2, body: "An archetypal Happy Teenager song, very closely modeled on The Kodaks’ 'Oh Gee, Oh Gosh' and Lewis Lyman’s 'I’m So Happy,' maybe with a little dash of Little Richard’s 'Tutti Fruitti.' This is a song celebrating the nonsense syllables of early rock and roll."})
+Annotation.create({track_id:25, user_id:1, start_idx:39, end_idx:43, body: "In a way, the two are their own worst perpetuators of gender essentialism: Danny’s hyper masculine, hyper misogynist version denies his emotional involvement, lest any emotionality cause him to be ostracized from the Burger Palace Boys; Sandy’s romanticization appeals to the Pink Ladies’ proclivities towards glamorous, storybook romances."})
+Annotation.create({track_id:26, user_id:1, start_idx:1, end_idx:2, body: "The opening number to the 1964 Broadway smash Fiddler on the Roof introduces the main theme of the movie: tradition. In pre-Revolutionary Russia, the growing anti-Jewish sentiment casts a dark cloud over the Jewish village Anatevka where the protagonist Tevye lives with his wife and daughters. The villagers cling to their customs, including the traditional roles of a husband who works outside the home, a wife who oversees the household, and children who follow in their parents' footsteps until a spouse is chosen for them. But Tevye begins to realize that the outside world has different ideas."})
+Annotation.create({track_id:26, user_id:2, start_idx:10, end_idx:11, body: "Harnick explained to NPR Fresh Air host Terry Gross: 'We had many, many meetings before we went on to rehearsal and at each meeting he started with the same question, what is this show about? And he would say there's something that gives this show its power and we don't know what it is. And finally at one of those meetings one of us said hey, you know what this show is about? It's about this changing of the way of life, of a people, in these Eastern European communities, these little towns, these shtetls, and Robbins got very excited by that. He said if that's the case, then what you have to write is a number about traditions, because we're going to see those traditions change. Every scene or every other scene will be about whether a tradition changes or whether a tradition remains the same.'"})
+Annotation.create({track_id:26, user_id:1, start_idx:32, end_idx:32, body: "This is the tradition that gets upended most frequently throughout the story, with varying degrees of change occurring along the way."})
+Annotation.create({track_id:27, user_id:5, start_idx:54, end_idx:60, body: "This song is the next after 'Tradition', setting up what the conflict with that previous way of life will be."})
+Annotation.create({track_id:27, user_id:1, start_idx:13, end_idx:16, body: "Here, Hodel and Chava are too naive to have thought about what marrying who a matchmaker picks could really mean. They believe that it will be easy to love their husband and that he will be a great man, even though they are daughters of a poor man."})
+Annotation.create({track_id:27, user_id:4, start_idx:24, end_idx:34, body: "Tzeitel, being the oldest and closest to marriage knows that the odds of getting a young, gentle, handsome, smart, wealthy husband are not in her favor. Out of her own heartbreak and fear, she shows her sisters what their fate could be by pretending to be Yente."})
+Annotation.create({track_id:28, user_id:1, start_idx:0, end_idx:2, body: "With Hodel leaving, she wants her father to understand the difficult choice she had to make."})
+Annotation.create({track_id:28, user_id:2, start_idx:10, end_idx:13, body: "Here it is clear that Hodel views her change of heart as an inevitible transition, affecting her ambitions, goals, and purpose."})
+Annotation.create({track_id:28, user_id:5, start_idx:20, end_idx:20, body: "'There' in this line refers to Perchik, her betrothed. She cannot stay in Anatevka because her heart is no longer there."})
+Annotation.create({track_id:29, user_id:3, start_idx:1, end_idx:3, body: "This is a reference to Daniel 6:1-28."})
+Annotation.create({track_id:29, user_id:1, start_idx:7, end_idx:8, body: "Joshua 6:20 says: 'So the people shouted, and the trumpets were blown. As soon as the people heard the sound of the trumpet, the people shouted a great shout, and the wall fell down flat, so that the people went up into the city, every man straight before him, and they captured the city.'"})
+Annotation.create({track_id:29, user_id:2, start_idx:9, end_idx:10, body: "These two lines reference the miracle of the Israelites leaving Egypt with God's provision. The details are outlined in the book of Exodus."})
 # Annotation.create({track_id:30, user_id:4, start_idx:, end_idx:, body: ""})
 # Annotation.create({track_id:30, user_id:1, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:30, user_id:2, start_idx:, end_idx:, body: ""})
-# Annotation.create({track_id:31, user_id:1, start_idx:, end_idx:, body: ""})
 # Annotation.create({track_id:31, user_id:3, start_idx:, end_idx:, body: ""})
 # Annotation.create({track_id:31, user_id:1, start_idx:, end_idx:, body: ""})
 # Annotation.create({track_id:32, user_id:4, start_idx:, end_idx:, body: ""})
@@ -4406,6 +4405,14 @@ Annotation.create({track_id:8, user_id:1, start_idx:19, end_idx:20, body: "Mariu
 # Annotation.create({track_id:49, user_id:1, start_idx:, end_idx:, body: ""})
 # Annotation.create({track_id:49, user_id:3, start_idx:, end_idx:, body: ""})
 # Annotation.create({track_id:50, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:50, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:50, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:51, user_id:4, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:51, user_id:1, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:51, user_id:5, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:52, user_id:2, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:52, user_id:3, start_idx:, end_idx:, body: ""})
+# Annotation.create({track_id:52, user_id:1, start_idx:, end_idx:, body: ""})
 
 Comment.create({track_id:1, user_id:5, body: "Idina KILLLS it here"})
 Comment.create({track_id:1, user_id:2, body: "all of the good foreshadowing"})
@@ -4518,6 +4525,7 @@ Upvote.create({annotation_id:2 , user_id:2 })
 Upvote.create({annotation_id:2 , user_id:3 })
 Upvote.create({annotation_id:3 , user_id:4 })
 Upvote.create({annotation_id:4 , user_id:5 })
+Upvote.create({annotation_id:5 , user_id:1 })
 Upvote.create({annotation_id:6 , user_id:2 })
 Upvote.create({annotation_id:7 , user_id:3 })
 Upvote.create({annotation_id:7 , user_id:4 })
@@ -4525,41 +4533,106 @@ Upvote.create({annotation_id:7 , user_id:1 })
 Upvote.create({annotation_id:8 , user_id:2 })
 Upvote.create({annotation_id:8 , user_id:3 })
 Upvote.create({annotation_id:9 , user_id:4 })
-# Upvote.create({annotation_id:10 , user_id:5 })
-# Upvote.create({annotation_id:10 , user_id:1 })
-# Upvote.create({annotation_id:11 , user_id:2 })
-# Upvote.create({annotation_id:12 , user_id:3 })
-# Upvote.create({annotation_id:13 , user_id:4 })
-# Upvote.create({annotation_id:13 , user_id:5 })
-# Upvote.create({annotation_id:13 , user_id:1 })
-# Upvote.create({annotation_id:14 , user_id:2 })
-# Upvote.create({annotation_id:20 , user_id:3 })
-# Upvote.create({annotation_id:21 , user_id:5 })
-# Upvote.create({annotation_id:21 , user_id:1 })
-# Upvote.create({annotation_id:21 , user_id:2 })
-# Upvote.create({annotation_id:22 , user_id:3 })
-# Upvote.create({annotation_id:23 , user_id:4 })
-# Upvote.create({annotation_id:23 , user_id:5 })
-# Upvote.create({annotation_id:24 , user_id:1 })
-# Upvote.create({annotation_id:24 , user_id:2 })
-# Upvote.create({annotation_id:29 , user_id:3 })
-# Upvote.create({annotation_id:29 , user_id:4 })
-# Upvote.create({annotation_id:29 , user_id:5 })
-# Upvote.create({annotation_id:30 , user_id:1 })
-# Upvote.create({annotation_id:30 , user_id:2 })
-# Upvote.create({annotation_id:30 , user_id:3 })
-# Upvote.create({annotation_id:31 , user_id:4 })
-# Upvote.create({annotation_id:31 , user_id:5 })
-# Upvote.create({annotation_id:32 , user_id:1 })
-# Upvote.create({annotation_id:32 , user_id:2 })
-# Upvote.create({annotation_id:33 , user_id:3 })
-# Upvote.create({annotation_id:34 , user_id:4 })
-# Upvote.create({annotation_id:34 , user_id:5 })
-# Upvote.create({annotation_id:34 , user_id:1 })
-# Upvote.create({annotation_id:35 , user_id:2 })
-# Upvote.create({annotation_id:37 , user_id:3 })
-# Upvote.create({annotation_id:38 , user_id:4 })
-# Upvote.create({annotation_id:39 , user_id:5 })
-# Upvote.create({annotation_id:40 , user_id:1 })
-# Upvote.create({annotation_id:45 , user_id:2 })
-# Upvote.create({annotation_id:45 , user_id:3 })
+Upvote.create({annotation_id:10 , user_id:5 })
+Upvote.create({annotation_id:10 , user_id:1 })
+Upvote.create({annotation_id:11 , user_id:2 })
+Upvote.create({annotation_id:12 , user_id:3 })
+Upvote.create({annotation_id:13 , user_id:4 })
+Upvote.create({annotation_id:13 , user_id:5 })
+Upvote.create({annotation_id:13 , user_id:1 })
+Upvote.create({annotation_id:14 , user_id:2 })
+Upvote.create({annotation_id:20 , user_id:3 })
+Upvote.create({annotation_id:21 , user_id:5 })
+Upvote.create({annotation_id:21 , user_id:1 })
+Upvote.create({annotation_id:21 , user_id:2 })
+Upvote.create({annotation_id:22 , user_id:3 })
+Upvote.create({annotation_id:23 , user_id:4 })
+Upvote.create({annotation_id:23 , user_id:5 })
+Upvote.create({annotation_id:24 , user_id:1 })
+Upvote.create({annotation_id:24 , user_id:2 })
+Upvote.create({annotation_id:29 , user_id:3 })
+Upvote.create({annotation_id:29 , user_id:4 })
+Upvote.create({annotation_id:29 , user_id:5 })
+Upvote.create({annotation_id:30 , user_id:1 })
+Upvote.create({annotation_id:30 , user_id:2 })
+Upvote.create({annotation_id:30 , user_id:3 })
+Upvote.create({annotation_id:31 , user_id:4 })
+Upvote.create({annotation_id:31 , user_id:5 })
+Upvote.create({annotation_id:32 , user_id:1 })
+Upvote.create({annotation_id:32 , user_id:2 })
+Upvote.create({annotation_id:33 , user_id:3 })
+Upvote.create({annotation_id:34 , user_id:4 })
+Upvote.create({annotation_id:34 , user_id:5 })
+Upvote.create({annotation_id:34 , user_id:1 })
+Upvote.create({annotation_id:35 , user_id:2 })
+Upvote.create({annotation_id:37 , user_id:3 })
+Upvote.create({annotation_id:38 , user_id:4 })
+Upvote.create({annotation_id:39 , user_id:5 })
+Upvote.create({annotation_id:40 , user_id:1 })
+Upvote.create({annotation_id:45 , user_id:2 })
+Upvote.create({annotation_id:45 , user_id:3 })
+Upvote.create({annotation_id:46, user_id:1 })
+Upvote.create({annotation_id:46, user_id:2 })
+Upvote.create({annotation_id:47, user_id:3 })
+Upvote.create({annotation_id:47, user_id:4 })
+Upvote.create({annotation_id:48, user_id:5 })
+Upvote.create({annotation_id:48, user_id:1 })
+Upvote.create({annotation_id:49, user_id:2 })
+Upvote.create({annotation_id:50, user_id:3 })
+Upvote.create({annotation_id:51, user_id:4 })
+Upvote.create({annotation_id:52, user_id:5 })
+Upvote.create({annotation_id:53, user_id:1 })
+Upvote.create({annotation_id:54, user_id:2 })
+Upvote.create({annotation_id:55, user_id:3 })
+Upvote.create({annotation_id:56, user_id:4 })
+Upvote.create({annotation_id:57, user_id:5 })
+Upvote.create({annotation_id:58, user_id:1 })
+Upvote.create({annotation_id:59, user_id:2 })
+Upvote.create({annotation_id:60, user_id:3 })
+Upvote.create({annotation_id:60, user_id:4 })
+Upvote.create({annotation_id:60, user_id:5 })
+Upvote.create({annotation_id:61, user_id:1 })
+Upvote.create({annotation_id:63, user_id:2 })
+Upvote.create({annotation_id:66, user_id:3 })
+Upvote.create({annotation_id:66, user_id:4 })
+Upvote.create({annotation_id:67, user_id:5 })
+Upvote.create({annotation_id:68, user_id:1 })
+Upvote.create({annotation_id:68, user_id:2 })
+Upvote.create({annotation_id:71, user_id:3 })
+Upvote.create({annotation_id:71, user_id:4 })
+Upvote.create({annotation_id:71, user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
+# Upvote.create({annotation_id: , user_id:1 })
+# Upvote.create({annotation_id: , user_id:2 })
+# Upvote.create({annotation_id: , user_id:3 })
+# Upvote.create({annotation_id: , user_id:4 })
+# Upvote.create({annotation_id: , user_id:5 })
