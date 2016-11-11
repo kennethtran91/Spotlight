@@ -3,7 +3,7 @@
   currentUser: {
     id: 1,
     username: "suttonlenore",
-    image_url: 'http://www2.pictures.stylebistro.com/gi/2013+Tony+Awards+Nominations+Ceremony+86lBe4B7F4nx.jpg'
+    image_url: 'https://www2.pictures.stylebistro.com/gi/2013+Tony+Awards+Nominations+Ceremony+86lBe4B7F4nx.jpg'
   },
   formErrors: {
     signUp: {errors: ["email already registered for an account"]},

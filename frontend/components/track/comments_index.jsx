@@ -1,5 +1,5 @@
 import React from 'react';
-import SmartTimeAgo from 'react-smart-time-ago';
+import TimeAgo from 'react-timeago';
 
 class CommentsIndex extends React.Component{
   constructor(props){
@@ -16,7 +16,7 @@ class CommentsIndex extends React.Component{
     if (this.props.currentUser && this.props.currentUser.id === comment.user_id){
       return (
         <button onClick={this.handleDelete} className='comment-delete' value={comment.id}>
-          <img src='http://res.cloudinary.com/doepem37s/image/upload/v1478295581/Spotlight/delete-512.png' />
+          <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478295581/Spotlight/delete-512.png' />
         </button>
       );
     } else {
@@ -33,7 +33,7 @@ class CommentsIndex extends React.Component{
               <h3 className='comment-username'>{comment.username}</h3>
               { this.deleteButton(comment) }
             </section>
-            <SmartTimeAgo className='comment-time' value={comment.updated_at} />
+            <TimeAgo className='comment-time' date={comment.updated_at} />
             <p className='comment-body'>{comment.body}</p>
           </li>) )}
       </ul>

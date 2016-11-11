@@ -7,7 +7,7 @@ class SessionForm extends React.Component {
     this.state = {
       username: "",
       password: "",
-      image_url: 'http://res.cloudinary.com/doepem37s/image/upload/v1478044295/spotlight_oybuda.png'
+      image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478044295/spotlight_oybuda.png'
     };
     this.greeting = this.greeting.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
@@ -44,7 +44,7 @@ class SessionForm extends React.Component {
   greeting() {
     return (
       <h2 className='auth-greeting'>
-        <img src="http://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png" />
+        <img src="https://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png" />
         Please {this.props.formType } below
         <br />
         <p>In a rush? Use our demo account.</p>

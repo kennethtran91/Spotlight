@@ -70,7 +70,7 @@ class Profile extends React.Component {
     return (
       <section className='profile'>
         <div className='splash-img-box'>
-          <img className='splash-img' src='http://res.cloudinary.com/doepem37s/image/upload/v1478043010/broadway_wsfzku.jpg' />
+          <img className='splash-img' src='https://res.cloudinary.com/doepem37s/image/upload/v1478043010/broadway_wsfzku.jpg' />
         </div>
         <div className='prof-details clearfix'>
           <aside className='user-details'>
@@ -81,17 +81,17 @@ class Profile extends React.Component {
             <h2>My Stats</h2>
             <ul className='stats-list'>
               <li>
-                <span><img src='http://res.cloudinary.com/doepem37s/image/upload/v1478121276/annotation-white_thpfx0.png' />
+                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1478121276/annotation-white_thpfx0.png' />
                 {this.props.currentUser.annotation_count}</span>
                 Annotations
               </li>
               <li>
-                <span><img src='http://res.cloudinary.com/doepem37s/image/upload/v1478121285/transcription-white_hkj68i.png' />
+                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1478121285/transcription-white_hkj68i.png' />
                 {this.props.currentUser.track_count}</span>
                 Transcriptions
               </li>
               <li>
-                <span><img src='http://res.cloudinary.com/doepem37s/image/upload/v1478121282/comment-white_dclvnv.png' />
+                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1478121282/comment-white_dclvnv.png' />
                 {this.props.currentUser.comment_count}</span>
                 Comments
               </li>
