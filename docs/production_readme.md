@@ -8,34 +8,31 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
 ## Features & Implementation
 
-### Note Rendering and Editing
+### Profile
 
-  On the database side, the notes are stored in one table in the database, which contains columns for `id`, `user_id`, `content`, and `updated_at`.  Upon login, an API call is made to the database which joins the user table and the note table on `user_id` and filters by the current user's `id`.  These notes are held in the `NoteStore` until the user's session is destroyed.  
+  When a user is logged in, they have access to their profile page which lists 
 
-  Notes are rendered in two different components: the `CondensedNote` components, which show the title and first few words of the note content, and the `ExpandedNote` components, which are editable and show all note text.  The `NoteIndex` renders all of the `CondensedNote`s as subcomponents, as well as one `ExpandedNote` component, which renders based on `NoteStore.selectedNote()`. The UI of the `NoteIndex` is taken directly from Evernote for a professional, clean look:  
+### Album Rendering
 
-![image of notebook index](wireframes/home-logged-in.png)
+  Albums are stores in one table of the database, which contains columns for `id`, `title`, `image_url`, `year`, `composer`, and `lyricist`. Upon entering the root route, an API call is made to the database which gathers basic information for each album. This information is held in the `AlbumStore`. Users cannot add or edit Albums.
 
-Note editing is implemented using the Quill.js library, allowing for a Word-processor-like user experience.
+  Albums are rendered in two different components: the `AlbumIndex` component, which shows the image for each album as a link to the album show page, and the `AlbumShow` components, which show all information for the album along with a list of the tracks belonging to the album and a form to add a new track. These two components are never rendered at once.
 
-### Notebooks
+  The list of tracks in each album is stored within the albums slice of state as it only contains the `id`, `title`, and `vocalists` for display and navigation purposes. The UI of the `AlbumShow` was taken from the profile page of Genius:
 
-Implementing Notebooks started with a notebook table in the database.  The `Notebook` table contains two columns: `title` and `id`.  Additionally, a `notebook_id` column was added to the `Note` table.  
+  ![image of album show](wireframes/logged-in-album-component.png)
 
-The React component structure for notebooks mirrored that of notes: the `NotebookIndex` component renders a list of `CondensedNotebook`s as subcomponents, along with one `ExpandedNotebook`, kept track of by `NotebookStore.selectedNotebook()`.  
+### Tracks
 
-`NotebookIndex` render method:
+  On the database side, the tracks are stored in one table in the database, which contains columns for `id`, `user_id`, `album_id`, `title`, `lyrics`, `context`, `vocalists`, and `updated_at`.
 
-```javascript
-render: function () {
-  return ({this.state.notebooks.map(function (notebook) {
-    return <CondensedNotebook notebook={notebook} />
-  }
-  <ExpandedNotebook notebook={this.state.selectedNotebook} />)
-}
-```
+  Once a user clicks on a track from the track index of the `AlbumShow` component or from their own `Profile` component if logged in, an API call is made to the database which joins the annotations and comments tables to the tracks tables on `track_id` and filters by the current track's id. The upvotes table is joined to the annotations table on `annotation_id`. and they move to the `Track` component.
 
-### Tags
+  The React component structure for tracks has a few sub-components. Lyrics and other track information are stored in the top-level and displayed directly from the `Track` presentational component. The `CommentIndex` are rendered underneath the lyrics and apply to the entire track. If a user is logged in, a `CommentForm` is rendered above the list of comments. The `AnnotationShow`, `AnnotationForm`, and `AnnotationEdit` components render next to the line that they annotate, with the form only available to signed in users and the edit form only available to the owner of the annotation.
+
+  ![image of track show](wireframes/logged-in-track-component.png)
+
+### Comments
 
 As with notebooks, tags are stored in the database through a `tag` table and a join table.  The `tag` table contains the columns `id` and `tag_name`.  The `tagged_notes` table is the associated join table, which contains three columns: `id`, `tag_id`, and `note_id`.  
 

@@ -30,6 +30,8 @@ gem 'rename'
 # Use Unicorn as the app server
 # gem 'unicorn'
 
+gem 'rails_serve_static_assets'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

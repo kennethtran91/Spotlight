@@ -54,6 +54,7 @@
 
 .track-lyrics .highlight {
   background-color: #CDCDCD;
+  cursor: pointer;
 }
 
 .track-lyrics .highlight:hover {

@@ -31,6 +31,7 @@ nav h1 {
 
 nav h1:hover {
   color: #B22222;
+  cursor: pointer;
 }
 
 nav li:hover {
@@ -53,6 +54,7 @@ nav li:hover {
 nav .dropdown-header {
   margin-right: 10px;
   position: relative;
+  cursor: pointer;
 }
 
 .nav-dropdown {

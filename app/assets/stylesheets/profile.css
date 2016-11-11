@@ -66,6 +66,7 @@
   font-size: 20px;
   /*text-align: center;*/
   margin-top: 20px;
+  cursor: pointer;
 }
 
 .contributions{
@@ -92,6 +93,7 @@
 .contributions-menu li{
   border-top: 1px solid black;
   padding: 3px;
+  cursor: pointer;
 }
 
 .contributions-menu li:hover{
