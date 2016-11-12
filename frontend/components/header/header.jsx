@@ -64,7 +64,7 @@ class Header extends React.Component {
       <nav className="in-header">
         <h1>
           <a href={'/'}>
-            <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
+            <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_30/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
             Spotlight
           </a>
         </h1>
