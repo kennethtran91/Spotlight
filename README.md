@@ -8,6 +8,8 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
 ## Features & Implementation
 
+![image of splash](docs/screenshots/spotlight-splash.png)
+
 ### Profile
 
   Upon log in, the store fetches user data from the user, annotations, tracks, and comments tables. A logged in user has access to the `Profile` component, which lists counts of their contributions and a drop-down to see an index of all of the tracks, annotations, and comments they have added to the database, along with links to the tracks.
@@ -20,7 +22,7 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
   The list of tracks in each album is stored within the albums slice of state as it only contains the `id`, `title`, and `vocalists` for display and navigation purposes. The UI of the `AlbumShow` was taken from the profile page of Genius:
 
-  ![image of album show](docs/wireframes/logged-in-album-component.png)
+  ![image of album show](docs/screenshots/spotlight-albumshow.png)
 
 ### Tracks
 
@@ -30,7 +32,6 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
   The React component structure for tracks has a few sub-components. Lyrics and other track information are stored in the top-level and displayed directly from the `Track` presentational component. The `CommentIndex` are rendered underneath the lyrics and apply to the entire track. If a user is logged in, a `CommentForm` is rendered above the list of comments. The `AnnotationShow`, `AnnotationForm`, and `AnnotationEdit` components render next to the line that they annotate, with the form only available to signed in users and the edit form only available to the owner of the annotation.
 
-  ![image of track show](docs/wireframes/logged-in-track-component.png)
 
   Each line of the lyrics is rendered as a span with classes given to represent whether or not the line has already been annotated. If the line has been annotated, it is highlighted in gray.
 
@@ -39,6 +40,8 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
   Annotations begin on the backend in a table with columns: `id`, `user_id`, `track_id`, `start_idx`, `end_idx`, and `body`. When a `Track` is rendered, the information for all annotations for the track are included in the state. Within the annotation slice of the track state, information about upvotes for the annotation is stored.
 
   If a user clicks on a line or group of lines that have not been annotated, a form to add an annotation appears. If an annotated line is selected, the annotation appears. For annotations added by the current user, there are options to delete and edit the annotation. Annotations are re-received for the track when upvotes are created/destroyed or annotations are created/destroyed/updated.
+
+  ![image of track show](docs/screenshots/spotlight-trackshow.png)
 
 ### Comments
 
