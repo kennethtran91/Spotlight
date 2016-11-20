@@ -20,7 +20,7 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
   The list of tracks in each album is stored within the albums slice of state as it only contains the `id`, `title`, and `vocalists` for display and navigation purposes. The UI of the `AlbumShow` was taken from the profile page of Genius:
 
-  ![image of album show](wireframes/logged-in-album-component.png)
+  ![image of album show](docs/wireframes/logged-in-album-component.png)
 
 ### Tracks
 
