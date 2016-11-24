@@ -12,6 +12,7 @@ const Home = () => (
       </p>
     </figure>
     <article id='home-albums'>
+      <h2>testing</h2>
       <h2>Check out our annotated tracks from your favorite cast albums!</h2>
       <HomeAlbumIndexContainer />
     </article>

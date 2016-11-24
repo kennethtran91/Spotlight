@@ -52,3 +52,9 @@ input, button, textarea {
 button:hover{
   cursor: pointer;
 }
+
+.holy_grail {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
