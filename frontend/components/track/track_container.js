@@ -6,6 +6,8 @@ import { createAnnotation, deleteAnnotation,
 import { createUpvote, deleteUpvote } from '../../actions/upvote_actions';
 import Track from './track';
 import { hashHistory } from 'react-router';
+import { demo } from '../../actions/session_actions';
+
 
 const mapStateToProps = state => {
   if (state.track.track) {
@@ -36,7 +38,8 @@ const mapDispatchToProps = (dispatch, ownProps) => ({
   updateAnnotation: annotation => dispatch(updateAnnotation(annotation)),
   deleteAnnotation: id => dispatch(deleteAnnotation(id)),
   deleteUpvote: id => dispatch(deleteUpvote(id)),
-  createUpvote: upvote => dispatch(createUpvote(upvote))
+  createUpvote: upvote => dispatch(createUpvote(upvote)),
+  demo: (closeModal) => dispatch(demo(closeModal))
 });
 
 export default connect(

@@ -196,7 +196,8 @@ class Track extends React.Component {
           { this.lyrics() }
           <CommentForm currentUser={this.props.currentUser}
             trackId={this.props.track.id}
-            createComment={this.props.createComment} />
+            createComment={this.props.createComment}
+            demo={this.props.demo} />
           <CommentsIndex comments={this.props.comments}
             deleteComment={this.props.deleteComment}
             currentUser={this.props.currentUser} />
