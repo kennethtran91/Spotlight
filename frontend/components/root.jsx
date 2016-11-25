@@ -14,12 +14,6 @@ import TrackContainer from './track/track_container';
 import { fetchAlbums } from '../actions/album_actions';
 
 const Root = ({ store }) => {
-  function _redirectIfLoggedIn () {
-    if (store.getState().session.currentUser) {
-      hashHistory.replace("/");
-    }
-  }
-
   function _redirectIfLoggedOut () {
     if (!store.getState().session.currentUser) {
       hashHistory.replace("/");
@@ -36,7 +30,7 @@ const Root = ({ store }) => {
         <Route path="/" component={App} onEnter={fetchAlbumsOnEnter}>
           <IndexRoute component={HomeContainer} />
           <Route path="/profile/:userId" component={ProfileContainer} onEnter={_redirectIfLoggedOut} />
-          <Route path='/albums' component={AlbumIndexContainer} onEnter={fetchAlbumsOnEnter} />
+          <Route path='/albums' component={AlbumIndexContainer} />
           <Route path='/albums/:albumId' component={AlbumShowContainer}>
             <IndexRoute component={TrackFormContainer} />
           </Route>

@@ -3,7 +3,7 @@ import { receiveAnnotations } from '../actions/annotation_actions';
 import { createUpvote, deleteUpvote } from '../util/upvote_api_util';
 
 export default ({dispatch}) => next => action => {
-  const errorCallback = data => console.log(data);
+  const errorCallback = data =>  (data);
 
   switch(action.type) {
     case CREATE_UPVOTE:

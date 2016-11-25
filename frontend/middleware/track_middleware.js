@@ -5,7 +5,7 @@ import { fetchTrack, createTrack, deleteTrack } from '../util/track_api_util';
 
 export default ({dispatch}) => next => action => {
   const errorCreate = data => dispatch(receiveTrackErrors(data.responseJSON));
-  const errorCallback = data => console.log(data);
+  const errorCallback = data =>  (data);
 
   switch(action.type) {
     case FETCH_TRACK:

@@ -58,3 +58,52 @@
 #home-albums {
   background-color: black;
 }
+
+.site-info {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF5EE;
+}
+
+.site-info h2{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.site-info p{
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.site-info section{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  display: flex;
+}
+
+.site-info section .exp {
+  float: left;
+  width: 60%;
+  padding-left: 7%;
+}
+
+.site-info section .exp-img {
+  float: right;
+  width: 40%;
+  padding-left: 7%;
+  padding-right: 7%;
+}
+
+.site-info section .exp2 {
+  float: right;
+  width: 60%;
+  padding-right: 7%;
+}
+
+.site-info section .exp-img2 {
+  float: left;
+  width: 40%;
+  padding-left: 7%;
+  padding-right: 7%;
+}

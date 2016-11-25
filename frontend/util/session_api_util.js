@@ -27,7 +27,7 @@ export const logout = success => {
     type: 'DELETE',
     success,
     error: () => {
-      console.log("Logout error");
+       ("Logout error");
     }
   });
 };

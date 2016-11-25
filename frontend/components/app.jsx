@@ -3,9 +3,11 @@ import HeaderContainer from './header/header_container';
 import Footer from './header/footer';
 
 const App = ({ children }) => (
-  <div class='holy_grail'>
+  <div className='holy-grail'>
     <HeaderContainer />
-    {children}
+    <main className='holy-grail-content'>
+      {children}
+    </main>
     <Footer />
   </div>
   );

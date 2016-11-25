@@ -53,8 +53,13 @@ button:hover{
   cursor: pointer;
 }
 
-.holy_grail {
+.holy-grail {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+}
+
+.holy-grail-content {
+  flex: 1;
+  background-color: black;
 }

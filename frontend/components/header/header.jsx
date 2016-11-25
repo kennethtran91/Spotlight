@@ -63,10 +63,10 @@ class Header extends React.Component {
     return (
       <nav className="in-header">
         <h1>
-          <a href={'/'}>
+          <Link to='/albums'>
             <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_30/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
             Spotlight
-          </a>
+          </Link>
         </h1>
         <div className='dropdown-header'>
           <a className='header-username'>{this.props.currentUser.username}</a>
@@ -122,7 +122,7 @@ class Header extends React.Component {
 
   render () {
     return (
-      <div>
+      <header>
         {this.props.currentUser ? this.loggedInHeader() : this.loggedOutHeader()}
         <Modal
           isOpen={ this.state.loginModalIsOpen }
@@ -143,7 +143,7 @@ class Header extends React.Component {
               formType={this.formType()}
               closeModal={this.closeModal}/>
         </Modal>
-      </div>
+      </header>
     );
   }
 }

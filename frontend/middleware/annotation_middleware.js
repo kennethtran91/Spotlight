@@ -4,7 +4,7 @@ import { createAnnotation, updateAnnotation,
   deleteAnnotation } from '../util/annotation_api_util';
 
 export default ({dispatch}) => next => action => {
-  const errorCallback = data => console.log(data);
+  const errorCallback = data =>  (data);
 
   switch(action.type) {
     case CREATE_ANNOTATION:

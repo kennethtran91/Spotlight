@@ -1,5 +1,6 @@
 import { connect } from 'react-redux';
 import { login, signup, demo } from '../../actions/session_actions';
+import { hashHistory } from 'react-router';
 import SessionForm from './session_form';
 
 const mapStateToProps = state => ({
@@ -13,8 +14,18 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   const processForm = ( formType === 'login' ) ? login : signup;
 
   return ({
-    demo: () => dispatch(demo(closeModal)),
-    processForm: user => dispatch(processForm(user, closeModal)),
+    demo: () => {
+      dispatch(demo(closeModal));
+      if (hashHistory.getCurrentLocation().pathname === '/'){
+        hashHistory.replace('/albums');
+      }
+    },
+    processForm: user => {
+      dispatch(processForm(user, closeModal));
+      if( hashHistory.location === '/'){
+        hashHistory.replace('/albums');
+      }
+    },
     formType,
     closeModal
   });

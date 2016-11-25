@@ -3,7 +3,7 @@ import { receiveAlbums, receiveAlbum,
 import { fetchAlbums, fetchAlbum } from '../util/album_api_util';
 
 export default ({dispatch}) => next => action => {
-  const errorCallback = data => console.log(data);
+  const errorCallback = data =>  (data);
 
   switch(action.type) {
     case FETCH_ALBUMS:

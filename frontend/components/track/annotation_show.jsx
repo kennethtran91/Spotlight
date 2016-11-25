@@ -124,7 +124,7 @@ class AnnotationShow extends React.Component {
         </button>
       );
     } else {
-      return <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478626744/Spotlight/Thumbsup-Icon.png' />;
+      return <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1478626744/Spotlight/Thumbsup-Icon.png' />;
     }
   }
 
