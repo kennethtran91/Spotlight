@@ -149,27 +149,40 @@ class Track extends React.Component {
 
   lyrics() {
     const lyricsArray = this.props.track.lyrics.split("\n");
-    const annotatedLines = highlightLines(this.props.annotations);
+    const orderedAnnotations = this.props.annotations.sort((a,b) => {
+      if (a.start_idx < b.start_idx) {
+        return -1;
+      }
+      if (a.start_idx > b.start_idx) {
+        return 1;
+      }
+      return 0;
+    });
+    let lyricsDiv = [];
+    let startIdx = 0;
 
-    return (<pre className='track-lyrics'
-      onMouseDown={ this.startAnnotating }
-      onMouseUp={ this.stopAnnotating }>
-      { lyricsArray.map( (line, idx) => {
-        if (line === "") {
-          return <br key={idx} id={idx}/>;
-        } else {
-          return (
-            <p key={idx} className={(annotatedLines.includes(idx)) ? "annotated" : ""}>
-              <span id={idx}
-                className={(annotatedLines.includes(idx)) ? "highlight" : ""}
-                onClick={(annotatedLines.includes(idx)) ? this.enableShow : ""} >
-                {line}
-              </span>
-            </p>
-          );
-        }
-      })}
-    </pre>);
+    orderedAnnotations.forEach(annotation => {
+      lyricsArray.slice(startIdx, annotation.start_idx).forEach((line, idx) => {
+        lyricsDiv.push(<p className='non-annotated' key={startIdx+idx}><span>{line !== "" ? line : <br />}</span></p>);
+      });
+      lyricsDiv.push(
+        <pre>
+          <span key={annotation.start_idx}
+            id={annotation.start_idx}
+            className='annotated highlight'
+            onClick={this.enableShow}>
+            {lyricsArray.slice(annotation.start_idx, annotation.end_idx+1).join("\n")}
+          </span>
+        </pre>
+      );
+      startIdx = annotation.end_idx+1;
+    });
+
+    lyricsArray.slice(startIdx, this.props.track.lyrics.length).forEach((line, idx) => {
+      lyricsDiv.push(<p key={startIdx + idx} className='non-annotated'><span>{line !== "" ? line : <br />}</span></p>);
+    });
+
+    return lyricsDiv;
   }
 
   loaded() {

@@ -56,12 +56,12 @@
   position: absolute;
 }
 
-.track-lyrics .highlight {
+.highlight {
   background-color: #CDCDCD;
   cursor: pointer;
 }
 
-.track-lyrics .highlight:hover {
+.highlight:hover {
   background-color: #ffff7f;
 }
 
