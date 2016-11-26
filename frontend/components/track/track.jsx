@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router';
+import Modal from 'react-modal';
 
 import CommentsIndex from './comments_index';
 import CommentForm from './comment_form';
@@ -9,6 +10,30 @@ import AnnotationShow from './annotation_show';
 import { highlightLines } from '../../reducers/selectors';
 import { range } from 'lodash';
 
+const style = {
+  overlay : {
+    position        : 'fixed',
+    top             : 0,
+    left            : 0,
+    right           : 0,
+    bottom          : 0,
+    backgroundColor : 'rgba(255, 255, 255, 0.75)',
+    z_index         : 10
+  },
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)',
+    width: '400px',
+    padding: '20px'
+  }
+};
+
+
+
 class Track extends React.Component {
   constructor(props) {
     super(props);
@@ -16,7 +41,8 @@ class Track extends React.Component {
     this.state = {
       formDisabled: true,
       showDisabled: true,
-      selectedId: null
+      selectedId: null,
+      modalIsOpen: true
     };
 
     this.loaded = this.loaded.bind(this);
@@ -29,6 +55,7 @@ class Track extends React.Component {
     this.closeAfterDelete = this.closeAfterDelete.bind(this);
     this.openAnnotation = this.openAnnotation.bind(this);
     this.enableShow = this.enableShow.bind(this);
+    this.closeModal = this.closeModal.bind(this);
   }
 
   componentWillMount() {
@@ -41,6 +68,12 @@ class Track extends React.Component {
 
   componentWillReceiveProps(nextProps){
     this.openAnnotation();
+  }
+
+  closeModal () {
+    this.setState({
+      modalIsOpen: false
+    });
   }
 
   loading() {
@@ -113,6 +146,7 @@ class Track extends React.Component {
 
   enableShow(e){
     e.preventDefault();
+
     this.setState({formDisabled: true, showDisabled: false});
     const line = Number(e.target.id);
     this.props.annotations.forEach( annotation => {
@@ -195,6 +229,16 @@ class Track extends React.Component {
   loaded() {
     return (
       <main className='track-show clearfix'>
+        <Modal
+          isOpen={ this.state.modalIsOpen }
+          onRequestClose={ this.closeModal }
+          style={style}>
+            <button onClick={ this.closeModal }>close</button>
+            <h4 className='track-explain-modal'>
+              Click on the gray lines to read the annotation. Click and drag your mouse over the un-annotated lines to start the Spotlight annotation for them.
+            </h4>
+            <div className='annotation-screenshot'></div>
+        </Modal>
         <section className='track-splash'>
           <h1>{this.props.track.title}</h1>
           <ul className='track-info'>
@@ -209,10 +253,6 @@ class Track extends React.Component {
           {this.deleteButton()}
         </section>
         <article className='track-body'>
-          <h4>
-            Click on the gray lines to read the annotation. Click and drag your mouse over the un-annotated lines to start the Spotlight annotation for them.
-          </h4>
-
           { this.lyrics() }
           <CommentForm currentUser={this.props.currentUser}
             trackId={this.props.track.id}

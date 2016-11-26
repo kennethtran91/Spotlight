@@ -85,25 +85,46 @@
 .site-info section .exp {
   float: left;
   width: 60%;
-  padding-left: 7%;
+  padding-left: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .site-info section .exp-img {
   float: right;
   width: 40%;
-  padding-left: 7%;
-  padding-right: 7%;
+  margin-left: 3%;
+  margin-right: 3%;
+  max-width: 450px;
+  width: 90%;
+  background-size: cover;
+}
+
+.exp-comment-img {
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_450/v1480149987/Spotlight/stage-door-2.jpg');
+  height: 250px;
+}
+
+.exp-track-img {
+  height: 196px;
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_450/v1480151108/Spotlight/spotlight-albumshow.png');
 }
 
 .site-info section .exp2 {
   float: right;
   width: 60%;
-  padding-right: 7%;
+  padding-right: 2%;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .site-info section .exp-img2 {
   float: left;
   width: 40%;
-  padding-left: 7%;
-  padding-right: 7%;
+  margin-left: 3%;
+  margin-right: 3%;
+  max-width: 450px;
+  width: 90%;
+  height: 250px;
+  background-size: cover;
 }

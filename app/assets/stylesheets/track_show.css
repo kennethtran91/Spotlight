@@ -1,3 +1,16 @@
+.track-explain-modal {
+  font-size: 16px;
+  color: #B22222;
+  text-align: center;
+}
+
+.annotation-screenshot {
+  width: 100%;
+  min-height: 184px;
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_400/v1480146885/Spotlight/spotlight-trackshow.png');
+  background-size: cover;
+}
+
 .track-show {
   background-color: #FFF5EE;
 }
@@ -62,6 +75,10 @@
 }
 
 .highlight:hover {
+  background-color: #ffff7f;
+}
+
+.highlight .active {
   background-color: #ffff7f;
 }
 
