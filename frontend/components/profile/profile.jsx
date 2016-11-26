@@ -14,15 +14,37 @@ class Profile extends React.Component {
     this.showComments = this.showComments.bind(this);
   }
 
+  componentDidMount() {
+    document.getElementById("tracks-tab").click();
+  }
+
   showTracks(){
+    const current = document.getElementById('tracks-tab');
+    current.className += " active";
+    const annotTab = document.getElementById('annotations-tab');
+    annotTab.className = annotTab.className.replace(" active", "");
+    const commentTab = document.getElementById('comments-tab');
+    commentTab.className = commentTab.className.replace(" active", "");
     this.setState({selected: 'tracks'});
   }
 
   showAnnotations(){
+    const current = document.getElementById('annotations-tab');
+    current.className += " active";
+    const commentTab = document.getElementById('comments-tab');
+    commentTab.className = commentTab.className.replace(" active", "");
+    const trackTab = document.getElementById('tracks-tab');
+    trackTab.className = trackTab.className.replace(" active", "");
     this.setState({selected: 'annotations'});
   }
 
   showComments(){
+    const current = document.getElementById('comments-tab');
+    current.className += " active";
+    const trackTab = document.getElementById('tracks-tab');
+    trackTab.className = trackTab.className.replace(" active", "");
+    const annotTab = document.getElementById('annotations-tab');
+    annotTab.className = annotTab.className.replace(" active", "");
     this.setState({selected: 'comments'});
   }
 
@@ -101,16 +123,16 @@ class Profile extends React.Component {
             <div className='contributions-menu'>
               <h2 className='drop-word'>{this.props.currentUser.username+"'s"} Contributions</h2>
               <ul>
-                <li onClick={this.showTracks}>Tracks</li>
-                <li onClick={this.showAnnotations}>Annotations</li>
-                <li onClick={this.showComments}>Comments</li>
+                <li id='tracks-tab' onClick={this.showTracks}>Tracks</li>
+                <li id='annotations-tab' onClick={this.showAnnotations}>Annotations</li>
+                <li id='comments-tab' onClick={this.showComments}>Comments</li>
               </ul>
             </div>
             {this.contributions()}
           </main>
         </div>
       </section>
-  );
+    );
   }
 }
 

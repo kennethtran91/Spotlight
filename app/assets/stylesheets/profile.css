@@ -63,66 +63,81 @@
 }
 
 .contributions h2{
-  font-size: 20px;
-  /*text-align: center;*/
+  font-size: 28px;
   margin-top: 20px;
   cursor: pointer;
 }
 
-.contributions{
-  position: relative;
-}
-
-.contributions-menu:hover {
-  color: #B22222;
-}
-
-.contributions-menu:hover ul{
-  display: block;
-}
-
 .contributions-menu ul {
-  display: none;
-  width: 115px;
-  left: auto;
-  background-color: white;
-  position: absolute;
-  color: black;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
 }
 
 .contributions-menu li{
-  border-top: 1px solid black;
-  padding: 3px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 10px 12px;
+  text-decoration: none;
+  transition: 0.3s;
+  font-size: 17px;
+  border-radius: 7px 7px 0 0;
+  border-top: 1px solid #ccc;
+  border-right: 1px solid #ccc;
   cursor: pointer;
+}
+.contributions-menu li:first-child {
+  border-left: 1px solid #ccc;
 }
 
 .contributions-menu li:hover{
   color: #B22222;
+  background-color: #BFBFBF;
+}
+
+.contributions-menu li:focus, .active {
+  background-color: gray;
+  border-bottom: 0;
 }
 
 .contribution-list {
-  width:90%;
+  background-color: gray;
+  padding-top: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+
+.contribution-list ul {
+  width:85%;
   max-width: 500px;
   margin: auto;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 .contribution-list li {
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid white;
-  background-color: gray;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  background-color: white;
+  color: black;
   padding: 5px;
   text-align: center;
 }
 
 .contribution-list ul:last-child{
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
   margin-bottom: 20px;
 }
 
 .contribution-list li:hover{
   background-color: #B22222;
+  color: white;
 }
 
 .contribution-title {
