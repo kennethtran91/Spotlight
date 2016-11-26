@@ -68,7 +68,7 @@ class Track extends React.Component {
 
   startAnnotating(e) {
     e.preventDefault();
-    if (e.target.className !== 'highlight' && e.target.className !== 'annotated') {
+    if (e.target.className === 'non-annotated') {
       const box = document.getElementById('annotations');
       box.style.position = "absolute";
       box.style.left = '60%';
@@ -80,7 +80,7 @@ class Track extends React.Component {
 
   stopAnnotating(e) {
     e.preventDefault();
-    if (e.target.className !== 'highlight' && e.target.className !== 'annotated') {
+    if (e.target.className === 'non-annotated') {
       this.end_idx = Number(e.target.id);
       this.setState({formDisabled: false, showDisabled: true});
     }
@@ -104,7 +104,8 @@ class Track extends React.Component {
         trackId={this.props.track.id}
         start={this.start_idx} end={this.end_idx}
         createAnnotation={this.props.createAnnotation}
-        closeForm={this.closeForm} />);
+        closeForm={this.closeForm}
+        demo={this.props.demo} />);
     } else {
       return <div></div>;
     }
@@ -163,10 +164,12 @@ class Track extends React.Component {
 
     orderedAnnotations.forEach(annotation => {
       lyricsArray.slice(startIdx, annotation.start_idx).forEach((line, idx) => {
-        lyricsDiv.push(<p className='non-annotated' key={startIdx+idx}><span>{line !== "" ? line : <br />}</span></p>);
+        lyricsDiv.push(<p className='non-annotated' key={startIdx+idx} id={startIdx+idx}>
+          <span className='non-annotated' id={startIdx+idx}>{line !== "" ? line : <br />}</span>
+        </p>);
       });
       lyricsDiv.push(
-        <pre>
+        <pre key={annotation.start_idx}>
           <span key={annotation.start_idx}
             id={annotation.start_idx}
             className='annotated highlight'
@@ -179,10 +182,14 @@ class Track extends React.Component {
     });
 
     lyricsArray.slice(startIdx, this.props.track.lyrics.length).forEach((line, idx) => {
-      lyricsDiv.push(<p key={startIdx + idx} className='non-annotated'><span>{line !== "" ? line : <br />}</span></p>);
+      lyricsDiv.push(<p key={startIdx + idx} className='non-annotated' id={startIdx+idx}>
+        <span className='non-annotated' id={startIdx+idx}>{line !== "" ? line : <br />}</span>
+      </p>);
     });
 
-    return lyricsDiv;
+    return <div className='track-lyrics'
+      onMouseDown={ this.startAnnotating }
+      onMouseUp={ this.stopAnnotating }>{ lyricsDiv }</div>;
   }
 
   loaded() {
