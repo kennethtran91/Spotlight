@@ -1,8 +1,8 @@
 # Spotlight
 
-[Spotlight Live][heroku]
+[Spotlight Live][live]
 
-[heroku]: https://spotlightbg.herokuapp.com
+[live]: http://www.spotlightmusic.top/#/
 
 Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby on Rails on the backend, a PostgreSQL database, and React.js with a Redux architectural framework on the frontend.  
 
