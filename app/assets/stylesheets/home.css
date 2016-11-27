@@ -105,9 +105,14 @@
   height: 250px;
 }
 
+.exp-annot-img {
+  height: 260px;
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_400/v1480150947/Spotlight/600x390.jpg');
+}
+
 .exp-track-img {
-  height: 196px;
-  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_450/v1480151108/Spotlight/spotlight-albumshow.png');
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_400/v1480224396/Spotlight/annotation.gif');
+  height: 290px;
 }
 
 .site-info section .exp2 {
