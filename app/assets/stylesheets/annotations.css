@@ -8,17 +8,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #B22222;
+  background-color: #BFBFBF;
   color: white;
   width: 85%;
   border-radius: 10px;
   margin: auto;
+  /*border: 1px solid #BFBFBF;*/
 }
 
 .annotation-form-body {
   width:80%;
   height: 100px;
   background-color: white;
+  /*border: 1px solid #BFBFBF;*/
   color: black;
   margin-top: 20px;
   padding: 10px;
@@ -27,12 +29,15 @@
 .annotation-form button {
   padding: 5px;
   border-radius: 5px;
-  border: 2px solid white;
+  border: 1px solid white;
+  color: white;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .annotation-form button:hover {
-  border-color: black;
-  color: black;
+  border-color: #B22222;
+  color: #B22222;
 }
 
 .annotation-show {

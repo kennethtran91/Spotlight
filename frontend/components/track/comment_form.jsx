@@ -72,9 +72,7 @@ class CommentForm extends React.Component {
           onChange={this.update('body')}
           value={this.state.body}
           className='comment-form-body'></textarea>
-        <br />
         <button className='comment-form-button' onClick={this.handleSubmit}>Add Comment</button>
-        <br />
       </form>
     );
   }
