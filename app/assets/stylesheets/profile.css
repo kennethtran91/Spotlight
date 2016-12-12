@@ -94,16 +94,16 @@
 }
 
 .contributions-menu li:hover{
-  background-color: #BFBFBF;
+  background-color: gray;
 }
 
 .contributions-menu li:focus, .active {
-  background-color: gray;
+  background-color: #BFBFBF;
   border-bottom: 0;
 }
 
 .contribution-list {
-  background-color: gray;
+  background-color: #BFBFBF;
   padding-top: 15px;
   margin-right: 15px;
   margin-bottom: 20px;
@@ -120,18 +120,12 @@
 }
 
 .contribution-list li {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  /*border: 1px solid black;*/
   background-color: white;
   color: black;
   padding: 5px;
   text-align: center;
-  border-bottom: 1px solid black;
-  margin-bottom: 20px;
-}
-
-.contribution-list ul:last-child{
+  margin-bottom: 10px;
 }
 
 .contribution-list li:hover{

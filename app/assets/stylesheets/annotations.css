@@ -15,17 +15,12 @@
   margin: auto;
 }
 
-.annotation-form h2 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px;
-}
-
 .annotation-form-body {
   width:80%;
   height: 100px;
   background-color: white;
   color: black;
+  margin-top: 20px;
   padding: 10px;
 }
 

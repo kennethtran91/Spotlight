@@ -74,7 +74,6 @@ class AnnotationForm extends React.Component {
   form() {
     return (
       <form className='annotation-form'>
-        <h2>Add an Annotation</h2>
         <textarea placeholder='Annotation'
           onChange={this.update('body')}
           value={this.state.body}
