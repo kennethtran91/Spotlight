@@ -30,10 +30,9 @@ class CommentsIndex extends React.Component{
         {this.props.comments.map ( (comment, idx) => (
           <li key={idx}>
             <section className='comment-header'>
-              <h3 className='comment-username'>{comment.username}</h3>
+              <h3 className='comment-username'>{comment.username} - <TimeAgo className='comment-time' date={comment.updated_at} /></h3>
               { this.deleteButton(comment) }
             </section>
-            <TimeAgo className='comment-time' date={comment.updated_at} />
             <p className='comment-body'>{comment.body}</p>
           </li>) )}
       </ul>

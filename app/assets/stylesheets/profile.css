@@ -94,7 +94,6 @@
 }
 
 .contributions-menu li:hover{
-  color: #B22222;
   background-color: #BFBFBF;
 }
 
@@ -128,16 +127,15 @@
   color: black;
   padding: 5px;
   text-align: center;
-}
-
-.contribution-list ul:last-child{
   border-bottom: 1px solid black;
   margin-bottom: 20px;
 }
 
+.contribution-list ul:last-child{
+}
+
 .contribution-list li:hover{
-  background-color: #B22222;
-  color: white;
+  color: #B22222;
 }
 
 .contribution-title {

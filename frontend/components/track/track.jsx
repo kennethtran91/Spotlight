@@ -42,7 +42,7 @@ class Track extends React.Component {
       formDisabled: true,
       showDisabled: true,
       selectedId: null,
-      modalIsOpen: true
+      numberClicks: 0
     };
 
     this.loaded = this.loaded.bind(this);
@@ -55,7 +55,6 @@ class Track extends React.Component {
     this.closeAfterDelete = this.closeAfterDelete.bind(this);
     this.openAnnotation = this.openAnnotation.bind(this);
     this.enableShow = this.enableShow.bind(this);
-    this.closeModal = this.closeModal.bind(this);
   }
 
   componentWillMount() {
@@ -68,12 +67,6 @@ class Track extends React.Component {
 
   componentWillReceiveProps(nextProps){
     this.openAnnotation();
-  }
-
-  closeModal () {
-    this.setState({
-      modalIsOpen: false
-    });
   }
 
   loading() {
@@ -102,6 +95,8 @@ class Track extends React.Component {
   startAnnotating(e) {
     e.preventDefault();
     if (e.target.className === 'non-annotated') {
+      let prevClicks = this.state.numberClicks;
+      this.setState({showDisabled: true, numberClicks: prevClicks + 1});
       const box = document.getElementById('annotations');
       box.style.position = "absolute";
       box.style.left = '60%';
@@ -115,7 +110,7 @@ class Track extends React.Component {
     e.preventDefault();
     if (e.target.className === 'non-annotated') {
       this.end_idx = Number(e.target.id);
-      this.setState({formDisabled: false, showDisabled: true});
+      this.setState({formDisabled: false});
     }
   }
 
@@ -151,7 +146,8 @@ class Track extends React.Component {
     const line = Number(e.target.id);
     this.props.annotations.forEach( annotation => {
       if (range(annotation.start_idx, annotation.end_idx + 1).includes(line)){
-        this.setState({ selectedId: annotation.id});
+        let prevClicks = this.state.numberClicks;
+        this.setState({ selectedId: annotation.id, numberClicks: prevClicks + 1});
       }
     });
 
@@ -179,6 +175,18 @@ class Track extends React.Component {
         fetchTrack={this.props.fetchTrack} />);
     } else {
       return <div></div>;
+    }
+  }
+
+  explanation_blurbs() {
+    if (this.state.numberClicks === 0) {
+      return (<div className='explain explain-view'>
+        <p>Click on a gray line to view the Spotlight annotation for that line.</p>
+      </div>);
+    } else if (this.state.numberClicks === 1) {
+      return (<div className='explain explain-add'>
+        <p>Use your mouse to highlight un-annotated lines and start the annotation for them.</p>
+      </div>);
     }
   }
 
@@ -229,16 +237,6 @@ class Track extends React.Component {
   loaded() {
     return (
       <main className='track-show clearfix'>
-        <Modal
-          isOpen={ this.state.modalIsOpen }
-          onRequestClose={ this.closeModal }
-          style={style}>
-            <button onClick={ this.closeModal }>close</button>
-            <h4 className='track-explain-modal'>
-              Click on the gray lines to read the annotation. Click and drag your mouse over the un-annotated lines to start the Spotlight annotation for them.
-            </h4>
-            <div className='annotation-screenshot'></div>
-        </Modal>
         <section className='track-splash'>
           <h1>{this.props.track.title}</h1>
           <ul className='track-info'>
@@ -252,6 +250,7 @@ class Track extends React.Component {
           </ul>
           {this.deleteButton()}
         </section>
+        {this.explanation_blurbs()}
         <article className='track-body'>
           { this.lyrics() }
           <CommentForm currentUser={this.props.currentUser}

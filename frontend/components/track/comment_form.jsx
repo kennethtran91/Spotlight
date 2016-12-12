@@ -68,7 +68,6 @@ class CommentForm extends React.Component {
   form() {
     return (
       <form className='comment-form'>
-        <h2>Add a Comment</h2>
         <textarea placeholder='Comment'
           onChange={this.update('body')}
           value={this.state.body}

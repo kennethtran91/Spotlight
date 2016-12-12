@@ -1,13 +1,13 @@
 .track-explain-modal {
   font-size: 16px;
-  color: #B22222;
+  color: black;
   text-align: center;
 }
 
 .annotation-screenshot {
   width: 100%;
   min-height: 292px;
-  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_400/v1480224396/Spotlight/annotation.gif');
+  background-image: url('https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_400/v1480224396/Spotlight/annotation.gif');
   background-size: cover;
 }
 
@@ -46,6 +46,10 @@
   padding: 25px;
 }
 
+pre {
+  white-space: pre-wrap;
+}
+
 .back-to-album:hover {
   font-weight: bolder;
   font-size: 23px;
@@ -69,6 +73,20 @@
   position: absolute;
 }
 
+.explain {
+  background-color: #FFF5EE;
+  position: fixed;
+  top: 260px;
+  left: 40%;
+  width: 170px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /*box-shadow: 5px 5px 5px #888888;*/
+  -webkit-animation-name: bounce;
+  animation: bounce 2s infinite;
+}
+
 .highlight {
   background-color: #CDCDCD;
   cursor: pointer;
@@ -82,7 +100,26 @@
   background-color: #ffff7f;
 }
 
-.track-body h4{
-  margin-left: 25px;
-  margin-bottom: 0;
+.non-annotated{
+  -moz-user-select: all;
+  -khtml-user-select: all;
+  -webkit-user-select: all;
+  -o-user-select: all;
+  user-select: all;
+}
+
+/*::-webkit-selection { background: yellow; }
+::-moz-selection { background: yellow; }
+::selection { background: yellow; }*/
+
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+  40% {-webkit-transform: translateY(-30px);}
+  60% {-webkit-transform: translateY(-15px);}
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+  40% {transform: translateY(-30px);}
+  60% {transform: translateY(-15px);}
 }
