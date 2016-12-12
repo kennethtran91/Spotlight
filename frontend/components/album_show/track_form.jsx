@@ -85,38 +85,31 @@ class TrackForm extends React.Component {
   form() {
     return (
       <form className='track-form'>
-        <h2>Add a Track</h2>
         { this.handleErrors() }
         <label>
-          <br />
           <input type='text' placeholder='Title'
             onChange={this.update('title')}
             value={this.state.title}
             className='track-form-input'></input>
         </label>
         <label>
-          <br />
           <input type='text' placeholder='Vocalists'
             onChange={ this.update('vocalists') }
             value={ this.state.vocalists }
             className='track-form-input'></input>
         </label>
         <label>
-          <br />
           <input type='text' placeholder='Context of song in the show'
             onChange={this.update('context')}
             value={this.state.context}
             className='track-form-input'></input>
         </label>
         <label className='track-form-lyrics'>
-          <br />
           <textarea placeholder='Lyrics'
             onChange={this.update('lyrics')}
             value={this.state.lyrics}></textarea>
         </label>
-        <br />
         <button className='track-form-button' onClick={this.handleSubmit}>Add Track</button>
-        <br />
       </form>
     );
   }
