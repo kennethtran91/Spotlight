@@ -78,7 +78,6 @@
 
 .contributions-menu li{
   display: inline-block;
-  color: white;
   text-align: center;
   padding: 10px 12px;
   text-decoration: none;
@@ -98,38 +97,40 @@
 }
 
 .contributions-menu li:focus, .active {
-  background-color: #BFBFBF;
+  background-color: #ccc;
   border-bottom: 0;
+  color: black;
 }
 
 .contribution-list {
-  background-color: #BFBFBF;
+  /*background-color: #BFBFBF;*/
+  background-color: #ccc;
   padding-top: 15px;
   margin-right: 15px;
   margin-bottom: 20px;
-  border-left: 1px solid #ccc;
+  /*border-left: 1px solid #ccc;
   border-bottom: 1px solid #ccc;
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #ccc;*/
+  max-width: 510px;
 }
 
 .contribution-list ul {
   width:85%;
-  max-width: 500px;
+  max-width: 450px;
   margin: auto;
   margin-top: 15px;
 }
 
 .contribution-list li {
-  background-color: white;
   color: black;
+  border-left: 5px solid black;
   padding: 5px;
-  text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .contribution-list li:hover{
   color: #B22222;
-  outline: 3px solid #B22222;
+  border-left: 5px solid #B22222;
 }
 
 .contribution-title {
