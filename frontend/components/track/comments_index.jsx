@@ -16,7 +16,7 @@ class CommentsIndex extends React.Component{
     if (this.props.currentUser && this.props.currentUser.id === comment.user_id){
       return (
         <button onClick={this.handleDelete} className='comment-delete' value={comment.id}>
-          <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478295581/Spotlight/delete-512.png' />
+          <img src='http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1481595387/Spotlight/trash-can-icon-24.png' />
         </button>
       );
     } else {
@@ -30,7 +30,7 @@ class CommentsIndex extends React.Component{
         {this.props.comments.map ( (comment, idx) => (
           <li key={idx}>
             <section className='comment-header'>
-              <h3 className='comment-username'>{comment.username} - <TimeAgo className='comment-time' date={comment.updated_at} /></h3>
+              <h3 className='comment-username'>{comment.username} - <TimeAgo id='comment-time' date={comment.updated_at} /></h3>
               { this.deleteButton(comment) }
             </section>
             <p className='comment-body'>{comment.body}</p>

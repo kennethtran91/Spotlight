@@ -121,6 +121,7 @@ class CommentForm extends React.Component {
   render(){
     return (
       <section>
+        <h3 className='comment-title'>Comments</h3>
         {this.props.currentUser ? this.form() : this.noForm()}
         <Modal
           isOpen={ this.state.loginModalIsOpen }

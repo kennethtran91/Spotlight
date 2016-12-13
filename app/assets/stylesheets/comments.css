@@ -1,3 +1,11 @@
+.comment-title {
+  font-size: 25px;
+  padding-bottom: 20px;
+  font-weight: bold;
+  width: 80%;
+  margin: auto;
+}
+
 .no-comment-form {
   text-align: center;
   padding-top: 10px;
@@ -5,18 +13,14 @@
 }
 
 .comment-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 
 .comment-form-body {
-  width:80%;
+  width:100%;
   min-height: 30px;
-  background-color: white;
-  border: 1px solid #888888;
+  border: 1px solid black;
   color: black;
   padding: 10px;
 }
@@ -24,10 +28,10 @@
 .comment-form button {
   padding: 5px;
   border-radius: 5px;
-  color: #888888;
-  border: 1px solid #888888;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: black;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .comment-form button:hover {
@@ -36,27 +40,34 @@
 }
 
 .comments-index {
-  display: flex;
+  /*display: flex;
   flex-direction: column-reverse;
-  align-items: center;
+  align-items: center;*/
+  width: 80%;
+  margin: auto;
   margin-bottom: 20px;
 }
 
 .comments-index li {
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  width: 80%;
-  padding: 10px;
+  color: black;
+  border-left: 5px solid black;
+  width: 100%;
+  padding: 7px;
+  margin-bottom: 15px;
 }
 
 .comment-username {
-  font-size: 15px;
+  font-size: 16px;
   font-weight: bold;
 }
 
+#comment-time {
+  font-size: 15px;
+  font-weight: normal;
+}
+
 .comments-index p {
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .comment-header {
@@ -66,10 +77,6 @@
 
 .comment-delete img{
   width: 15px;
-}
-
-.comment-body {
-
 }
 
 p .login-link:hover {
