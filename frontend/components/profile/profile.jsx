@@ -100,20 +100,19 @@ class Profile extends React.Component {
             <h1 className='prof-name'>
               {this.props.currentUser.username}
             </h1>
-            <h2>My Stats</h2>
             <ul className='stats-list'>
               <li>
-                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1478121276/annotation-white_thpfx0.png' />
+                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1481601478/Spotlight/annotation-white.png' />
                 {this.props.currentUser.annotation_count}</span>
                 Annotations
               </li>
               <li>
-                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1478121285/transcription-white_hkj68i.png' />
+                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1481601478/Spotlight/musical-note-white.png' />
                 {this.props.currentUser.track_count}</span>
                 Transcriptions
               </li>
               <li>
-                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1478121282/comment-white_dclvnv.png' />
+                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1481601478/Spotlight/comment-white.png' />
                 {this.props.currentUser.comment_count}</span>
                 Comments
               </li>

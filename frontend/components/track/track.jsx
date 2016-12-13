@@ -84,7 +84,7 @@ class Track extends React.Component {
     if (this.props.currentUser && this.props.currentUser.id === this.props.track.user_id){
       return (
         <button onClick={this.handleDelete} className='track-delete'>
-          <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478295581/Spotlight/delete-512.png' />
+          <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_30/v1481601478/Spotlight/can.png' />
         </button>
       );
     } else {

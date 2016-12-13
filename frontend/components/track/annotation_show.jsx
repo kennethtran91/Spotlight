@@ -68,7 +68,7 @@ class AnnotationShow extends React.Component {
     if (this.props.currentUser && this.props.currentUser.id === this.props.annotation.user_id){
       return (
         <button onClick={this.handleDelete} className='annotation-delete'>
-          <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478295581/Spotlight/delete-512.png' />
+          <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1481601478/Spotlight/garbage.png' />
         </button>
       );
     } else {
@@ -80,7 +80,7 @@ class AnnotationShow extends React.Component {
     if (this.props.currentUser && this.props.currentUser.id === this.props.annotation.user_id){
       return (
         <button onClick={this.handleEdit} className='annotation-delete'>
-          <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478548425/Spotlight/edit-512.png' />
+          <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1481601478/Spotlight/edit.png' />
         </button>
       );
     } else {
@@ -124,7 +124,7 @@ class AnnotationShow extends React.Component {
         </button>
       );
     } else {
-      return <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1478626744/Spotlight/Thumbsup-Icon.png' />;
+      return <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_15/v1481601478/Spotlight/shapes.png' />;
     }
   }
 

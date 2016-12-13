@@ -5,7 +5,7 @@ import merge from 'lodash/merge';
 class AnnotationEditForm extends React.Component {
   constructor(props){
     super(props);
-    
+
     this.state = {
       id: props.annotation.id,
       body: props.annotation.body,
@@ -42,7 +42,6 @@ class AnnotationEditForm extends React.Component {
   render(){
     return (
       <form className='annotation-form'>
-        <h2>Edit Annotation</h2>
         <textarea placeholder='Annotation'
           onChange={this.update('body')}
           value={this.state.body}

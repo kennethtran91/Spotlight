@@ -85,31 +85,26 @@ class TrackForm extends React.Component {
   form() {
     return (
       <form className='track-form'>
+        <h3 className='track-form-title'>Add a Track</h3>
         { this.handleErrors() }
-        <label>
-          <input type='text' placeholder='Title'
-            onChange={this.update('title')}
-            value={this.state.title}
-            className='track-form-input'></input>
-        </label>
-        <label>
-          <input type='text' placeholder='Vocalists'
-            onChange={ this.update('vocalists') }
-            value={ this.state.vocalists }
-            className='track-form-input'></input>
-        </label>
-        <label>
-          <input type='text' placeholder='Context of song in the show'
-            onChange={this.update('context')}
-            value={this.state.context}
-            className='track-form-input'></input>
-        </label>
-        <label className='track-form-lyrics'>
-          <textarea placeholder='Lyrics'
-            onChange={this.update('lyrics')}
-            value={this.state.lyrics}></textarea>
-        </label>
-        <button className='track-form-button' onClick={this.handleSubmit}>Add Track</button>
+        <input type='text' placeholder='Title'
+          onChange={this.update('title')}
+          value={this.state.title}
+          className='track-form-input'></input>
+        <input type='text' placeholder='Vocalists'
+          onChange={ this.update('vocalists') }
+          value={ this.state.vocalists }
+          className='track-form-input'></input>
+        <input type='text' placeholder='Context of song in the show'
+          onChange={this.update('context')}
+          value={this.state.context}
+          className='track-form-input'></input>
+        <textarea placeholder='Lyrics'
+          className='track-form-input track-form-lyrics'
+          onChange={this.update('lyrics')}
+          value={this.state.lyrics}></textarea>
+        <button className='track-form-button'
+          onClick={this.handleSubmit}>Add Track</button>
       </form>
     );
   }
