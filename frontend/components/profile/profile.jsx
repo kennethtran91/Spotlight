@@ -54,10 +54,10 @@ class Profile extends React.Component {
         <section className='contribution-list'>
           <ul>
             {this.props.currentUser.tracks.map((track, idx) => (
-              <Link to={`/tracks/${track.id}`} key={idx}><li>
+              <li key={idx}><Link to={`/tracks/${track.id}`} key={idx}>
                 <p className='contribution-title'>{track.title}</p>
                 <p>From "{track.album}"</p>
-              </li></Link>
+              </Link></li>
             ))}
         </ul>
       </section>);
@@ -66,10 +66,10 @@ class Profile extends React.Component {
         <section className='contribution-list'>
           <ul>
             {this.props.currentUser.annotations.map((annotation, idx) => (
-              <Link to={`/tracks/${annotation.track_id}`} key={idx}><li>
+              <li key={idx}><Link to={`/tracks/${annotation.track_id}`} key={idx}>
                 <p className='contribution-title'>{annotation.track}</p>
                 <p>{annotation.synopsis}</p>
-              </li></Link>
+              </Link></li>
             ))}
         </ul>
       </section>);
@@ -78,10 +78,10 @@ class Profile extends React.Component {
         <section className='contribution-list'>
           <ul>
             {this.props.currentUser.comments.map((comment, idx) => (
-              <Link to={`/tracks/${comment.track_id}`} key={idx}><li>
+              <li key={idx}><Link to={`/tracks/${comment.track_id}`} key={idx}>
                 <p className='contribution-title'>{comment.track}</p>
                 <p>{comment.synopsis}</p>
-              </li></Link>
+              </Link></li>
             ))}
         </ul>
       </section>);
@@ -92,7 +92,6 @@ class Profile extends React.Component {
     return (
       <section className='profile'>
         <div className='splash-img-box'>
-          <img className='splash-img' src='https://res.cloudinary.com/doepem37s/image/upload/v1478043010/broadway_wsfzku.jpg' />
         </div>
         <div className='prof-details clearfix'>
           <aside className='user-details'>
@@ -102,19 +101,16 @@ class Profile extends React.Component {
             </h1>
             <ul className='stats-list'>
               <li>
-                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1481601478/Spotlight/annotation-white.png' />
-                {this.props.currentUser.annotation_count}</span>
-                Annotations
+                <span className='annotation-logo' />
+                {this.props.currentUser.annotation_count} Annotations
               </li>
               <li>
-                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1481601478/Spotlight/musical-note-white.png' />
-                {this.props.currentUser.track_count}</span>
-                Transcriptions
+                <span className='transcription-logo' />
+                {this.props.currentUser.track_count} Transcriptions
               </li>
               <li>
-                <span><img src='https://res.cloudinary.com/doepem37s/image/upload/v1481601478/Spotlight/comment-white.png' />
-                {this.props.currentUser.comment_count}</span>
-                Comments
+                <span className='comment-logo' />
+                {this.props.currentUser.comment_count} Comments
               </li>
             </ul>
           </aside>

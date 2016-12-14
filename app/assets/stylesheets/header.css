@@ -2,7 +2,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding-top: 7px;
-  padding-bottom: 7px;
   color: white;
   background-color: black;
   max-width: 1341px;
@@ -16,14 +15,16 @@ nav ul {
 
 nav li {
   font-size: 18px;
-  padding-right: 10px;
-  padding-left: 4px;
+  padding-right: 15px;
   position: relative;
+  height: 24px;
+  padding-top: 3px;
 }
 
 nav h1 {
   font-family: 'Limelight', cursive;
   padding-left: 10px;
+  padding-bottom: 7px;
 }
 
 .icon {
@@ -31,16 +32,12 @@ nav h1 {
 }
 
 nav h1:hover {
-  color: #B22222;
+  color: #e2e23d;
   cursor: pointer;
 }
 
 nav li:hover {
-  color: #B22222;
-}
-
-.dropdown-header:hover .header-username{
-  color: #B22222;
+  color: #e2e23d;
 }
 
 .nav-dropdown ul {
@@ -55,23 +52,37 @@ nav li:hover {
 nav .dropdown-header {
   margin-right: 10px;
   position: relative;
+  height: 30px;
+  padding-bottom: 9px;
+  padding-top: 1px;
   cursor: pointer;
+}
+
+.dropdown-header span {
+  height: 30px;
 }
 
 .nav-dropdown {
   display: none;
-  font-size: 18px;
-  width: 130px;
-  background-color: black;
+  width: 150px;
+  background-color: #2a2a2a;
   position: absolute;
   text-align: center;
   z-index: 1;
+  top: 40px;
 }
 
 .nav-dropdown li{
-  padding-bottom: 5px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 0px;
+  padding-right: 0px;
   border-bottom: 1px solid white;
+  font-size: 16px;
+  color: white;
+  font-weight: bold;
 }
+
 .nav-dropdown li:last-child{
   border-bottom: 0;
 }
@@ -81,7 +92,6 @@ nav .dropdown-header {
   background-color: white;
   border-radius: 50%;
   position: relative;
-  top: 2px;
 }
 
 .header-button {
@@ -91,16 +101,18 @@ nav .dropdown-header {
 .header-username{
   padding-right: 4px;
   vertical-align: top;
+  font-size: 20px;
 }
 
 .footer {
   display: flex;
-  background-color: #B22222;
+  background-color: black;
   justify-content: center;
 }
 
 .footer a{
-  padding: 7px;
+  padding: 8px;
+  line-height: 0;
 }
 
 .footer img {

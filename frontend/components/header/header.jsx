@@ -69,7 +69,7 @@ class Header extends React.Component {
           </Link>
         </h1>
         <div className='dropdown-header'>
-          <a className='header-username'>{this.props.currentUser.username}</a>
+          <span className='header-username'>{this.props.currentUser.username}</span>
           <img src={this.props.currentUser.image_url} className='header-prof-pic'/>
           {this.dropdown()}
         </div>

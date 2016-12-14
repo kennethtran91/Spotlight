@@ -30,8 +30,7 @@
 }
 
 .annotation-form button:hover {
-  border-color: #B22222;
-  color: #B22222;
+  box-shadow: 5px 5px 5px #7e7e7e;
 }
 
 .annotation-show {
@@ -68,7 +67,7 @@
   margin: 0;
   padding: 0;
   height: 20px;
-  background-color: #FFF5EE;
+  background-color: white;
 }
 
 .annotation-body {

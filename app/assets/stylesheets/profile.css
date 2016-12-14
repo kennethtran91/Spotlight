@@ -1,5 +1,5 @@
 .prof-details{
-  background-color: black;
+  background-color: #151515;
   color: white;
   position: relative;
 }
@@ -7,36 +7,47 @@
 .profile h1 {
   font-size: 27px;
   font-weight: bold;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .prof-pic {
-  border: 3px solid white;
   max-width: 300px;
   width: 70%;
   height: auto;
   margin: auto;
+  margin-top: 12%;
 }
 
 .user-details {
-  box-sizing: border-box;
-  width: 30%;
-  text-align: center;
   float: left;
   position: relative;
   top: -60px;
+  box-sizing: border-box;
+  width: 30%;
+  text-align: center;
+  line-height: 1.5;
+  background-color: #2a2a2a;
+  border-radius: 5px;
+  margin-left: 3%;
 }
 
 .splash-img-box {
   max-width: 1340px;
   width: 100%;
-  height: 200px;
+  height: 300px;
   overflow: hidden;
+  background-image: url("https://res.cloudinary.com/doepem37s/image/upload/v1478043010/broadway_wsfzku.jpg");
 }
 
 .contributions {
   float: right;
-  width: 70%;
+  width: 65%;
+  box-sizing: border-box;
+  padding-left: 50px;
+}
+
+.stats-list {
+  padding-bottom: 20px;
 }
 
 .stats-list img {
@@ -47,21 +58,41 @@
 }
 
 .stats-list li {
-  font-size: 18px;
+  font-size: 16px;
   padding: 7px;
   vertical-align: center;
 }
 
 .stats-list span {
   position: relative;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 11px;
+  padding-right: 11px;
+  margin-right: 6px;
+}
+
+.annotation-logo {
+  background-image: url('https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_22/v1481601478/Spotlight/annotation-white.png');
+  height: 20px;
+  width: 20px;
+}
+
+.transcription-logo {
+  background-image: url("http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_22/v1481601478/Spotlight/musical-note-white.png");
+  height: 20px;
+  width: 20px;
+}
+
+.comment-logo {
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_22/v1481601478/Spotlight/comment-white.png');
+  height: 20px;
+  width: 20px;
 }
 
 .contributions h2{
   font-size: 28px;
   margin-top: 20px;
   cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .contributions-menu ul {
@@ -69,7 +100,7 @@
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: black;
+  background-color: #151515;
 }
 
 .contributions-menu li{
@@ -79,59 +110,51 @@
   text-decoration: none;
   transition: 0.3s;
   font-size: 17px;
-  border-radius: 7px 7px 0 0;
-  border-top: 1px solid #ccc;
-  border-right: 1px solid #ccc;
   cursor: pointer;
-}
-.contributions-menu li:first-child {
-  border-left: 1px solid #ccc;
+  border-bottom: 4px solid #151515;
 }
 
 .contributions-menu li:hover{
-  background-color: gray;
+  color: #e2e23d;
 }
 
-.contributions-menu li:focus, .active {
-  background-color: #ccc;
-  border-bottom: 0;
-  color: black;
+.contributions-menu .active {
+  border-bottom: 4px solid #7e7e7e;
+  color: #e2e23d;
 }
 
 .contribution-list {
-  background-color: #ccc;
   padding-top: 10px;
-  margin-right: 15px;
   margin-bottom: 20px;
-  max-width: 510px;
+  max-width: 590px;
+  width: 95%;
+  border-top: 1px solid #7e7e7e;
 }
 
 .contribution-list ul {
   width:85%;
-  max-width: 450px;
+  max-width: 550px;
   margin: auto;
   padding-bottom: 10px;
 }
 
 .contribution-list li {
-  color: black;
-  border-left: 5px solid #ccc;
+  color: white;
   padding-left: 5px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid white;
 }
 
-/*.contribution-list li:last-of-type {
+.contribution-list li:last-of-type {
   border-bottom: none;
-}*/
+}
 
 .contribution-list li:hover{
-  color: #B22222;
-  border-left: 5px solid #B22222;
+  border-left: 5px solid #e2e23d;
 }
 
 .contribution-title {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
 }

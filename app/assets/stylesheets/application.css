@@ -28,7 +28,7 @@ html, body, div, ul, li, h1, h2, h3, p, a, button, pre, input, textarea {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: #FFF5EE;
+  background-color: white;
   position: relative;
   max-width: 1340px;
   width: 100%;
@@ -61,5 +61,5 @@ button:hover{
 
 .holy-grail-content {
   flex: 1;
-  background-color: black;
+  background-color: #151515;
 }

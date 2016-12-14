@@ -2680,10 +2680,10 @@ I promise you do, you'll see,
 you matter to me
 
 JENNA:
-Too addicted the minute you let yourself think
+It's addictive the minute you let yourself think
 The things that I say just might matter to someone
-All of this time I've been tripping or lying or running away
-For the first time I think I'm considered safe
+All of this time I've been keeping my mind on the running away
+And for the first time, I think I'd consider the stay
 
 Because you matter to me.
 Simple and plain and not much to ask from somebody.
@@ -2691,14 +2691,6 @@ You matter to me,
 I promise you do, you matter to,
 I promise you do, you'll see,
 you matter to me.
-
-Dear baby,
-I hope someday somebody wants to hold you for twenty minutes
-straight and that's all they do. They don't pull away,
-they don't look at your face, they don't try to kiss you,
-all they do is wrap their arms around you and hold on without
-an ounce of selfishness to it. I hope you become addicted, baby.
-I hope you become addicted to saying things and having them matter to someone.
 
 BOTH:
 You matter to me.
@@ -4363,10 +4355,10 @@ Annotation.create({track_id:34, user_id:1, start_idx:77, end_idx:81, body: "Abov
 Annotation.create({track_id:35, user_id:5, start_idx:8, end_idx:8, body: "As a kid, Ogie may not have had any friends, but he seems to have been close with his mom. Earlier in this scene, Dawn complained that Ogie had been taking her through “his family’s medical history”."})
 Annotation.create({track_id:35, user_id:1, start_idx:19, end_idx:19, body: "The second verse begins after the song has faded to silence; the song seems gone, but it isn’t. Try to get this song out of your head once you’ve heard it. Hard task. It’s just as persistent as the singer."})
 Annotation.create({track_id:35, user_id:3, start_idx:22, end_idx:25, body: "The odd implication is that “no” doesn’t always mean no; a “no” can become a “yes” after perseverance. Actions and desires are often inconsistent, especially when it comes to love."})
-Annotation.create({track_id:36, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:36, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:36, user_id:5, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:37, user_id:1, start_idx:, end_idx:, body: ""})
+Annotation.create({track_id:36, user_id:2, start_idx:4, end_idx:4, body: "Dr. Pomatter wants to love Jenna on her terms as well as his; Earl only cares about his own terms in his and Jenna’s marriage."})
+Annotation.create({track_id:36, user_id:1, start_idx:24, end_idx:24, body: "During the instrumental interlude, Jenna (very pregnant) delivers this “dear Baby” monologue: 'Dear Baby, I hope someday somebody wants to hold you for 20 minutes straight, and that’s all they do. They don’t pull away. They don’t look at your face. They don’t try to kiss you. All they do is wrap their arms around you and hold on without an ounce of selfishness to it. I hope you become addicted, Baby. I hope you become addicted to saying things and having them matter to someone.''"})
+Annotation.create({track_id:36, user_id:5, start_idx:16, end_idx:17, body: "Jenna had been planning for the longest time to get away from Earl, and she had never had a reason to even consider staying behind. Now, she had a oasis of good that made it possible for her to consider not leaving."})
+Annotation.create({track_id:37, user_id:1, start_idx:38, end_idx:38, body: "This means selling newspapers because the headline is also called a banner line, but carrying the banner is also a phrase that means going against the norm and standing up for what is right - acting as a rallying point. The double meaning makes it really appropriate that 'Carrying the Banner' is the Newsies anthem!"})
 Annotation.create({track_id:37, user_id:4, start_idx:, end_idx:, body: ""})
 Annotation.create({track_id:37, user_id:1, start_idx:, end_idx:, body: ""})
 Annotation.create({track_id:38, user_id:2, start_idx:, end_idx:, body: ""})

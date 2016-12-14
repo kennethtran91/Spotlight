@@ -1,5 +1,5 @@
 .track-show {
-  background-color: #FFF5EE;
+  background-color: white;
 }
 
 .track-splash {
@@ -62,32 +62,28 @@ pre {
 }
 
 .explain {
-  background-color: #888888;
-  color: white;
-  font-weight: bold;
+  background-color: #d3d3d3;
   position: fixed;
   top: 260px;
   left: 40%;
   width: 150px;
   padding: 10px;
-  /*border: 1px solid black;*/
   border-radius: 5px;
-  /*box-shadow: 5px 5px 5px #888888;*/
   -webkit-animation-name: bounce;
   animation: bounce 2s 2;
 }
 
 .highlight {
-  background-color: #CDCDCD;
+  background-color: #d3d3d3;
   cursor: pointer;
 }
 
 .highlight:hover {
-  background-color: #ffff7f;
+  background-color: #e2e23d;
 }
 
 .highlight .active {
-  background-color: #ffff7f;
+  background-color: #e2e23d;
 }
 
 .non-annotated{

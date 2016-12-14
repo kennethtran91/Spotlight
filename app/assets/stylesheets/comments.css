@@ -20,37 +20,33 @@
 .comment-form-body {
   width:100%;
   min-height: 30px;
-  border: 1px solid black;
-  color: black;
+  border: 1px solid #151515;
+  color: #151515;
   padding: 10px;
 }
 
 .comment-form button {
   padding: 5px;
   border-radius: 5px;
-  color: black;
-  border: 1px solid black;
+  color: #151515;
+  border: 1px solid #151515;
   margin-top: 5px;
   margin-bottom: 20px;
 }
 
 .comment-form button:hover {
-  border-color: #B22222;
-  color: #B22222;
+  box-shadow: 5px 5px 5px #7e7e7e;
 }
 
 .comments-index {
-  /*display: flex;
-  flex-direction: column-reverse;
-  align-items: center;*/
   width: 80%;
   margin: auto;
   margin-bottom: 20px;
 }
 
 .comments-index li {
-  color: black;
-  border-left: 5px solid black;
+  color: #151515;
+  border-left: 5px solid #151515;
   width: 100%;
   padding: 7px;
   margin-bottom: 15px;
@@ -80,5 +76,5 @@
 }
 
 p .login-link:hover {
-  color: #B22222;
+  color: #e2e23d;
 }

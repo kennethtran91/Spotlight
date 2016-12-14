@@ -56,14 +56,14 @@
 }
 
 #home-albums {
-  background-color: black;
+  background-color: #151515;
 }
 
 .site-info {
-  color: black;
+  color: #151515;
   display: flex;
   flex-direction: column;
-  background-color: #FFF5EE;
+  background-color: white;
 }
 
 .site-info h2{
