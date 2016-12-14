@@ -20,7 +20,9 @@ const style = {
     bottom                : 'auto',
     marginRight           : '-50%',
     transform             : 'translate(-50%, -50%)',
-    padding: '40px'
+    backgroundColor : 'rgba(0, 0, 0, 0.9)',
+    color: 'white',
+    padding: '15px'
   }
 };
 
@@ -128,7 +130,7 @@ class Header extends React.Component {
           isOpen={ this.state.loginModalIsOpen }
           onRequestClose={ this.closeModal }
           style={style}>
-            <button onClick={ this.closeModal }>close</button>
+            <button className='modal-close' onClick={ this.closeModal }>close</button>
             <SessionFormContainer
               formType={this.formType()}
               closeModal={this.closeModal}/>
@@ -138,7 +140,7 @@ class Header extends React.Component {
           isOpen={ this.state.signupModalIsOpen }
           onRequestClose={ this.closeModal }
           style={style}>
-            <button onClick={ this.closeModal }>close</button>
+            <button className='modal-close' onClick={ this.closeModal }>close</button>
             <SessionFormContainer
               formType={this.formType()}
               closeModal={this.closeModal}/>

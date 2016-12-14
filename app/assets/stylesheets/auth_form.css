@@ -1,11 +1,8 @@
 .auth-section {
   box-sizing: border-box;
   margin: auto;
-  width: 300px;
+  width: 500px;
   padding: 20px;
-  border: 1px solid white;
-  border-radius: 5px;
-  background-color: #151515;
   color: white;
 }
 
@@ -25,14 +22,16 @@
 
 .auth-input {
   margin-bottom: 10px;
-  width: 200px;
+  width: 90%;
   font-size: 15px;
+  border-radius: 5px;
 }
 
 .auth-button {
   padding: 5px;
   border: 1px solid white;
-  margin: 5px;
+  margin-top: 10px;
+  margin-right: 10px;
   border-radius: 5px;
 }
 
@@ -49,6 +48,7 @@
 
 .auth-greeting p{
   font-size: 16px;
+  margin-bottom: 20px;
 }
 
 .auth-button:disabled {
@@ -56,7 +56,11 @@
   border-color: #4c4c4c;
 }
 
-.auth-label input {
+.auth-form input {
   border: 1px solid white;
   padding: 4px;
+}
+
+.modal-close {
+  float: right;
 }
