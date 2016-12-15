@@ -2939,36 +2939,35 @@ and when it dries just watch what happens.
 Those kids will live and breathe right on the page
 and once they're center stage, you watch what happens.
 And who's there with her camera and her pen
-as boys turn into men
-they'll storm the gates and then just watch what happens when they do.
+As boys turn into men
+They'll storm the gates and then just watch what happens when they do.
 
 *squeal*
 Picture a handsome, heroically charismatic--
-plain spoken, know nothing, skirt-chasing, cocky little son of a--
-lie down with dogs and you wake up with a raise and a promotion.
-So, he's a flirt,
-a complete ego maniac.
+Plain spoken, know nothing, skirt-chasing, cocky little son of a--
+Lie down with dogs and you wake up with a raise and a promotion.
+So, he's a flirt, a complete ego maniac.
 The fact is he's also the face of the strike--
 
 What a face--
-face the fact, that's a face that could save us all from sinking in the ocean.
+Face the fact, that's a face that could save us all from sinking in the ocean.
 Like someone said, 'Power tends to corrupt'
 and absolute power, wait! Wait, corrupts!?
 Absolutely, that is genius!
 But give me some time, I'll be twice as good as that six months from never.
 Just look around at the world we're inheriting
 
-and think of the one we'll create.
+And think of the one we'll create.
 Their mistake is they got old, that is not a mistake we'll be making.
 No sir, we'll stay young forever!
 Give those kids and me the brand new century and watch what happens.
 It's David and Goliath, do or die
-the fight is on and I can't watch what happens.
+The fight is on and I can't watch what happens.
 
 But all I know is nothing happens if you just give in.
 It can't be any worse than how it's been.
 And it just so happens that we just might win,
-so whatever happens! Let's begin!"})
+So whatever happens! Let's begin!"})
 
 Track.create({title: 'Seize the Day', user_id:5, album_id:12,
   vocalists: 'Ben Fankhauser, Jeremy Jordan, Andrew Keenan-Bolger, and Newsies',
@@ -3314,9 +3313,7 @@ Track.create({title: 'What Kind of Woman', user_id:2, album_id:13,
   vocalists:'Marin Mazzie and Ensemble',
   context: "Mother unearths a newborn black baby in her garden. The police arrive with Sarah, the baby's mother, and on an impulse Mother takes responsibility for both Sarah and her child.",
   lyrics: "[MOTHER]
-Get Kathleen
-
-[LITTLE BOY]
+Get Kathleen!
 Get Kathleen, I tell you! Call the doctor!
 
 [KATHLEEN]
@@ -3419,7 +3416,7 @@ EMMA
 He wanted to say:
 
 YOUNGER BROTHER
-Don not blame me for my past.
+Do not blame me for my past.
 
 BOTH
 We different lives and faces
@@ -3440,7 +3437,7 @@ One waking to...
 ALL THREE
 ...America!
 Two men finding
-FOr a moment in the darkness...
+For a moment in the darkness...
 
 YOUNGER BROTHER & COALHOUSE
 They're the same. EMMA
@@ -3707,11 +3704,6 @@ Track.create({title: 'Any Moment/Moments in the Woods', user_id:1, album_id:14,
 Anything can happen in the woods.
 May I kiss you-?
 Any moment we could be crushed.
-
-BAKER'S WIFE
-uh-
-
-CINDERELLA'S PRINCE
 Don't feel rushed.
 
 BAKER'S WIFE
@@ -4356,56 +4348,64 @@ Annotation.create({track_id:35, user_id:5, start_idx:8, end_idx:8, body: "As a k
 Annotation.create({track_id:35, user_id:1, start_idx:19, end_idx:19, body: "The second verse begins after the song has faded to silence; the song seems gone, but it isn’t. Try to get this song out of your head once you’ve heard it. Hard task. It’s just as persistent as the singer."})
 Annotation.create({track_id:35, user_id:3, start_idx:22, end_idx:25, body: "The odd implication is that “no” doesn’t always mean no; a “no” can become a “yes” after perseverance. Actions and desires are often inconsistent, especially when it comes to love."})
 Annotation.create({track_id:36, user_id:2, start_idx:4, end_idx:4, body: "Dr. Pomatter wants to love Jenna on her terms as well as his; Earl only cares about his own terms in his and Jenna’s marriage."})
-Annotation.create({track_id:36, user_id:1, start_idx:24, end_idx:24, body: "During the instrumental interlude, Jenna (very pregnant) delivers this “dear Baby” monologue: 'Dear Baby, I hope someday somebody wants to hold you for 20 minutes straight, and that’s all they do. They don’t pull away. They don’t look at your face. They don’t try to kiss you. All they do is wrap their arms around you and hold on without an ounce of selfishness to it. I hope you become addicted, Baby. I hope you become addicted to saying things and having them matter to someone.''"})
+Annotation.create({track_id:36, user_id:1, start_idx:24, end_idx:24, body: "During the instrumental interlude, Jenna (very pregnant) delivers this “Dear Baby” monologue: 'Dear Baby, I hope someday somebody wants to hold you for 20 minutes straight, and that’s all they do. They don’t pull away. They don’t look at your face. They don’t try to kiss you. All they do is wrap their arms around you and hold on without an ounce of selfishness to it. I hope you become addicted, Baby. I hope you become addicted to saying things and having them matter to someone.''"})
 Annotation.create({track_id:36, user_id:5, start_idx:16, end_idx:17, body: "Jenna had been planning for the longest time to get away from Earl, and she had never had a reason to even consider staying behind. Now, she had a oasis of good that made it possible for her to consider not leaving."})
 Annotation.create({track_id:37, user_id:1, start_idx:38, end_idx:38, body: "This means selling newspapers because the headline is also called a banner line, but carrying the banner is also a phrase that means going against the norm and standing up for what is right - acting as a rallying point. The double meaning makes it really appropriate that 'Carrying the Banner' is the Newsies anthem!"})
-Annotation.create({track_id:37, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:37, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:38, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:38, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:38, user_id:5, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:39, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:39, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:39, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:40, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:40, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:40, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:41, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:41, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:41, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:42, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:42, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:42, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:43, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:43, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:43, user_id:5, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:44, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:44, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:44, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:45, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:45, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:45, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:46, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:46, user_id:5, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:46, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:47, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:47, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:47, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:48, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:48, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:48, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:49, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:49, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:49, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:50, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:50, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:50, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:51, user_id:4, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:51, user_id:1, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:51, user_id:5, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:52, user_id:2, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:52, user_id:3, start_idx:, end_idx:, body: ""})
-Annotation.create({track_id:52, user_id:1, start_idx:, end_idx:, body: ""})
+Annotation.create({track_id:37, user_id:4, start_idx:116, end_idx:118, body: "Newsies would exaggerate a boring headline in the movie to sell more papers. The headline, sometimes, was changed and exaggerated by the papers themselves. Yellow journalism, a term coined in the 1890s, described Joseph Pulitzer and William Randolph Hearst’s habit of exaggerating headlines to boost paper sales. The two papers were constantly in competition, so this exaggeration was a way of allowing one to triumph over the other. Sensationalizing headlines leads to big problems in the ethical dispersal of information. It is unethical today to exaggerate the truth to the extreme extent that Pulitzer and Hearst did in their papers."})
+Annotation.create({track_id:37, user_id:3, start_idx:6, end_idx:13, body: "In New York during the Gilded Age, with such a large population, many workers were needed to distribute large amounts of papers. Many of these workers were children. These children were newsboys , or “newsies.” Their job was to stand on streets and their corners and shot the headlines of that day’s paper, hoping that people would buy the newspaper. These children were street urchins, homeless children who sought to make a living for themselves. These children were seen sleeping beneath the stairs of newspapers’ offices, huddling together to keep each other warm at night. They lived dirty, impoverished lives but worked to make ends meet."})
+Annotation.create({track_id:38, user_id:2, start_idx:16, end_idx:19, body: "Katherine has been waiting for this opportunity to write something that will be impactful, not just for her own advancement, but to make the world better."})
+Annotation.create({track_id:38, user_id:1, start_idx:3, end_idx:6, body: "Katherine sees the huge potential that this story has, but since she is still green, she easily imtimdates herself with the momentual impact that writing the story well could have or the disappointment she could feel if she doesn't perform."})
+Annotation.create({track_id:38, user_id:5, start_idx:29, end_idx:30, body: "Jack Kelly has Katherine stuck between admiration, annoyance, and a crush."})
+Annotation.create({track_id:39, user_id:1, start_idx:12, end_idx:12, body: "Roman soldier imagery introduced through 'seize the day'/'carpe diem' is continued here as they compare themselves directly to an army as they go into a battle for their strike."})
+Annotation.create({track_id:39, user_id:4, start_idx:61, end_idx:62, body: "The imagery of the papers as corrupt and exploitive is brought up again here with the archetypal judgement served by David to Goliath."})
+Annotation.create({track_id:40, user_id:1, start_idx:33, end_idx:33, body: "Another reference to the 'banner' as a headline and as a symbol for their beliefs. They will stop at nothing to achieve their goal of fair wages and treatment."})
+Annotation.create({track_id:40, user_id:3, start_idx:45, end_idx:46, body: "Not only do these lines bring in the other children who are exploited for cheap labor, it also highlights further unjust juxtapositions of employees and employers like they one they experience with Pulitzer."})
+Annotation.create({track_id:41, user_id:2, start_idx:1, end_idx:6, body: "A quote from the book 'Ragtime' connects to Father's emotional state at this point: 'He wandered through the house finding everywhere signs of his own exclusion. His son now had a desk, as befitted all young students. He thought he heard an Arctic wind but it was the sound of the housemaid Brigit pushing an electric suction cleaner across the rug in the parlor. What was the strangest of all was the mirror in his bath: it gave back the gaunt, bearded face of a derelict, a man who lacked a home.'"})
+Annotation.create({track_id:41, user_id:1, start_idx:9, end_idx:12, body: "Mother's reactions to her changing environment provide us with important insights into her emotional, psychological, and intellectual processes of change. Her relationship with her husband undergoes a dramatic transformation after his return from the Arctic. After finding the tasks of the family business both simple and somewhat boring, Mother loses the respect she had had for his professional life. Mother's hosting of and caring for Sarah and her baby have also changed her. Although she still feels love for her husband on occasion, it constitutes the old love of friends or family members rather than the passionate love of lovers. Mother has become an idealistic and creative dreamer, while Father, resistant to change, has remained dull and static. Mother's dissatisfaction with her husband, and in particular the ways in which he fails to satisfy her, foreshadows her subsequent union with Tateh."})
+Annotation.create({track_id:41, user_id:5, start_idx:29, end_idx:32, body: "Like many others throughout history, Mother's Younger Brother is a young, idealistic male with little direction in life until his attention and spirit are captured by Emma Goldman's words and motives."})
+Annotation.create({track_id:42, user_id:1, start_idx:17, end_idx:21, body: "In the novel 'Ragtime', Doctorow says 'From these principles Ford established the final proposition of the theory of industrial manufacture - not only that the parts of the finished product be interchangeable, but that the men who build the products be themselves interchangeable parts.' Here Doctorow clearly addresses the potential for technology to undermine the value of the individual and his abilities."})
+Annotation.create({track_id:42, user_id:3, start_idx:24, end_idx:25, body: "The Progressive Era (1900–1917) during which this novel is set was a time marked by rapid technological developments and industrialization. These years also brought a heavy influx of immigrants as well as an increasingly urban American landscape. Technological advancements enabled increased efficiency and mass production."})
+Annotation.create({track_id:42, user_id:1, start_idx:71, end_idx:71, body: "Here we see the beginning of how industrialization will shake up the established social order. This is also another example of Coalhouse conducting himself 'above his station' in a way that would confuse Father and Grandfather."})
+Annotation.create({track_id:43, user_id:2, start_idx:8, end_idx:12, body: "Mother's initial reaction to the baby - calling him 'it' several times and first thining she would rather not handle this situation, but wishes her husband would tak care of it, are indicative of the white woman's perspective at this time in history, as most of her words and actions are."})
+Annotation.create({track_id:43, user_id:1, start_idx:1, end_idx:2, body: "The music and Mother's voice during these few lines of initial panic is erratic to match the hurry of thoughts and actions that happen quickly enough to Sarah's baby's life."})
+Annotation.create({track_id:43, user_id:5, start_idx:24, end_idx:29, body: "This is one of the most telling sections of dialogue about the white perspective in America, even today. Since other people are 'other', it is easy to forget their humanity and their own dignity. Fortunately, Mother is capable of change and realizes her own blindness before she acts on her fear."})
+Annotation.create({track_id:44, user_id:2, start_idx:21, end_idx:21, body: "Since all of Coalhouse's men are black and Younger Brother is whtie, it would be easier for him to fit in and be accepted if he understood their struggle firsthand. He longs to prove his passion and like-mindedness by any means he can."})
+Annotation.create({track_id:44, user_id:1, start_idx:37, end_idx:38, body: "Younger Brother, the aimless, finally knows his purpose and his passion. Younger Brother finds his identity in relation to other people: Evelyn and Coalhouse. So it's fitting that his name itself shows his relation to, well, his relations. He's not himself alone; he's Mother's Younger Brother."})
+Annotation.create({track_id:44, user_id:3, start_idx:51, end_idx:53, body: "From the novel: 'They believed they were going to die in a spectacular manner. This belief produced in them a dramatic, exalted self-awareness. Younger Brother was totally integrated in their community. He was one of them. He awoke every day into a state of solemn joy.'"})
+Annotation.create({track_id:45, user_id:1, start_idx:0, end_idx:0, body: "Upon entering and leaving the stage, each brother strikes an overdramatic pose to highlight their self-conscious dramatics."})
+Annotation.create({track_id:45, user_id:4, start_idx:9, end_idx:11, body: "This "})
+Annotation.create({track_id:45, user_id:2, start_idx:21, end_idx:24, body: "In the competition of their 'agony', we gain another level of understanding of the princes. We see the depth (or lack thereof) of their sincerity and their moral dubiousness."})
+Annotation.create({track_id:46, user_id:5, start_idx:32, end_idx:34, body: "After the Baker rescues Red Riding Hood from the wolf's stomach, she is completely altered. She now carries a knife and wears the wolf as a cape (having given hers to the Baker as a reward for rescuing her)."})
+Annotation.create({track_id:46, user_id:3, start_idx:15, end_idx:15, body: "Being a Sondheim musical, there are slight sexual undertones and jokes in unexpected places. Here we see that some of the wolf's power to trick Little Red was in sexual attraction and excitement."})
+Annotation.create({track_id:46, user_id:1, start_idx:42, end_idx:42, body: "This line summarizes for us the lesson of Little Red Ridinghood. The Witch will repeat this distinction in Act II."})
+Annotation.create({track_id:46, user_id:4, start_idx:29, end_idx:30, body: "When the baker rescued Little Red Riding Hood, he metaphorically brought her back onto the straight path that her mother had set her on at the start of the story. These lines also happen where the recapitulation of the song starts."})
+Annotation.create({track_id:47, user_id:1, start_idx:8, end_idx:9, body: "The repeated “st” alliteration here and elsewhere in the song mirrors Cinderella’s situation of being “stuck,” both literally and figuratively."})
+Annotation.create({track_id:47, user_id:3, start_idx:16, end_idx:19, body: "Cinderella realizes here that even all dressed up in this stunning gown that he really doesn’t know what she is really like outside of the castle. So Cinderella believes that she isn’t what the prince really would want."})
+Annotation.create({track_id:47, user_id:1, start_idx:42, end_idx:43, body: "Cinderella had just wanted to go to the King’s Festival. As sung in the first song, she never mentioned the prince bu the festival of the king. She thought that even if she went, she could leave. Cinderella never thought that the Prince would like her because of all the deprivation she had suffered from her step sisters. She didn’t know that what she did here would ever influence her life outside of this “fairytale.”"})
+Annotation.create({track_id:48, user_id:1, start_idx:3, end_idx:4, body: "The Prince presents a contradiction in terms (“we could die” vs. “don’t worry, we have all the time in the world”) to confuse and beguile the Baker’s Wife. Ironically, the Baker’s Wife will die at the end of “Moments in the Woods” meaning maybe she should feel rushed!"})
+Annotation.create({track_id:48, user_id:2, start_idx:9, end_idx:9, body: "A meta-theatrical remark from the Baker’s Wife. In-character, the Baker’s Wife singing “the wrong story” refers to the fact that she’s commenting on the surreal nature of being kissed by a prince, who is not her socioeconomic equal. Also, they’re both already married. Out of character, the Baker’s Wife is now playing the role of Cinderella’s Prince’s lover—a role and narrative that belong to Cinderella, instead."})
+Annotation.create({track_id:48, user_id:5, start_idx:18, end_idx:18, body: "Plays off the socioeconomic contrast between the Prince and the Baker, but part of why this gets laughs is based on gender standards—the prince is expected to “have” the princess, but it’s unexpected for the Baker’s Wife to “have” (possess, specifically) a Baker (the male role) especially after her only name/role is as the Baker’s Wife."})
+Annotation.create({track_id:48, user_id:1, start_idx:75, end_idx:75, body: "Just what the audience is wondering…"})
+Annotation.create({track_id:48, user_id:3, start_idx:122, end_idx:125, body: "This song, and particularly this section, brings up the concept of the woods as a liminal space that is outside of the normal rules."})
+Annotation.create({track_id:48, user_id:4, start_idx:96, end_idx:97, body: "Another list of four items. Reminiscent of the witch's list: the cow as white as milk, the cape as red as blood, the hair as yellow as corn, and the slipper as pure as gold."})
+Annotation.create({track_id:49, user_id:4, start_idx:2, end_idx:2, body: "Cinderella’s Prince refers back to his brother’s quest to win/rescue Rapunzel in Act I as a way to qualify and out-do his brother’s previous challenge."})
+Annotation.create({track_id:49, user_id:1, start_idx:5, end_idx:6, body: "Cinderella’s Prince has discovered Briar Rose, also known as Sleeping Beauty."})
+Annotation.create({track_id:49, user_id:3, start_idx:8, end_idx:11, body: "This reprise says the same thing musically that it says textually: it’s Act II and the princes have not changed at all since Act I. Both their melody and their desires remain the same because their character growth is nonexistent. Every character feels this way. They all want things they can’t see, but they cheat and lie their way to it. So while the Princes are viewed immoral here, so are all the characters."})
+Annotation.create({track_id:49, user_id:1, start_idx:29, end_idx:29, body: "The joke, of course, is that Rapunzel’s Prince has just revealed the maiden’s name to the audience, by saying it “Snow White” in the previous lyric. The tropes (such as the dwarves!) of her story are so well known that it’s hilarious to us that the Prince cannot name/classify her even as we get increasing amounts of confirmation of who he is trying to rescue based on what we know of the story."})
+Annotation.create({track_id:49, user_id:1, start_idx:38, end_idx:39, body: "The princes can only ever really want “something almost.” As Questing Princes, it’s the fact of seeking they crave, rather than the object they claim to seek. So as soon as they pass the almost-achievement of the quest and achieve their goals completely (such as the princesses they won and married), they immediately lose interest in what they’ve won."})
+Annotation.create({track_id:49, user_id:2, start_idx:100, end_idx:100, body: "Hinting that they actually get a kick out of all this weeping and woe."})
+Annotation.create({track_id:49, user_id:5, start_idx:104, end_idx:104, body: "A joke based on the Act I version of “Agony,” which ends “I must have her to wife.” Here, the Princes are going on quests even though they are already married—showing how inappropriate and un-“prince-like” their behavior truly is."})
+Annotation.create({track_id:50, user_id:1, start_idx:0, end_idx:0, body: "As a test for the stenographer position, Mr. Graydon dictates a letter to Millie. Each time half of the letter is read, the tempo increases."})
+Annotation.create({track_id:50, user_id:2, start_idx:19, end_idx:19, body: "Since Millie's ultimate goal is to marry Mr. Graydon, she flirts with him from the very beginning. This is another indication that Millie is a 'modern' girl: she doesn't wait for him to make a move. Instead, her ambition leads her to pursue her dreams."})
+Annotation.create({track_id:50, user_id:3, start_idx:120, end_idx:120, body: "As Millie types out the letter, she taps out the clacking of the keys under her desk and two office workers accompany her tapping."})
+Annotation.create({track_id:50, user_id:3, start_idx:177, end_idx:177, body: "Millie has betrayed her true motives to the entire staff by mistakenly calling herself by her hopefully-future last name."})
+Annotation.create({track_id:51, user_id:4, start_idx:2, end_idx:2, body: "Foster works so well with dynamics. She takes a nice pause between 'business man' and 'clever girl' as well as changes up the dynamics to really show the contrast. All she wanted before was to be a 'clever girl' and marry a 'business man.' Now she's not so sure."})
+Annotation.create({track_id:51, user_id:1, start_idx:19, end_idx:19, body: "Foster says 'thick.' That's right, says, not sings. And it works well, especially consider she follows it later with a vibrato-filled 'thin', then an accented 'rich,' and finally an elongated vowel on 'poor'."})
+Annotation.create({track_id:51, user_id:5, start_idx:3, end_idx:3, body: "This is a reference to Muzzy's story of how she met her late husband, a supposedly poor but goodhearted man who gave her a green glass necklace. Regardless of his income status, she loved him anyway, and she later realized that her green glass necklace was actually genuine emerald."})
+Annotation.create({track_id:51, user_id:2, start_idx:27, end_idx:28, body: "The dove, sparrow, swallow, swan and turtle were the favorite animals of Aphrodite, the Greek goddess of love. Cupid is the Greek god of love and Aphrodite's son. Here Millie calls upon all the symbols of love to join her in the decision she has made to follow their lessons."})
+Annotation.create({track_id:52, user_id:2, start_idx:15, end_idx:15, body: "This song, sung by Jimmy, and 'Jimmy', sung by Millie, are structural pillars which employ similar compositional techniques. Both characters are of two minds; Jimmy wants his playboy lifestyle and has fallen in love. Millie wants to marry her boss and has fallen in love with someone else. At the beginning of both of these numbers, the characters veer back and forth between legato, lyric melodies and frenetic nervous ones. The similarities between these songs is appropriate because Jimmy and Millie are falling in love, but both have objections to it."})
+Annotation.create({track_id:52, user_id:3, start_idx:17, end_idx:18, body: "The temptation mentioned is falling in love and being forced to give up his lifestyle. By only dating girls who are shallow and unintelligent, he keeps himself distracted with girls he doesn't care about."})
+Annotation.create({track_id:52, user_id:1, start_idx:27, end_idx:29, body: "These two lines are somewhat ironic because many people would say that they are lucky when they find someone they truly love and want to be with, but here Jimmy claims that he has the good fortune to have caught himself before he falls deeper in love with Millie."})
 
 Comment.create({track_id:1, user_id:5, body: "Idina KILLLS it here"})
 Comment.create({track_id:1, user_id:2, body: "all of the good foreshadowing"})
@@ -4497,6 +4497,7 @@ Comment.create({track_id:43, user_id:1, body: "Times they are a'changin'"})
 Comment.create({track_id:43, user_id:2, body: "I love Mother. Can I grow up to be her?"})
 Comment.create({track_id:44, user_id:1, body: "it's songs like this that reassure me that Musical Theater is so worthwhile"})
 Comment.create({track_id:44, user_id:5, body: "Can I be Emma???"})
+Comment.create({track_id:44, user_id:4, body: "Al Silber MUST sing this at some point."})
 Comment.create({track_id:45, user_id:3, body: "Sondheim at his best"})
 Comment.create({track_id:45, user_id:1, body: "lol, petty princes"})
 Comment.create({track_id:46, user_id:4, body: "Well, excited and scared! My favorite line to quote"})
@@ -4594,38 +4595,96 @@ Upvote.create({annotation_id:68, user_id:2 })
 Upvote.create({annotation_id:71, user_id:3 })
 Upvote.create({annotation_id:71, user_id:4 })
 Upvote.create({annotation_id:71, user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
-# Upvote.create({annotation_id: , user_id:1 })
-# Upvote.create({annotation_id: , user_id:2 })
-# Upvote.create({annotation_id: , user_id:3 })
-# Upvote.create({annotation_id: , user_id:4 })
-# Upvote.create({annotation_id: , user_id:5 })
+Upvote.create({annotation_id:72, user_id:1 })
+Upvote.create({annotation_id:73, user_id:2 })
+Upvote.create({annotation_id:73, user_id:3 })
+Upvote.create({annotation_id:75, user_id:4 })
+Upvote.create({annotation_id:76, user_id:5 })
+Upvote.create({annotation_id:76, user_id:1 })
+Upvote.create({annotation_id:77, user_id:2 })
+Upvote.create({annotation_id:77, user_id:3 })
+Upvote.create({annotation_id:78, user_id:4 })
+Upvote.create({annotation_id:79, user_id:5 })
+Upvote.create({annotation_id:80, user_id:1 })
+Upvote.create({annotation_id:80, user_id:2 })
+Upvote.create({annotation_id:80, user_id:3 })
+Upvote.create({annotation_id:80, user_id:4 })
+Upvote.create({annotation_id:81, user_id:5 })
+Upvote.create({annotation_id:81, user_id:1 })
+Upvote.create({annotation_id:82, user_id:2 })
+Upvote.create({annotation_id:83, user_id:3 })
+Upvote.create({annotation_id:84, user_id:4 })
+Upvote.create({annotation_id:87, user_id:5 })
+Upvote.create({annotation_id:86, user_id:1 })
+Upvote.create({annotation_id:87, user_id:2 })
+Upvote.create({annotation_id:87, user_id:3 })
+Upvote.create({annotation_id:89, user_id:4 })
+Upvote.create({annotation_id:90, user_id:5 })
+Upvote.create({annotation_id:91, user_id:1 })
+Upvote.create({annotation_id:91, user_id:2 })
+Upvote.create({annotation_id:92, user_id:3 })
+Upvote.create({annotation_id:93, user_id:4 })
+Upvote.create({annotation_id:94, user_id:5 })
+Upvote.create({annotation_id:95, user_id:1 })
+Upvote.create({annotation_id:96, user_id:2 })
+Upvote.create({annotation_id:97, user_id:3 })
+Upvote.create({annotation_id:97, user_id:4 })
+Upvote.create({annotation_id:98, user_id:5 })
+Upvote.create({annotation_id:99, user_id:1 })
+Upvote.create({annotation_id:99, user_id:2 })
+Upvote.create({annotation_id:99, user_id:3 })
+Upvote.create({annotation_id:100 , user_id:1 })
+Upvote.create({annotation_id:100 , user_id:2 })
+Upvote.create({annotation_id:102 , user_id:3 })
+Upvote.create({annotation_id:101 , user_id:4 })
+Upvote.create({annotation_id:104 , user_id:5 })
+Upvote.create({annotation_id:105 , user_id:1 })
+Upvote.create({annotation_id:106 , user_id:2 })
+Upvote.create({annotation_id:107 , user_id:3 })
+Upvote.create({annotation_id:107 , user_id:4 })
+Upvote.create({annotation_id:107 , user_id:1 })
+Upvote.create({annotation_id:108 , user_id:2 })
+Upvote.create({annotation_id:108 , user_id:3 })
+Upvote.create({annotation_id:109 , user_id:4 })
+Upvote.create({annotation_id:110 , user_id:5 })
+Upvote.create({annotation_id:110 , user_id:1 })
+Upvote.create({annotation_id:111 , user_id:2 })
+Upvote.create({annotation_id:112 , user_id:3 })
+Upvote.create({annotation_id:113 , user_id:4 })
+Upvote.create({annotation_id:113 , user_id:5 })
+Upvote.create({annotation_id:113 , user_id:1 })
+Upvote.create({annotation_id:114 , user_id:2 })
+Upvote.create({annotation_id:120 , user_id:3 })
+Upvote.create({annotation_id:121 , user_id:5 })
+Upvote.create({annotation_id:121 , user_id:1 })
+Upvote.create({annotation_id:121 , user_id:2 })
+Upvote.create({annotation_id:122 , user_id:3 })
+Upvote.create({annotation_id:123 , user_id:4 })
+Upvote.create({annotation_id:123 , user_id:5 })
+Upvote.create({annotation_id:124 , user_id:1 })
+Upvote.create({annotation_id:124 , user_id:2 })
+Upvote.create({annotation_id:129 , user_id:3 })
+Upvote.create({annotation_id:129 , user_id:4 })
+Upvote.create({annotation_id:129 , user_id:5 })
+Upvote.create({annotation_id:130 , user_id:1 })
+Upvote.create({annotation_id:130 , user_id:2 })
+Upvote.create({annotation_id:130 , user_id:3 })
+Upvote.create({annotation_id:131 , user_id:4 })
+Upvote.create({annotation_id:131 , user_id:5 })
+Upvote.create({annotation_id:132 , user_id:1 })
+Upvote.create({annotation_id:132 , user_id:2 })
+Upvote.create({annotation_id:133 , user_id:3 })
+Upvote.create({annotation_id:134 , user_id:4 })
+Upvote.create({annotation_id:134 , user_id:5 })
+Upvote.create({annotation_id:134 , user_id:1 })
+Upvote.create({annotation_id:135 , user_id:2 })
+Upvote.create({annotation_id:137 , user_id:3 })
+Upvote.create({annotation_id:138 , user_id:4 })
+Upvote.create({annotation_id:139 , user_id:5 })
+Upvote.create({annotation_id:140 , user_id:1 })
+Upvote.create({annotation_id:145 , user_id:2 })
+Upvote.create({annotation_id:145 , user_id:3 })
+Upvote.create({annotation_id:146, user_id:1 })
+Upvote.create({annotation_id:146, user_id:2 })
+Upvote.create({annotation_id:147, user_id:3 })
+Upvote.create({annotation_id:147, user_id:4 })
