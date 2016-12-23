@@ -64,12 +64,13 @@ nav .dropdown-header {
 
 .nav-dropdown {
   display: none;
-  width: 150px;
+  width: 120px;
   background-color: #2a2a2a;
   position: absolute;
   text-align: center;
   z-index: 1;
   top: 40px;
+  right: 0px;
 }
 
 .nav-dropdown li{
