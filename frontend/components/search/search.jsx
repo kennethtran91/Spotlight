@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router';
 
-class SessionForm extends React.Component {
+class Search extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -9,7 +9,6 @@ class SessionForm extends React.Component {
       password: "",
       image_url: 'https://res.cloudinary.com/doepem37s/image/upload/v1478044295/spotlight_oybuda.png'
     };
-    
     this.greeting = this.greeting.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleErrors = this.handleErrors.bind(this);
@@ -87,4 +86,4 @@ class SessionForm extends React.Component {
   }
 }
 
-export default SessionForm;
+export default Search;

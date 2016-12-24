@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
 import SessionFormContainer from '../session/session_form_container';
+import SearchContainer from '../search/search_container';
 
 const style = {
   overlay : {
@@ -33,11 +34,13 @@ class Header extends React.Component {
     super(props);
     this.state = {
       loginModalIsOpen: false,
-      signupModalIsOpen: false
+      signupModalIsOpen: false,
+      searchParams: ''
     };
 
     this.openLoginModal = this.openLoginModal.bind(this);
     this.openSignupModal = this.openSignupModal.bind(this);
+    this.handleSearch = this.handleSearch.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
@@ -70,11 +73,16 @@ class Header extends React.Component {
             Spotlight
           </Link>
         </h1>
-        <div className='dropdown-header'>
-          <span className='header-username'>{this.props.currentUser.username}</span>
-          <img src={this.props.currentUser.image_url} className='header-prof-pic'/>
-          {this.dropdown()}
-        </div>
+        <ul>
+          <li>
+            <input type='text' className='search' onChange={this.handleSearch} placeholder='Search' />
+          </li>
+          <li className='dropdown-header'>
+            <span className='header-username'>{this.props.currentUser.username}</span>
+            <img src={this.props.currentUser.image_url} className='header-prof-pic'/>
+            {this.dropdown()}
+          </li>
+        </ul>
       </nav>
     );
   }
@@ -89,6 +97,9 @@ class Header extends React.Component {
           </a>
         </h1>
         <ul>
+          <li>
+            <input type='text' className='search' onChange={this.handleSearch} placeholder='Search' />
+          </li>
           <li><Link to='/albums'>Albums</Link></li>
           <li><button onClick={this.openLoginModal}>Login</button></li>
           <li><button onClick={this.openSignupModal}>Sign up</button></li>
@@ -111,10 +122,17 @@ class Header extends React.Component {
     });
   }
 
+  handleSearch (e) {
+    this.setState({
+      searchParams: e.currentTarget.value
+    });
+  }
+
   closeModal () {
     this.setState({
       loginModalIsOpen: false,
-      signupModalIsOpen: false
+      signupModalIsOpen: false,
+      searchModalIsOpen: false
     });
   }
 
