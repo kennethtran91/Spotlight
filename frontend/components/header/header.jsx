@@ -2,7 +2,6 @@ import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
 import SessionFormContainer from '../session/session_form_container';
-import SearchContainer from '../search/search_container';
 
 const style = {
   overlay : {
@@ -67,16 +66,19 @@ class Header extends React.Component {
   loggedInHeader() {
     return (
       <nav className="in-header">
-        <h1>
-          <Link to='/albums'>
-            <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_30/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
-            Spotlight
-          </Link>
-        </h1>
+        <div className='header-left'>
+          <h1>
+            <Link to='/albums'>
+              <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_30/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
+              Spotlight
+            </Link>
+          </h1>
+          <div className='search'>
+            <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' />
+            <span className='search-icon'/>
+          </div>
+        </div>
         <ul>
-          <li>
-            <input type='text' className='search' onChange={this.handleSearch} placeholder='Search' />
-          </li>
           <li className='dropdown-header'>
             <span className='header-username'>{this.props.currentUser.username}</span>
             <img src={this.props.currentUser.image_url} className='header-prof-pic'/>
@@ -90,16 +92,19 @@ class Header extends React.Component {
   loggedOutHeader() {
     return (
       <nav className='out-header'>
-        <h1>
-          <a href={'/'}>
-            <img src='https://res.cloudinary.com/doepem37s/image/upload/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
-            Spotlight
-          </a>
-        </h1>
+        <div className='header-left'>
+          <h1>
+            <Link to='/'>
+              <img src='https://res.cloudinary.com/doepem37s/image/upload/c_scale,w_30/v1478047544/spotlight-icon_elf4ia.png' className='icon' />
+              Spotlight
+            </Link>
+          </h1>
+          <div className='search'>
+            <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' />
+            <span className='search-icon'/>
+          </div>
+        </div>
         <ul>
-          <li>
-            <input type='text' className='search' onChange={this.handleSearch} placeholder='Search' />
-          </li>
           <li><Link to='/albums'>Albums</Link></li>
           <li><button onClick={this.openLoginModal}>Login</button></li>
           <li><button onClick={this.openSignupModal}>Sign up</button></li>
@@ -123,9 +128,12 @@ class Header extends React.Component {
   }
 
   handleSearch (e) {
-    this.setState({
-      searchParams: e.currentTarget.value
-    });
+    e.preventDefault();
+    // this.setState({
+    //   searchParams: e.currentTarget.value
+    // });
+    const searchParams = e.currentTarget.value;
+    this.props.updateSearch(searchParams);
   }
 
   closeModal () {

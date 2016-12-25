@@ -50,7 +50,6 @@ nav li:hover {
 }
 
 nav .dropdown-header {
-  margin-right: 10px;
   position: relative;
   height: 30px;
   padding-bottom: 9px;
@@ -70,7 +69,7 @@ nav .dropdown-header {
   text-align: center;
   z-index: 1;
   top: 40px;
-  right: 0px;
+  right: 10px;
 }
 
 .nav-dropdown li{
@@ -105,11 +104,24 @@ nav .dropdown-header {
   font-size: 20px;
 }
 
+.header-left {
+  display: flex;
+}
+
 .search {
+  margin-left: 20px;
+}
+
+.search-icon {
   height: 20px;
   width: 20px;
-  margin-top: 4px;
+  /*margin-top: 4px;*/
   background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_20/v1482539822/Spotlight/search.png');
+}
+
+.search-input {
+  font-size: 18px;
+  width: 200px;
 }
 
 .footer {

@@ -28,3 +28,14 @@ export const deleteTrack = (id, success, error) => {
     error
   });
 };
+
+export const searchTracks = (searchParams, success, error) => {
+  $.ajax({
+    datatype: 'json',
+    url: `/api/tracks`,
+    type: 'GET',
+    data: {searchParams: searchParams},
+    success,
+    error
+  });
+};

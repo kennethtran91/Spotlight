@@ -26,8 +26,16 @@ class Api::TracksController < ApplicationController
     render :show
   end
 
+  def index
+    debugger
+    if (params[:searchParams] != '')
+      @tracks = Track.where("title ILIKE ? OR lyrics ILIKE ?", "%#{params[:searchParams]}%", "%#{params[:searchParams]}%")
+    end
+    render :index
+  end
+
   private
   def track_params
-    params.require(:track).permit(:album_id, :lyrics, :title, :context, :vocalists)
+    params.require(:track).permit(:album_id, :lyrics, :title, :context, :vocalists, :searchParams)
   end
 end

@@ -6,8 +6,4 @@ class Track < ActiveRecord::Base
   belongs_to :album
   has_many :annotations, dependent: :destroy
   has_many :comments, dependent: :destroy
-
-  def self.find_by_search_params(input)
-
-  end
 end

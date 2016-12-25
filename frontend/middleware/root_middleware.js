@@ -5,6 +5,7 @@ import TrackMiddleware from './track_middleware';
 import CommentMiddleware from './comment_middleware';
 import AnnotationMiddleware from './annotation_middleware';
 import UpvoteMiddleware from './upvote_middleware';
+import SearchMiddleware from './search_middleware';
 
 const RootMiddleware = applyMiddleware(
   SessionMiddleware,
@@ -12,7 +13,8 @@ const RootMiddleware = applyMiddleware(
   TrackMiddleware,
   CommentMiddleware,
   AnnotationMiddleware,
-  UpvoteMiddleware
+  UpvoteMiddleware,
+  SearchMiddleware
 );
 
 export default RootMiddleware;
