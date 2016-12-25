@@ -33,8 +33,7 @@ class Header extends React.Component {
     super(props);
     this.state = {
       loginModalIsOpen: false,
-      signupModalIsOpen: false,
-      searchParams: ''
+      signupModalIsOpen: false
     };
 
     this.openLoginModal = this.openLoginModal.bind(this);
@@ -129,9 +128,6 @@ class Header extends React.Component {
 
   handleSearch (e) {
     e.preventDefault();
-    // this.setState({
-    //   searchParams: e.currentTarget.value
-    // });
     const searchParams = e.currentTarget.value;
     this.props.updateSearch(searchParams);
   }
@@ -139,8 +135,7 @@ class Header extends React.Component {
   closeModal () {
     this.setState({
       loginModalIsOpen: false,
-      signupModalIsOpen: false,
-      searchModalIsOpen: false
+      signupModalIsOpen: false
     });
   }
 

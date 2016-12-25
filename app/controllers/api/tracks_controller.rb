@@ -27,9 +27,8 @@ class Api::TracksController < ApplicationController
   end
 
   def index
-    debugger
     if (params[:searchParams] != '')
-      @tracks = Track.where("title ILIKE ? OR lyrics ILIKE ?", "%#{params[:searchParams]}%", "%#{params[:searchParams]}%")
+      @tracks = Track.where("title ILIKE ? OR lyrics ILIKE ?", "%#{params[:searchParams]}%", "%#{params[:searchParams]}%").limit(12)
     end
     render :index
   end
