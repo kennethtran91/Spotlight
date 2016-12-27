@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router';
 import Modal from 'react-modal';
 import SessionFormContainer from '../session/session_form_container';
+import SearchContainer from '../search/search_container';
 
 const style = {
   overlay : {
@@ -38,7 +39,6 @@ class Header extends React.Component {
 
     this.openLoginModal = this.openLoginModal.bind(this);
     this.openSignupModal = this.openSignupModal.bind(this);
-    this.handleSearch = this.handleSearch.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
@@ -72,10 +72,7 @@ class Header extends React.Component {
               Spotlight
             </Link>
           </h1>
-          <div className='search'>
-            <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' />
-            <span className='search-icon'/>
-          </div>
+          <SearchContainer />
         </div>
         <ul>
           <li className='dropdown-header'>
@@ -98,10 +95,7 @@ class Header extends React.Component {
               Spotlight
             </Link>
           </h1>
-          <div className='search'>
-            <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' />
-            <span className='search-icon'/>
-          </div>
+          <SearchContainer />
         </div>
         <ul>
           <li><Link to='/albums'>Albums</Link></li>
@@ -124,12 +118,6 @@ class Header extends React.Component {
       loginModalIsOpen: false,
       signupModalIsOpen: true
     });
-  }
-
-  handleSearch (e) {
-    e.preventDefault();
-    const searchParams = e.currentTarget.value;
-    this.props.updateSearch(searchParams);
   }
 
   closeModal () {

@@ -1,4 +1,5 @@
-import { RECEIVE_SEARCH_TRACKS } from '../actions/search_actions';
+import { RECEIVE_SEARCH_TRACKS,
+  CLEAR_SEARCH_TRACKS } from '../actions/search_actions';
 // import merge from 'lodash/merge';
 
 const SearchReducer = ( state = [], action ) => {
@@ -6,6 +7,8 @@ const SearchReducer = ( state = [], action ) => {
   switch(action.type) {
     case RECEIVE_SEARCH_TRACKS:
       return action.searchTracks;
+    case CLEAR_SEARCH_TRACKS:
+      return [];
     default:
       return state;
   }
