@@ -1,5 +1,4 @@
 import React from 'react';
-import Masonry from 'react-masonry-component';
 import { Link } from 'react-router';
 
 class AlbumIndex extends React.Component {

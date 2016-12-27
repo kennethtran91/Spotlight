@@ -4,7 +4,6 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 
 import App from './app';
 import HomeContainer from './home/home_container';
-import SessionFormContainer from './session/session_form_container';
 import ProfileContainer from './profile/profile_container';
 import AlbumIndexContainer from './album_index/album_index_container';
 import AlbumShowContainer from './album_show/album_show_container';
