@@ -1,0 +1,50 @@
+.search-icon {
+  height: 20px;
+  width: 20px;
+  /*margin-top: 4px;*/
+  background-image: url('http://res.cloudinary.com/doepem37s/image/upload/c_scale,w_20/v1482539822/Spotlight/search.png');
+}
+
+.search-input {
+  font-size: 18px;
+  width: 200px;
+  margin-left: 20px;
+  position: relative;
+}
+
+.search-results {
+  position: absolute;
+  top: 47px;
+  z-index: 5;
+  min-width: 230px;
+}
+
+.search-list {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+}
+
+.search-list li {
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  height: 50px;
+}
+
+.search-list li:last-child {
+  border-bottom: none;
+}
+
+.search-item:hover {
+  cursor: pointer;
+}
+
+.search-album-title {
+  font-size: 15px;
+}
+
+.search-track-title {
+  font-weight: bold;
+}

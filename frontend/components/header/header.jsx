@@ -32,6 +32,7 @@ const style = {
 class Header extends React.Component {
   constructor(props) {
     super(props);
+    
     this.state = {
       loginModalIsOpen: false,
       signupModalIsOpen: false

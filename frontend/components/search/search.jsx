@@ -33,14 +33,16 @@ class Search extends React.Component {
       <div className='search'>
         <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' value={this.state.searchParams}/>
         <span className='search-icon'/>
-        <ul className='search-results'>
-          {this.props.searchTracks.map( (track, idx) => (
+        <div className='search-results'>
+          <ul className='search-list'>
+            {this.props.searchTracks.map( (track, idx) => (
               <li className='search-item' onClick={this.handleClick} key={track.id} id={track.id}>
-                <span>{track.title}</span>
-                <span>{track.album}</span>
+                <span className='search-track-title'>{track.title}</span>
+                <span className='search-album-title'>{track.album}</span>
               </li>
-          ))}
-        </ul>
+            ))}
+          </ul>
+        </div>
       </div>
     );
   }
