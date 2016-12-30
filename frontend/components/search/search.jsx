@@ -25,14 +25,15 @@ class Search extends React.Component {
     this.props.clearSearchTracks();
     this.state.searchParams = '';
     hashHistory.push('/tracks/'+e.currentTarget.id);
+    this.props.emptyTrack();
     this.props.fetchTrack(e.currentTarget.id);
   }
 
   render() {
     return (
       <div className='search'>
-        <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' value={this.state.searchParams}/>
         <span className='search-icon'/>
+        <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' value={this.state.searchParams}/>
         <div className='search-results'>
           <ul className='search-list'>
             {this.props.searchTracks.map( (track, idx) => (

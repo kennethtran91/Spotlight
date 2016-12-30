@@ -79,6 +79,7 @@ class AnnotationForm extends React.Component {
           value={this.state.body}
           className='annotation-form-body'></textarea>
         <button className='annotation-form-button' onClick={this.handleSubmit}>Add Annotation</button>
+        <button className='annotation-form-button' onClick={this.props.closeForm}>Cancel</button>
       </form>
     );
   }
