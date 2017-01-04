@@ -22,17 +22,17 @@ class Search extends React.Component {
 
   handleClick (e) {
     e.preventDefault();
-    this.props.clearSearchTracks();
+    this.props.closeModal();
     this.state.searchParams = '';
     hashHistory.push('/tracks/'+e.currentTarget.id);
-    this.props.emptyTrack();
     this.props.fetchTrack(e.currentTarget.id);
+    this.props.clearSearchTracks();
   }
 
   render() {
     return (
       <div className='search'>
-        <span className='search-icon'/>
+        <button onClick={this.props.closeModal} >x</button>
         <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' value={this.state.searchParams}/>
         <div className='search-results'>
           <ul className='search-list'>

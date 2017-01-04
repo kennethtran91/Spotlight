@@ -1,17 +1,17 @@
 import { connect } from 'react-redux';
 import Search from './search';
 import { clearSearchTracks, updateSearch } from '../../actions/search_actions';
-import { fetchTrack, emptyTrack } from '../../actions/track_actions';
+import { fetchTrack } from '../../actions/track_actions';
 
 const mapStateToProps = ({ searchTracks }) => ({
   searchTracks: searchTracks
 });
 
-const mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = ( dispatch, ownProps ) => ({
   fetchTrack: trackId => dispatch(fetchTrack(trackId)),
-  emptyTrack: () => dispatch(emptyTrack()),
   clearSearchTracks: () => dispatch(clearSearchTracks()),
-  updateSearch: searchParams => dispatch(updateSearch(searchParams))
+  updateSearch: searchParams => dispatch(updateSearch(searchParams)),
+  closeModal: ownProps.closeModal
 });
 
 export default connect(

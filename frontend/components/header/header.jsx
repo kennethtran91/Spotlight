@@ -27,19 +27,44 @@ const style = {
   }
 };
 
+const searchStyle = {
+  overlay : {
+    position        : 'fixed',
+    top             : 0,
+    left            : 0,
+    right           : 0,
+    bottom          : 0,
+    backgroundColor : 'rgba(255, 255, 255, 0.75)',
+    z_index         : 10
+  },
+  content : {
+    top             : 0,
+    left            : 0,
+    right           : 0,
+    bottom          : 0,
+    height: '100%',
+    width: '100%',
+    backgroundColor : 'rgba(0, 0, 0, 0.95)',
+    color: 'white',
+    padding: '15px'
+  }
+};
+
 
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
-    
+
     this.state = {
       loginModalIsOpen: false,
-      signupModalIsOpen: false
+      signupModalIsOpen: false,
+      searchModalIsOpen: false
     };
 
     this.openLoginModal = this.openLoginModal.bind(this);
     this.openSignupModal = this.openSignupModal.bind(this);
+    this.openSearchModal = this.openSearchModal.bind(this);
     this.closeModal = this.closeModal.bind(this);
   }
 
@@ -73,7 +98,7 @@ class Header extends React.Component {
               Spotlight
             </Link>
           </h1>
-          <SearchContainer />
+          <span className='search-icon' onClick={this.openSearchModal} />
         </div>
         <ul>
           <li className='dropdown-header'>
@@ -96,7 +121,7 @@ class Header extends React.Component {
               Spotlight
             </Link>
           </h1>
-          <SearchContainer />
+          <span className='search-icon' onClick={this.openSearchModal} />
         </div>
         <ul>
           <li><Link to='/albums'>Albums</Link></li>
@@ -110,21 +135,32 @@ class Header extends React.Component {
   openLoginModal () {
     this.setState({
       loginModalIsOpen: true,
-      signupModalIsOpen: false
+      signupModalIsOpen: false,
+      searchModalIsOpen: false
     });
   }
 
   openSignupModal () {
     this.setState({
       loginModalIsOpen: false,
-      signupModalIsOpen: true
+      signupModalIsOpen: true,
+      searchModalIsOpen: false
+    });
+  }
+
+  openSearchModal () {
+    this.setState({
+      loginModalIsOpen: false,
+      signupModalIsOpen: false,
+      searchModalIsOpen: true
     });
   }
 
   closeModal () {
     this.setState({
       loginModalIsOpen: false,
-      signupModalIsOpen: false
+      signupModalIsOpen: false,
+      searchModalIsOpen: false
     });
   }
 
@@ -153,6 +189,14 @@ class Header extends React.Component {
             <button className='modal-close' onClick={ this.closeModal }>close</button>
             <SessionFormContainer
               formType={this.formType()}
+              closeModal={this.closeModal}/>
+        </Modal>
+
+        <Modal
+          isOpen={ this.state.searchModalIsOpen }
+          onRequestClose={ this.closeModal }
+          style={searchStyle}>
+            <SearchContainer
               closeModal={this.closeModal}/>
         </Modal>
       </header>

@@ -8,7 +8,7 @@ const mapStateToProps = state => ({
   errors: state.session.errors
 });
 
-const mapDispatchToProps = (dispatch, ownProps) => {
+const mapDispatchToProps = ( dispatch, ownProps ) => {
   const formType = ownProps.formType;
   const closeModal = ownProps.closeModal;
   const processForm = ( formType === 'login' ) ? login : signup;
