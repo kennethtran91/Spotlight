@@ -32,14 +32,15 @@ class Search extends React.Component {
   render() {
     return (
       <div className='search'>
-        <button onClick={this.props.closeModal} >x</button>
+        <button className='close-search' onClick={this.props.closeModal} >x</button>
         <input type='text' className='search-input' onChange={this.handleSearch} placeholder='Search lyrics and titles' value={this.state.searchParams}/>
         <div className='search-results'>
           <ul className='search-list'>
             {this.props.searchTracks.map( (track, idx) => (
               <li className='search-item' onClick={this.handleClick} key={track.id} id={track.id}>
-                <span className='search-track-title'>{track.title}</span>
+                <img className='search-art' src={track.album_art} />
                 <span className='search-album-title'>{track.album}</span>
+                <span className='search-track-title'>{track.title}</span>
               </li>
             ))}
           </ul>
