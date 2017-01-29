@@ -44,6 +44,7 @@ Album.create({title: 'Thoroughly Modern Millie', image_url: 'https://res.cloudin
   year: 2002, composer: 'Jeanine Tesori', lyricist: 'Dick Scanlan'})
 
 Track.create({title: 'The Wizard and I', user_id: 1, album_id: 1,
+  url: "https://embed.spotify.com/?uri=spotify:track:3TJQRDc5qot9GJb6T0Pdh2",
   lyrics: "MADAME MORRIBLE
 (spoken) Oh, Miss Elphaba:
 (sung) Many years I have waited
@@ -141,6 +142,7 @@ And I!",
   context: "Madame Morrible has just discovered Elphaba's powers. Elphaba reflects on how her life would change if she were 'with the Wizard'."})
 
 Track.create({title: 'For Good', user_id: 1, album_id: 1, vocalists: 'Idina Menzel and Kristin Chenoweth',
+  url:"https://embed.spotify.com/?uri=spotify:track:46UIRyvRZx9TW5Y5jz13Y8",
   lyrics: "(Elphaba)
 I'm limited
 Just look at me
@@ -238,6 +240,7 @@ I have been changed for good...",
   context: "After Nessa's death, Glinda goes to warn Elphaba to release Dorothy. As they say goodbye for the last time, the two women forgive each other for all grievances and mistakes on both sides."})
 
 Track.create({title: 'Defying Gravity', user_id:2, album_id:1,
+  url:"https://embed.spotify.com/?uri=spotify:track:1bpnYrDCforv9ctJMzJRV8",
   vocalists:'Idina Menzel and Kristin Chenoweth',
   context: "After Elphaba realizes that the Wizard has no powers, he offers her and Glinda everything if they will help him. Elphaba is unable to comply and goes on her own to do what's best for her.",
   lyrics: "GLINDA
@@ -383,8 +386,9 @@ Ahhh!
 CITIZENS OF OZ
 Down!"})
 
-Track.create({title: 'Music of the Night', user_id:2, album_id:2,
+Track.create({title: 'The Music of the Night', user_id:2, album_id:2,
   vocalists:'Michael Crawford',
+  url:"https://embed.spotify.com/?uri=spotify:track:2jF3AQzvTj9L1Ax9Di5BYu",
   context: "In the Phantom's secret lair beneath the opéra house, he explains that he has chosen Christine to sing his music and enchants her with his own sublime voice.",
   lyrics: "Night time sharpens, heightens each sensation
 Darkness wakes and stirs imagination
@@ -425,6 +429,7 @@ Help me make the music of the night"})
 
 Track.create({title: 'All I Ask of You', user_id:3, album_id:2,
   vocalists:'Steve Barton, Sarah Brightman, and Michael Crawford',
+  url:"https://embed.spotify.com/?uri=spotify:track:52KiYg6Kn2NB9riY2IwUgi",
   context: 'On the roof, Christine tells Raoul about her subterranean rendezvous with the Phantom. Raoul is sceptical, but swears to love and to protect her always.',
   lyrics: "(Raoul)
 No more talk of darkness
@@ -500,8 +505,9 @@ Share each day with me, each night, each morning...
 You will curse the day you did not do!
 All that the Phantom asked of you!"})
 
-Track.create({title: 'Point of No Return', user_id:1, album_id:2,
+Track.create({title: 'The Point of No Return', user_id:1, album_id:2,
   vocalists:'Michael Crawford',
+  url:"https://embed.spotify.com/?uri=spotify:track:18y1ZP9WCMunAe6QgByGif",
   context: "During their duet in the opera, Christine realizes that she is singing not with Piangi, but the Phantom. When he expresses his love for her, Christine rips off his mask, exposing his deformed face.",
   lyrics: "PHANTOM: Passarino - Go away for the trap it is set and waits for it's prey.
 You have come here
@@ -583,8 +589,8 @@ Anywhere you go
 Let me go too
 Christine that's all I ask of… "})
 
-Track.create({title: 'Stars', user_id:1, album_id:3,
-  vocalists:'Terrence Mann',
+Track.create({title: 'Stars', user_id:1, album_id:3, vocalists:'Terrence Mann',
+  url:"https://embed.spotify.com/?uri=spotify:track:52TopHncY1DHtdTln55FxG",
   context: "Javert makes a vow to the stars (which represent his belief in a just and ordered universe where suffering is a punishment for sin) that he will find Valjean and recapture him.",
   lyrics: "There, out in the darkness
 A fugitive running
@@ -637,6 +643,7 @@ This I swear by the stars!"})
 
 Track.create({title: 'Empty Chairs at Empty Tables', user_id:5, album_id:3,
   vocalists:'David Bryant',
+  url:"https://embed.spotify.com/?uri=spotify:track:5TTZNyqZaea3YP4XoRVhTx",
   context: "In the wake of the failed revolution, Marius, wounded but alive, despairs at the sacrifice of so many lives.",
   lyrics: "There's a grief that can't be spoken.
 There's a pain goes on and on.
@@ -673,6 +680,7 @@ Where my friends will sing no more"})
 
 Track.create({title: 'On My Own', user_id:2, album_id:3,
   vocalists:'Frances Ruffelle',
+  url:"https://embed.spotify.com/?uri=spotify:track:7iSsdMhdSLJFG2t3y04Jyt",
   context: "Éponine walks the streets of Paris alone, imagining that Marius is there with her, but laments that her love for Marius will never be reciprocated.",
   lyrics: "On my own
 Pretending he's beside me
@@ -718,6 +726,7 @@ But only on my own"})
 
 Track.create({title: 'I Dreamed a Dream', user_id:2, album_id:3,
   vocalists:'Randy Graff',
+  url:"https://embed.spotify.com/?uri=spotify:track:7w2d0evPLoCfACe9nRs0dY",
   context: "Fantine reflects on her broken dreams and about Cosette's father, who abandoned them both. Desperate for money, she sells her locket and hair, finally becoming a prostitute.",
   lyrics:"There was a time when men were kind
 When their voices were soft
@@ -759,8 +768,9 @@ So different now from what it seemed
 Now life has killed
 The dream I dreamed."})
 
-Track.create({title: 'Surrey with the Fringe on Top', user_id:1, album_id:4,
+Track.create({title: 'The Surrey with the Fringe on Top', user_id:1, album_id:4,
   vocalists:'Alfred Drake',
+  url:"https://embed.spotify.com/?uri=spotify:track:4lATGdGRr0St8inN2EUPcX",
   context: "Curly asks Laurey to go with him to the box social, but she refuses, feeling that he has waited too long. He attempts to persuade her by telling her that he will take her in a fine carriage.",
   lyrics:
   "When I take you out tonight with me
@@ -827,8 +837,9 @@ At a slow clip clop
 Don't you hurry little surrey
 With the fringe on the top"})
 
-Track.create({title: 'Oklahoma!', user_id:1, album_id:4,
+Track.create({title: 'Oklahoma', user_id:1, album_id:4,
   vocalists:'Company',
+  url:"https://embed.spotify.com/?uri=spotify:track:4VdZPkoW0cNrhZHK7Xhh3m",
   context: "Three weeks after the box social, Laurey and Curly are married and everyone rejoices in celebration of the territory's impending statehood.",
   lyrics: "They couldn't pick a better time to start in life!
 It ain't too early and it ain't too late
@@ -901,6 +912,7 @@ Yeow!"})
 
 Track.create({title: "I Cain't Say No", user_id:4, album_id:4,
   vocalists:'Celeste Holm',
+  url:"https://embed.spotify.com/?uri=spotify:track:2FgAFG3HHAHg72KpEdqAEq",
   context: "Ado Annie confesses to Laurey that while Will has been away, she has been spending a lot of time with Ali Hakim, a Persian peddler. Laurey tells her she'll have to choose between them, but Ado Annie insists she loves them both.",
   lyrics: "It ain't so much a question of not knowin' what to do
 I knowed what's right an' wrong since I've been ten
@@ -974,6 +986,7 @@ I cain't say no!"})
 
 Track.create({title: 'Circle of Life', user_id:1, album_id:5,
   vocalists:'Sheila Gibbs',
+  url:"https://embed.spotify.com/?uri=spotify:track:5qdmxwRkULsZY1BxNvSGx4",
   context: 'As the sun rises, Rafiki the mandrill calls the animals to Pride Rock. She greets King Mufasa and Queen Sarabi before presenting their cub to the gathered animals.',
   lyrics: "Nants ingonyama bagithi baba (there comes a lion)
 Sithi uhhmm ingonyama (oh yes, it's a lion)
@@ -1016,6 +1029,7 @@ The circle of life"})
 
 Track.create({title: "I Just Can't Wait to be King", user_id:5, album_id:5,
   vocalists:'Alberto Cruz, Jr., Geoff Hoyle, and Jennifer Josephs',
+  url:"https://embed.spotify.com/?uri=spotify:track:2hmX7OquuyHXFphptTW68R",
   context: 'Simba and Nala formulate a plan and manage to lose Zazu, while Simba brags about his future position.',
   lyrics: "SIMBA:
 I'm gonna be a mighty king, so enemies beware!
@@ -1097,6 +1111,7 @@ To be king!"})
 
 Track.create({title: 'Burn', user_id:1, album_id:6,
   vocalists: 'Phillipa Soo',
+  url:"https://embed.spotify.com/?uri=spotify:track:4B3qvzOMzLQXLeYgPsG3KA",
   context: "After Hamilton tells the country about his infidelity, Eliza tearfully and despondently burns their correspondence, destroying Hamilton's chance at being redeemed by 'future historians' and keeping the world from knowing how she reacted by 'erasing herself from the narrative'.",
   lyrics: "I saved every letter you wrote me
 From the moment I read them
@@ -1163,6 +1178,7 @@ I hope that you burn"})
 
 Track.create({title: 'Wait For It', user_id:3, album_id:6,
   vocalists: 'Leslie Odom, Jr.',
+  url:"https://embed.spotify.com/?uri=spotify:track:7EqpEBPOohgk7NnKvBGFWo",
   context: "After Hamilton's wedding, Burr privately admits that he is having an affair with the wife of a British officer. Hamilton advises him to take action, but Burr prefers to wait and see what life has in store for him.",
   lyrics: "[BURR]
 Theodosia writes me a letter every day
@@ -1330,6 +1346,7 @@ Wait for it..."})
 
 Track.create({title: 'Dear Theodosia', user_id:2, album_id:6,
   vocalists: 'Leslie Odom, Jr. and Lin-Manuel Miranda',
+  url:"https://embed.spotify.com/?uri=spotify:track:2sEq2rC3ynYsT49x7utWnd",
   context: "Soon after the revolution, Hamilton's son Philip is born, while Burr has a daughter, Theodosia. Both men feel the need to make up for their own absent fathers.",
   lyrics: "[BURR]
 Dear Theodosia, what to say to you?
@@ -1390,6 +1407,7 @@ Someday, someday"})
 
 Track.create({title: "You'll Be Back", user_id:1, album_id:6,
   vocalists:'Jonathan Groff',
+  url:"https://embed.spotify.com/?uri=spotify:track:6OG1S805gIrH5nAQbEOPY3",
   context: 'In response to the growing unrest in the colonies, a message arrives from King George III, reminding the colonists that he is willing and able to fight for their love.',
   lyrics: "[Verse 1: KING GEORGE]
 You say
@@ -1449,6 +1467,7 @@ Dat dat da ya da!"})
 
 Track.create({title: "You Can't Stop the Beat", user_id:4, album_id:7,
   vocalists:'Company',
+  url:"https://embed.spotify.com/?uri=spotify:track:4WETOI0rRKTLF1NqJ8E5Xf",
   context: 'Prudy arrives at the station and, seeing how happy Penny is with Seaweed, accepts her daughter for who she is. At the height of the moment, the company invites Amber and Velma to join the celebration. With the station in joyous celebration, Tracy and Link cement their love with a kiss.',
   lyrics: "TRACY
 You can't stop an avalanche
@@ -1634,6 +1653,7 @@ You can't stop the beat!!"})
 
 Track.create({title: 'It Takes Two', user_id:1, album_id:7,
   vocalists:'Matthew Morrison and Male Ensemble',
+  url:"https://embed.spotify.com/?uri=spotify:track:2gVNHsFCboH2rih4HZvRmQ",
   context: "During Tracy's first broadcast, Link, following Corny’s suggestion, sings 'It Takes Two' to Tracy, much to Amber’s dismay.",
   lyrics: "GUYS
 It takes two
@@ -1698,6 +1718,7 @@ It takes two..."})
 
 Track.create({title: 'Run and Tell That!', user_id:2, album_id:7,
   vocalists:'Corey Reynolds and Danelle Eugenia Wilson',
+  url:"https://embed.spotify.com/?uri=spotify:track:5dMVwIbmkbItIcge9afwtg",
   context: 'Seaweed, suggesting that some fun would make Tracy feel better, invites all of them to his mother’s record shop for a platter party.',
   lyrics: "SEAWEED
 Hey Trace, my moms pitching a platter party at our record shop
@@ -1865,8 +1886,9 @@ Run and tell that!
 SEAWEED
 Run and tell that!!"})
 
-Track.create({title: "Greased Lightning'", user_id:3, album_id:8,
+Track.create({title: "Greased Lightnin'", user_id:3, album_id:8,
   vocalists: "Timothy Meyers",
+  url:"https://embed.spotify.com/?uri=spotify:track:74Sw2Qlne1DypSOkb0QjyQ",
   context: 'The Burger Palace Boys are busy stealing hubcaps and teasing Kenickie about his "new" used car, Greased Lightning, which he proudly brags about.',
   lyrics: "Well this car could be systematic
 Hydromatic
@@ -1898,6 +1920,7 @@ Greased Lightning"})
 
 Track.create({title: 'We Go Together', user_id:5, album_id:8,
   vocalists:'Company',
+  url:"https://embed.spotify.com/?uri=spotify:track:1aIz5lEROxvD9b2UxQwG0Z",
   context: 'After Danny and Sandy reunite and Rizzo and Kenicke makeup, the Burger Palace Boys, the Pink Ladies, Sandy, and Patty sing about how they will always be friends to the end.',
   lyrics: "We go together like
 Ramma lamma lamma
@@ -1965,6 +1988,7 @@ We'll always be together"})
 
 Track.create({title: 'Summer Nights', user_id:1, album_id:8,
   vocalists:'Carole Demas and Barry Bostwick',
+  url:"https://embed.spotify.com/?uri=spotify:track:21GJZWXsWv9ygGJTdaaQmt",
   context: 'Sandy describes her brief summer love affair with Danny Zuko to the Pink Ladies. In describing the fling, Sandy focuses on the romance, while Danny exaggerates to the other Burger Palace Boys regarding the physical aspects of their relationship.',
   lyrics: "[Danny]
 Summer lovin' had me a blast
@@ -2119,6 +2143,7 @@ Tell me more, tell me more!"})
 
 Track.create({title: 'Tradition', user_id:4, album_id:9,
   vocalists:'Danny Burr and Company',
+  url:"https://embed.spotify.com/?uri=spotify:track:5b9E5QZDfPtv6MoXwzPUR5",
   context: 'Tevye, a poor Jewish milkman with five daughters, explains the customs of the Jews in the Russian shtetl of Anatevka in 1905, where their lives are as precarious as the perch of a fiddler on a roof.',
   lyrics: "[TEVYE]
 Tradition, tradition! Tradition!
@@ -2158,6 +2183,7 @@ The daughter, the daughter! Tradition!"})
 
 Track.create({title: 'Matchmaker', user_id:3, album_id:9,
   vocalists:'Samantha Massell, Melanie Moore, and Alexandra Silber',
+  url:"https://embed.spotify.com/?uri=spotify:track:4OXDosr6Bmg0O2POGhoAvO",
   context: "Yente, the village matchmaker, arrives to tell Golde that Lazar Wolf wants to wed Tzeitel. Hodel and Chava, are excited about Yente's visit, but Tzeitel is unenthusiastic because she wants to marry Motel.",
   lyrics: "[HODEL]
 Matchmaker, matchmaker, make me a match.
@@ -2222,6 +2248,7 @@ Unless he's a matchless match!"})
 
 Track.create({title: 'Far From the Home I Love', user_id:3, album_id:9,
   vocalists:'Samantha Massell',
+  url:"https://embed.spotify.com/?uri=spotify:track:0WlXYWDTELK69JwcgfTkFf",
   context: "After Perchik is arrested and exiled to Siberia, Hodel is determined to join him there. At the railway station, she explains to her papa that her home is with her beloved, wherever he may be, although she will always love her family.",
   lyrics: "How can I hope to make you understand
 Why I do, what I do,
@@ -2252,6 +2279,7 @@ Yet, there with my love, I'm home."})
 
 Track.create({title: 'Miracle of Miracles', user_id:1, album_id:9,
   vocalists:'Adam Kantor',
+  url:"https://embed.spotify.com/?uri=spotify:track:2llmfMSCf2G2y97g7mBb45",
   context: "Tevye agrees to let Tzeitel and Motel marry. An overjoyed Motel celebrates the miracle with Tzeitel.",
   lyrics: "Wonder of wonders, miracle of miracles-
 God took a Daniel once again,
@@ -2282,6 +2310,7 @@ God has given you to me!"})
 
 Track.create({title: 'Seasons of Love', user_id:2, album_id:10,
   vocalists:'Company',
+  url:"https://embed.spotify.com/?uri=spotify:track:4MChb2OaU6Ein2NDznBSiK",
   context: 'Act Two begins with the cast singing this song before the action resumes.',
   lyrics: "ALL
 Five hundred twenty-five thousand
@@ -2345,6 +2374,7 @@ Seasons of love"})
 
 Track.create({title: 'Take Me or Leave Me', user_id:5, album_id:10,
   vocalists:'Idina Menzel and Fredi Walker',
+  url:"https://embed.spotify.com/?uri=spotify:track:3YVjgknwWqdge6S5OMQLU8",
   context: "Maureen and Joanne are preparing another protest, and during rehearsal, Maureen cites Joanne's controlling behavior and Joanne cites Maureen's promiscuous mannerisms as they break up dramatically.",
   lyrics: "[Maureen]
 Every single day,
@@ -2429,6 +2459,7 @@ Take me baby, or leave me
 
 Track.create({title: "I'll Cover You", user_id:1, album_id:10,
   vocalists:'Jesse L. Martin and Wilson Jermaine Heredia',
+  url:"https://embed.spotify.com/?uri=spotify:track:04QFZcPfuvRcisZ9iY4Dp1",
   context: 'After Collins tells Angel about his dream to move to Santa Fe, they declare their love for each other and vow to provide what the other needs.',
   lyrics: "[Angel]
 Live in my house, I'll be your shelter
@@ -2485,6 +2516,7 @@ Oh lover, I'll cover you"})
 
 Track.create({title: 'She Used to be Mine', user_id:1, album_id:11,
   vocalists:'Jesse Mueller',
+  url:"https://embed.spotify.com/?uri=spotify:track:7CBrUf50mf2IqcRZla38by",
   context: "After Jenna gives in to Earl, she reflects on who she is and how she has changed. Emotionally, this is her loneliest and most disappointed point.",
   lyrics: "It's not simple to say
 That most days I don't recognize me
@@ -2538,6 +2570,7 @@ She is gone but she used to be mine"})
 
 Track.create({title: 'When He Sees Me', user_id:4, album_id:11,
 vocalists:'Kikimo Glenn, Jessie Mueller, and Keala Settle',
+url:"https://embed.spotify.com/?uri=spotify:track:4tG0cdbL7v4pQ8RWOqLDHx",
 context: "Before Dawn's blind date, she explains what she is afraid of in love and what she really longs for.",
 lyrics: "DAWN:
 I stick with real things,
@@ -2624,6 +2657,7 @@ Wants to again."})
 
 Track.create({title: 'Never Getting Rid of Me', user_id:3, album_id:11,
 vocalists:'Jonathan Fitzgerald',
+url:"https://embed.spotify.com/?uri=spotify:track:1CZgbcEZEhHH28HcBFvQIW",
 context: "After their first date, Ogie shows up at the diner to declare his love for Dawn and make sure that she understands he is serious.",
 lyrics: "I will never let you let me leave
 I promise I'm not lying
@@ -2665,6 +2699,7 @@ I love you means you're never, ever, ever getting rid of me"})
 
 Track.create({title: 'You Matter to Me', user_id:1, album_id:11,
 vocalists:'Drew Gehling and Jesse Mueller',
+url:"https://embed.spotify.com/?uri=spotify:track:3OIoLMnnWzAUORFQxRAhdF",
 context: "Jenna stays home from work and Dr. Pomater comes to keep her company. At this point, it is clear that their relationship is about more than lust.",
 lyrics: "DR POMATER:
 I could find the whole meaning of life in those sad eyes.
@@ -2714,6 +2749,7 @@ you matter to me."})
 
 Track.create({title: 'Carrying the Banner', user_id:3, album_id:12,
   vocalists:'Newsies',
+  url:"https://embed.spotify.com/?uri=spotify:track:4GVZDS6lAKoHUorptx88gd",
   context: 'As the sun rises, the newsies awaken and prepare for another day on the job.',
   lyrics: "Racetrack:
 That's my cigar
@@ -2913,6 +2949,7 @@ Ah, ah, ah, go!"})
 
 Track.create({title: 'Watch What Happens', user_id:2, album_id:12,
   vocalists:'Kara Lindsay',
+  url:"https://embed.spotify.com/?uri=spotify:track:3wYLkvIoLfU0h1Wrom3tua",
   context: "Katherine, inspired by Jack's leadership and artistic abilities, sees the newsies' strike as an opportunity to become a more successful reporter and decides to cover the protest.",
   lyrics: "'Write what you know'
 so they say, all I know is I don't know what to write
@@ -2971,6 +3008,7 @@ So whatever happens! Let's begin!"})
 
 Track.create({title: 'Seize the Day', user_id:5, album_id:12,
   vocalists: 'Ben Fankhauser, Jeremy Jordan, Andrew Keenan-Bolger, and Newsies',
+  url:"https://embed.spotify.com/?uri=spotify:track:6antzS0gywbS0FSNzAPs7c",
   context: "The next day, Jack fails to properly motivate the newsies, as he isn't always the best with words, but Davey steps in and rallies the newsies for a full scale strike against the New York World.",
   lyrics: "DAVEY:
 Now is the time to seize the day
@@ -3052,6 +3090,7 @@ One for all and all for one!"})
 
 Track.create({title: 'Once and For All', user_id:1, album_id:12,
   vocalists:"Ben Fankhauser, Jeremy Jordan, Kara Lindsay, and Newsies",
+  url:"https://embed.spotify.com/?uri=spotify:track:4wvPE9IX8kuVVbzDowpaPj",
   context: 'Jack and Katherine then join the newsies in printing their own paper; one that will determine the outcome of the strike.',
   lyrics: "Jack:
 There's change coming once and for all
@@ -3127,6 +3166,7 @@ Jack:
 (Once and for all!!)"})
 
 Track.create({title: 'New Music', user_id:3, album_id:13,
+  url:"https://embed.spotify.com/?uri=spotify:track:4n6lJHPIyTEUQXftbrPQkw",
   vocalists:'Mark Jacoby, Marin Mazzie, Steven Sutcliffe, Brian Stokes Mitchell, and Audra McDonald',
   context: "Father returns home from the north pole to find Coalhouse playing Ragtime in the Family's parlor. Mother is unsympathetic to his complaints about the unorthodox changes to his household. Hearing Coalhouse's music, Sarah finally descends to forgive him, and the lovers are joyfully reunited.",
   lyrics: "[FATHER]
@@ -3234,6 +3274,7 @@ I'll
 Hear it forevermore!"})
 
 Track.create({title: 'Henry Ford', user_id:1, album_id:13,
+  url:"https://embed.spotify.com/?uri=spotify:track:6se0gbLUJIt4MbmX1DpEUx",
   vocalists:'Larry Daggett, Brian Stokes Mitchell, and Company',
   context: "As Coalhouse prepares to visit Sarah, he visits Henry Ford's factory for a brand new Model T, and the inventor proudly explains his system of automated production.",
   lyrics: "[FORD]
@@ -3311,6 +3352,7 @@ I'm ready, Lord!"})
 
 Track.create({title: 'What Kind of Woman', user_id:2, album_id:13,
   vocalists:'Marin Mazzie and Ensemble',
+  url:"https://embed.spotify.com/?uri=spotify:track:6XvfdJuNnZHl23s4nfsssc",
   context: "Mother unearths a newborn black baby in her garden. The police arrive with Sarah, the baby's mother, and on an impulse Mother takes responsibility for both Sarah and her child.",
   lyrics: "[MOTHER]
 Get Kathleen!
@@ -3383,6 +3425,7 @@ Would that have made me?"})
 
 Track.create({title: 'He Wanted to Say', user_id:5, album_id:13,
   vocalists:'Brian Stokes Mitchell, Judy Kaye, Steven Sutcliffe, and Ensemble',
+  url:"https://embed.spotify.com/?uri=spotify:track:6uGIoSL5iHCGvcK7W64tFf",
   context: "Younger Brother arrives at Coalhouse's Gang's hideout and is unable to articulate why he wants to join the fight. The men's profound thoughts are narrated by Emma Goldman.",
   lyrics: "COALHOUSE
 I said, no music.
@@ -3474,6 +3517,7 @@ In the darkness."})
 
 Track.create({title: 'Agony', user_id:4, album_id:14,
   vocalists:'Robert Westenberg and Chuck Wagner',
+  url:"https://embed.spotify.com/?uri=spotify:track:0r1VEzAB1Uy6Yl4nRa2J6k",
   context: "Cinderella's Prince and Rapunzel's Prince, who are brothers, meet and compare the misery of their newfound and unobtainable loves.",
   lyrics: "[CINDERELLA'S PRINCE]
 Did I abuse her
@@ -3571,6 +3615,7 @@ I must have her to wife."})
 
 Track.create({title: 'I Know Things Now', user_id:1, album_id:14,
   vocalists:'Danielle Ferland',
+  url:"https://embed.spotify.com/?uri=spotify:track:5ElJYMKDe2Nr9FW6Q9OHW5",
   context: "The Baker slays the Wolf, pulling Little Red and her grandmother from the beast's innards. Little Red rewards him with the red cape and reflects on her new experiences.",
   lyrics: "Mother said,
 'Straight ahead,
@@ -3624,6 +3669,7 @@ And a little bit not..."})
 
 Track.create({title: 'On the Steps of the Palace', user_id:4, album_id:14,
   vocalists:'Kim Crosby',
+  url:"https://embed.spotify.com/?uri=spotify:track:0DDTbMfgYvkvVBpcmoe9bm",
   context: "Cinderella, returning from the last night of the festival, describes how the Prince had spread pitch on the stairs to stop her escape. She eventually resolves to let the Prince decide.",
   lyrics: "He's a very smart Prince
 He's a Prince who prepares
@@ -3699,6 +3745,7 @@ On the steps of the palace"})
 
 Track.create({title: 'Any Moment/Moments in the Woods', user_id:1, album_id:14,
   vocalists:'Joanna Gleason and Robert Westenberg',
+  url:"https://embed.spotify.com/?uri=spotify:track:5eVCpPA1WwDkdgb6BlebV5",
   context: "The Baker's Wife meets Cinderella's Prince, and he easily seduces her. The Prince leaves the Baker's Wife with a few platitudes, and she realizes her error and returns to her happy life.",
   lyrics: "CINDERELLA'S PRINCE
 Anything can happen in the woods.
@@ -3851,6 +3898,7 @@ And it's time to leave the woods."})
 
 Track.create({title: 'Agony (Reprise)', user_id:3, album_id:14,
   vocalists: 'Robert Westenberg and Chuck Wagner',
+  url:"https://embed.spotify.com/?uri=spotify:track:7mDgDCGPALpVJHMG1pPnBD",
   context: "The Princes have grown bored and frustrated with their marriages and now lust after two beautiful women asleep in the woods - Snow White and Sleeping Beauty.",
   lyrics: "CINDERELLA'S PRINCE
 High in a tower-
@@ -3960,6 +4008,7 @@ Ah, well, back to my wife..."})
 
 Track.create({title: 'The Speed Test', user_id:1, album_id:15,
   vocalists:'Marc Kudisch, Angela Christian, and Sutton Foster',
+  url:"https://embed.spotify.com/?uri=spotify:track:6T5NxANrBB5Bsd1AoSgTUe",
   context: "After researching the richest and most eligible bachelors in the world, Millie comes to Sincere Trust to gain a job and the company's boss, Trevor Graydon III.",
   lyrics: "MR. GRAYDON:
 Take a letter. To a Mr. John Hudson, Hudson's Floor Wax.
@@ -4161,6 +4210,7 @@ Ahhhhhhh!"})
 
 Track.create({title: 'Gimme Gimme', user_id:2, album_id:15,
   vocalists:'Sutton Foster',
+  url:"https://embed.spotify.com/?uri=spotify:track:3AQUwT6IIX9iqBStVs6lWq",
   context: "Millie reconsiders her feelings and finally realizes that she would rather have a green-glass love with Jimmy, than an emerald one with a wealthy man she doesn't love.",
   lyrics: "A simple choice, nothing more
 This or that, either or
@@ -4211,6 +4261,7 @@ Gimme, gimme that thing called love!"})
 
 Track.create({title: 'What Do I Need with Love', user_id:1, album_id:15,
   vocalists:'Gavin Creel',
+  url:"https://embed.spotify.com/?uri=spotify:track:5Xy1L9pRvzRZQRpj7lOoYK",
   context: "To celebrate their success the girls go to a speakeasy, where they meet Jimmy, but the club is raided by the police. While waiting for his release in the jail cell, Jimmy realizes that he loves Millie.",
   lyrics: "Oh, the places I would like to show you
 Although I hardly know you
