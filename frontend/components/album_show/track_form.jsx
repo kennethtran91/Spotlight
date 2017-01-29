@@ -37,6 +37,7 @@ class TrackForm extends React.Component {
       context: '',
       lyrics: '',
       vocalists: '',
+      url:'',
       loginModalIsOpen: false,
       signupModalIsOpen: false
     };
@@ -67,7 +68,8 @@ class TrackForm extends React.Component {
       title: '',
       context: '',
       lyrics: '',
-      vocalists: ''
+      vocalists: '',
+      url: ''
     });
     this.props.createTrack(track);
   }
@@ -98,6 +100,10 @@ class TrackForm extends React.Component {
         <input type='text' placeholder='Context of song in the show'
           onChange={this.update('context')}
           value={this.state.context}
+          className='track-form-input'></input>
+        <input type='text' placeholder='Spotify URL for song'
+          onChange={this.update('url')}
+          value={this.state.url}
           className='track-form-input'></input>
         <textarea placeholder='Lyrics'
           className='track-form-input track-form-lyrics'
