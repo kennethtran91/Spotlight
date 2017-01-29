@@ -46,18 +46,20 @@ Spotlight is a full-stack web application inspired by Genius.  It utilizes Ruby 
 
 ### Comments
 
-  The backend for comments is a table with columns for `id`, `track_id`, `user_id`, `body`, and `created_at`. The comment information for a track is stored within the comments slice of the track state. Comments are rendered in an index with each item containing the username of the creator, how long ago it was added, and the content.
+  The backend for `Comment`s is a table with columns for `id`, `track_id`, `user_id`, `body`, and `created_at`. The comment information for a track is stored within the comments slice of the track state. Comments are rendered in an index with each item containing the username of the creator, how long ago it was added, and the content.
 
   Comments can be added in the `CommentForm` container and deleted by the author of the comment. Either of these actions will re-receive the comments slice of the state and re-render the track component.
+
+### Search
+
+  The `Search` component allows users to search through track lyrics and titles. An input string from the frontend is sent to the backend via an AJAX request. Once the request gets to the Tracks Controller, the array of `Track` objects is made from a SQL query. Titles are indexed to increase the speed of the query slightly.
+
+  On the frontend the json array is received into the store and displayed similarly to the album index page with album art, album title, and track title. The component is viewed by the user within a modal in the header, accessible to any user regardless of logged-in status.
 
 ## Future Directions for the Project
 
 In addition to the features already implemented, I plan to continue work on this project.  The next steps for Spotlight are outlined below.
 
-### Search
+### Playing Songs on Track Show Page
 
-Searching for tracks is a standard feature of Genius. This will search all track titles that contain the input string.
-
-### Playing Songs on Track Show
-
-Although this is less essential functionality, I also plan to implement the ability to listen to the music while on the track show page.  To do this, I plan to use the react-player gem.
+Although this is less essential functionality, I also plan to implement the ability to listen to the music while on the track show page.  To do this, I plan to use the Spotify Play Button Widget.
