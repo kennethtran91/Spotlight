@@ -249,7 +249,7 @@ class Track extends React.Component {
             <li>{this.props.track.context}</li>
           </ul>
           <div className='player-div'>
-            <iframe src={this.props.trackUrl} width="100%" height="300"></iframe>
+            <iframe src={this.props.track.url} width="100%" height="300"></iframe>
           </div>
           {this.deleteButton()}
         </section>

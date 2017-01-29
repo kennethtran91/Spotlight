@@ -3,6 +3,7 @@ class Api::TracksController < ApplicationController
 
   def create
     @track = Track.new(track_params)
+    @track.url = "https://embed.spotify.com/?uri=#{params[:track][:uri]}"
     @track.user_id = current_user.id
     if @track.save
       render :show
@@ -35,6 +36,6 @@ class Api::TracksController < ApplicationController
 
   private
   def track_params
-    params.require(:track).permit(:album_id, :lyrics, :title, :context, :vocalists, :url, :searchParams)
+    params.require(:track).permit(:album_id, :lyrics, :title, :context, :vocalists, :searchParams)
   end
 end

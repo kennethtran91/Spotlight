@@ -17,7 +17,7 @@ const mapStateToProps = state => {
       track,
       currentUser: state.session.currentUser,
       comments: state.track.comments,
-      annotations: state.track.annotations
+      annotations: state.track.annotations,
     };
   } else {
     return {};
