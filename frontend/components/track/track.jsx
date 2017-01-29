@@ -248,6 +248,9 @@ class Track extends React.Component {
             <li>Performed by: {this.props.track.vocalists}</li>
             <li>{this.props.track.context}</li>
           </ul>
+          <div className='player-div'>
+            <iframe src={this.props.trackUrl} width="100%" height="300" allowtransparency="true"></iframe>
+          </div>
           {this.deleteButton()}
         </section>
         {this.explanation_blurbs()}
